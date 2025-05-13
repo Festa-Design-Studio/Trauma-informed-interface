@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Card Header Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Breadcrumb navigation -->
+  <nav class="bg-selenite-white-100 py-3 px-4 md:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <ol class="flex flex-wrap items-center gap-2 text-small text-grey-600">
+        <li><a href="/src/index.html" class="hover:text-azurite-blue-600 transition-colors">Home</a></li>
+        <li class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </li>
+        <li><a href="/src/components" class="hover:text-azurite-blue-600 transition-colors">Components</a></li>
+        <li class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </li>
+        <li><a href="/src/components/molecules" class="hover:text-azurite-blue-600 transition-colors">Molecules</a></li>
+        <li class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </li>
+        <li><a href="/src/components/molecules/cards" class="hover:text-azurite-blue-600 transition-colors">Cards</a></li>
+        <li class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </li>
+        <li aria-current="page" class="text-azurite-blue-800 font-medium">Card Header</li>
+      </ol>
+    </div>
+  </nav>
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Card Header Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A collection of card header components designed for consistency and trauma-informed experiences. Card headers establish context and set expectations for the card content.
+      </p>
+
+      <!-- Card Header Components -->
+      <div class="space-y-12 mt-8">
+        <!-- Standard Card Header -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Standard Card Header</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="p-5 border-b border-grey-200">
+              <h3 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900">
+                Card Heading
+              </h3>
+            </div>
+            <div class="p-4 bg-grey-100 text-grey-500 text-center font-montserrat text-small font-light">Card content would go here</div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-b border-grey-200"&gt;
+              &lt;h3 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900"&gt;
+                Card Heading
+              &lt;/h3&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Header with Subtitle -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Header with Subtitle</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="p-5 border-b border-grey-200">
+              <h3 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900 mb-1">
+                Card Heading
+              </h3>
+              <p class="font-montserrat font-regular text-small text-grey-600">
+                Descriptive subtitle provides additional context
+              </p>
+            </div>
+            <div class="p-4 bg-grey-100 text-grey-500 text-center font-montserrat text-small font-light">Card content would go here</div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-b border-grey-200"&gt;
+              &lt;h3 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900 mb-1"&gt;
+                Card Heading
+              &lt;/h3&gt;
+              &lt;p class="font-montserrat font-regular text-small text-grey-600"&gt;
+                Descriptive subtitle provides additional context
+              &lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Header with Icon -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Header with Icon</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="p-5 border-b border-grey-200">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <h3 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900">
+                  Card Heading with Icon
+                </h3>
+              </div>
+            </div>
+            <div class="p-4 bg-grey-100 text-grey-500 text-center font-montserrat text-small font-light">Card content would go here</div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-b border-grey-200"&gt;
+              &lt;div class="flex items-center gap-3"&gt;
+                &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+                  &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /&gt;
+                &lt;/svg&gt;
+                &lt;h3 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900"&gt;
+                  Card Heading with Icon
+                &lt;/h3&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Component Documentation -->
+        <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+          <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+          
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+              <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+                <li>For the top section of card components</li>
+                <li>To provide a clear title and context for the card content</li>
+                <li>As a container for metadata about the card content</li>
+                <li>In combination with card bodies and footers for complete cards</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-montserrat font-medium mb-2">Variations:</h3>
+              <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+                <li>Simple header with just a title</li>
+                <li>Header with subtitle for additional context</li>
+                <li>Header with icon for visual reinforcement</li>
+                <li>Header with status badge for indicating state</li>
+                <li>Header with content warning for trauma-informed signaling</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+              <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+                <li>Use proper heading hierarchy (typically h3 within cards)</li>
+                <li>Ensure adequate color contrast (minimum 4.5:1 for text)</li>
+                <li>Include descriptive alt text for any icons</li>
+                <li>Content warnings should be at the top and clearly visible</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+              <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+                <li>Clear headings establish predictability</li>
+                <li>Content warnings are prominently displayed at the top</li>
+                <li>Icons and visual elements are gentle and supportive</li>
+                <li>Adequate spacing reduces visual overload</li>
+                <li>Border separates the header from content for clarity</li>
+                <li>Consistent visual patterns throughout card headers</li>
+                <li>Metadata provides clear expectations about content</li>
+                <li>Neutral color scheme avoids triggering stress responses</li>
+                <li>Rounded corners soften the visual appearance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="../../molecules/alerts/supportive-message.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Supportive Message
+          </a>
+          <a href="card-body.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Card Body
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

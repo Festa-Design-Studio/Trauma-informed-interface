@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Design System</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+  <!-- Main Navigation with Predictable Structure -->
+  <nav class="bg-selenite-white-50 border-b border-grey-200 py-4 px-6 md:px-8" aria-label="Main navigation">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Logo and site name -->
+      <div class="flex items-center">
+        <img src="/src/img/dgl-logomark.svg" alt="Dr. G's Lab Logo" class="h-10 w-10 mr-3">
+        <span class="font-playfair font-bold text-h4-mobile md:text-h3-tablet text-azurite-blue-900">Dr. G's Lab</span>
+      </div>
+      
+      <!-- Navigation links with clear states -->
+      <ul class="hidden md:flex space-x-8">
+        <li>
+          <a href="index.html" class="font-montserrat font-medium text-small text-chrysocolla-green-900 border-b-2 border-chrysocolla-green-900 pb-1 transition-all duration-300" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#components" class="font-montserrat font-medium text-small text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Components
+          </a>
+        </li>
+        <li>
+          <a href="#principles" class="font-montserrat font-medium text-small text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Principles
+          </a>
+        </li>
+        <li>
+          <a href="samples.html" class="font-montserrat font-medium text-small text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Examples
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Mobile menu button -->
+      <button class="md:hidden bg-transparent border-none text-grey-800 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Open main menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile menu, hidden by default -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <ul class="flex flex-col space-y-4">
+        <li>
+          <a href="index.html" class="block font-montserrat font-medium text-small text-chrysocolla-green-900 font-bold transition-all duration-300" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#components" class="block font-montserrat font-medium text-small text-grey-800 hover:text-chrysocolla-green-900 transition-all duration-300">
+            Components
+          </a>
+        </li>
+        <li>
+          <a href="#principles" class="block font-montserrat font-medium text-small text-grey-800 hover:text-chrysocolla-green-900 transition-all duration-300">
+            Principles
+          </a>
+        </li>
+        <li>
+          <a href="samples.html" class="block font-montserrat font-medium text-small text-grey-800 hover:text-chrysocolla-green-900 transition-all duration-300">
+            Examples
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Emergency Exit Button - Fixed Position -->
+  <div class="fixed top-4 right-4 z-50" aria-live="polite">
+    <button 
+      class="bg-grey-100 hover:bg-grey-200 text-grey-900 font-montserrat font-medium text-small py-2 px-4 rounded-md shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-grey-300 flex items-center gap-2"
+      aria-label="Emergency exit to safe space">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Exit to Safe Space
+    </button>
+  </div>
+
+  <!-- Hero Section with Welcome Message -->
+  <section class="bg-gradient-to-b from-selenite-white-100 to-selenite-white-50 py-12 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="bg-chrysocolla-green-100 text-chrysocolla-green-900 text-caption font-montserrat font-medium py-1 px-3 rounded-full inline-block mb-6">
+          Version 1.0
+        </span>
+        <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+          A Trauma-Informed Design System for Digital Wellbeing
+        </h1>
+        <p class="font-montserrat font-regular text-body-large text-grey-800 mb-8">
+          Dr. G's Lab provides a comprehensive framework and component library designed with trauma-informed principles, prioritizing psychological safety, user autonomy, and emotional wellbeing without compromising on elegant design.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#components" class="bg-chrysocolla-green-900 hover:bg-chrysocolla-green-800 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-chrysocolla-green-700 focus:ring-offset-2 inline-flex items-center justify-center">
+            Explore Components
+          </a>
+          <a href="#principles" class="border-2 border-azurite-blue-700 text-azurite-blue-700 hover:bg-azurite-blue-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 inline-flex items-center justify-center">
+            Learn Our Principles
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <section class="bg-azurite-blue-900 py-10 border-y border-azurite-blue-700">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <p class="font-playfair font-bold text-h2-mobile text-selenite-white-50 mb-2">40+</p>
+          <p class="font-montserrat font-regular text-body text-selenite-white-200">Trauma-Informed Components</p>
+        </div>
+        <div class="text-center">
+          <p class="font-playfair font-bold text-h2-mobile text-selenite-white-50 mb-2">5</p>
+          <p class="font-montserrat font-regular text-body text-selenite-white-200">Core Principles</p>
+        </div>
+        <div class="text-center">
+          <p class="font-playfair font-bold text-h2-mobile text-selenite-white-50 mb-2">100%</p>
+          <p class="font-montserrat font-regular text-body text-selenite-white-200">User Autonomy Focus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-12 px-4 md:px-6 lg:px-8">
+    <!-- Trauma-Informed Principles Section -->
+    <section id="principles" class="mb-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-playfair font-bold text-h2-mobile md:text-h2-tablet text-chrysocolla-green-900 mb-6 text-center">
+          Core Trauma-Informed Principles
+        </h2>
+        <p class="font-montserrat font-regular text-body text-grey-800 mb-12 text-center">
+          Our design system is built on five core principles that ensure every interaction respects the user's emotional wellbeing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Principle 1: Safety -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md">
+          <div class="bg-chrysocolla-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="font-montserrat font-bold text-h3-mobile text-azurite-blue-900 mb-3">
+            Safety First
+          </h3>
+          <p class="font-montserrat font-regular text-body text-grey-800">
+            All components are designed with psychological safety in mind, including clear exit points, content warnings, and gentle visual design that avoids triggering elements.
+          </p>
+        </div>
+        
+        <!-- Principle 2: Trustworthiness -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md">
+          <div class="bg-chrysocolla-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-montserrat font-bold text-h3-mobile text-azurite-blue-900 mb-3">
+            Trustworthiness & Transparency
+          </h3>
+          <p class="font-montserrat font-regular text-body text-grey-800">
+            Our components are transparent about their purpose and actions, building trust through predictable behaviors and clear communication.
+          </p>
+        </div>
+        
+        <!-- Principle 3: Choice -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md">
+          <div class="bg-chrysocolla-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </div>
+          <h3 class="font-montserrat font-bold text-h3-mobile text-azurite-blue-900 mb-3">
+            Choice & User Control
+          </h3>
+          <p class="font-montserrat font-regular text-body text-grey-800">
+            Empowerment is central to our design philosophy, with adjustable settings, opt-in interactions, and multiple navigation paths to give users agency.
+          </p>
+        </div>
+        
+        <!-- Principle 4: Collaboration -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md">
+          <div class="bg-chrysocolla-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="font-montserrat font-bold text-h3-mobile text-azurite-blue-900 mb-3">
+            Collaboration & Mutuality
+          </h3>
+          <p class="font-montserrat font-regular text-body text-grey-800">
+            Our components encourage co-creation of experiences, with supportive feedback mechanisms and acknowledging the shared responsibility of digital wellbeing.
+          </p>
+        </div>
+        
+        <!-- Principle 5: Empowerment -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md">
+          <div class="bg-chrysocolla-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="font-montserrat font-bold text-h3-mobile text-azurite-blue-900 mb-3">
+            Empowerment & Skill Building
+          </h3>
+          <p class="font-montserrat font-regular text-body text-grey-800">
+            Components are designed to foster resilience, with supportive messaging, non-judgmental feedback, and design that builds confidence through successful interactions.
+          </p>
+        </div>
+        
+        <!-- Principle 6: Cultural Considerations -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md">
+          <div class="bg-chrysocolla-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+          </div>
+          <h3 class="font-montserrat font-bold text-h3-mobile text-azurite-blue-900 mb-3">
+            Cultural Responsiveness
+          </h3>
+          <p class="font-montserrat font-regular text-body text-grey-800">
+            Our system acknowledges diverse experiences of trauma and incorporates inclusive design practices that respect cultural differences in emotional expression and safety needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Component Hierarchy Section -->
+    <section id="components" class="mb-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-playfair font-bold text-h2-mobile md:text-h2-tablet text-chrysocolla-green-900 mb-6 text-center">
+          Atomic Component Hierarchy
+        </h2>
+        <p class="font-montserrat font-regular text-body text-grey-800 mb-12 text-center">
+          Our trauma-informed components are organized following atomic design principles, ensuring consistent implementation of safety across all levels of complexity.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Atoms -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-azurite-blue-900 py-4 px-6">
+            <h3 class="font-montserrat font-bold text-h3-mobile text-selenite-white-50 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+              </svg>
+              Atoms
+            </h3>
+          </div>
+          <div class="p-6">
+            <p class="font-montserrat font-regular text-body text-grey-800 mb-4">
+              The foundational elements of our design system, each designed with trauma-informed considerations.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/buttons/primary-button.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Buttons (Primary, Secondary, Tertiary)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/typography/headings.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Typography (Headings, Body, Captions)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/form-elements/text-input.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Form Elements (Inputs, Checkboxes, Radios)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/status-indicators/status-badge.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Status Indicators (Badges, Tags, Progress)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/media/icon.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Media Elements (Icons, Images)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/buttons/emergency-exit.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Emergency Exit Button
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/atoms/media/image-container.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Image Container
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Molecules -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-azurite-blue-800 py-4 px-6">
+            <h3 class="font-montserrat font-bold text-h3-mobile text-selenite-white-50 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+              Molecules
+            </h3>
+          </div>
+          <div class="p-6">
+            <p class="font-montserrat font-regular text-body text-grey-800 mb-4">
+              Groups of atoms working together as a functional unit with cohesive trauma-informed properties.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/form-groups/input-with-label.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Form Groups (Label + Input + Helper Text)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/alerts/content-warning.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Alerts (Content Warnings, Supportive Messages)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/cards/card-header.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Card Elements (Headers, Bodies, Footers)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/text-groups/title-subtitle.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Text Groups (Title + Subtitle, List Items)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/navigation/desk-menu.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Navigation Elements (Menus, Breadcrumbs)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/alerts/supportive-message.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Supportive Message Alerts
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/cards/card-body.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Card Body
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/cards/card-footer.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Card Footer
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/molecules/media-controls/video-controls.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Video Controls
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Organisms -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-azurite-blue-700 py-4 px-6">
+            <h3 class="font-montserrat font-bold text-h3-mobile text-selenite-white-50 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+              Organisms
+            </h3>
+          </div>
+          <div class="p-6">
+            <p class="font-montserrat font-regular text-body text-grey-800 mb-4">
+              Relatively complex components composed of molecules and atoms that form distinct sections of an interface.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/organisms/course/core-course-card.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Course Components (Module Cards, Progress Trackers)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="organisms/trauma-informed-components.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Modal Dialogs (Trauma-Informed Overlays)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/organisms/blog/blog-card.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Blog Components (Article Cards, Content Warnings)
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/organisms/safety/safety-toolkit.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Safety Toolkits (Emergency Exits, Resource Centers)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Templates -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg overflow-hidden shadow-sm">
+          <div class="bg-azurite-blue-600 py-4 px-6">
+            <h3 class="font-montserrat font-bold text-h3-mobile text-selenite-white-50 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+              Templates
+            </h3>
+          </div>
+          <div class="p-6">
+            <p class="font-montserrat font-regular text-body text-grey-800 mb-4">
+              Page-level structures that organize organisms into comprehensive layouts with consistent trauma-informed navigation patterns.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <a href="components/templates/learning-module.html" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 hover:underline transition-all duration-300">
+                  Learning Module Templates
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="font-montserrat text-small text-grey-500">
+                  Blog Article Templates <span class="text-caption text-sunstone-orange">(Coming Soon)</span>
+                </span>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="font-montserrat text-small text-grey-500">
+                  Resource Center Templates <span class="text-caption text-sunstone-orange">(Coming Soon)</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="mb-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-playfair font-bold text-h2-mobile md:text-h2-tablet text-chrysocolla-green-900 mb-6 text-center">
+          Getting Started
+        </h2>
+        <p class="font-montserrat font-regular text-body text-grey-800 mb-8 text-center">
+          Integrate trauma-informed design into your digital products with our comprehensive component library.
+        </p>
+        
+        <!-- Steps -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-6 shadow-sm">
+          <ol class="space-y-6">
+            <li class="flex">
+              <div class="bg-chrysocolla-green-100 text-chrysocolla-green-900 rounded-full w-8 h-8 flex items-center justify-center font-montserrat font-bold mr-4 flex-shrink-0">1</div>
+              <div>
+                <h4 class="font-montserrat font-bold text-body-large text-azurite-blue-900 mb-2">Explore the Guidelines</h4>
+                <p class="font-montserrat font-regular text-body text-grey-800">
+                  Start by understanding the core trauma-informed principles and how they apply to different interface contexts.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="bg-chrysocolla-green-100 text-chrysocolla-green-900 rounded-full w-8 h-8 flex items-center justify-center font-montserrat font-bold mr-4 flex-shrink-0">2</div>
+              <div>
+                <h4 class="font-montserrat font-bold text-body-large text-azurite-blue-900 mb-2">Browse Component Examples</h4>
+                <p class="font-montserrat font-regular text-body text-grey-800">
+                  Review our component library to understand how trauma-informed principles are implemented at different levels of the interface.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="bg-chrysocolla-green-100 text-chrysocolla-green-900 rounded-full w-8 h-8 flex items-center justify-center font-montserrat font-bold mr-4 flex-shrink-0">3</div>
+              <div>
+                <h4 class="font-montserrat font-bold text-body-large text-azurite-blue-900 mb-2">Implement with Tailwind CSS</h4>
+                <p class="font-montserrat font-regular text-body text-grey-800">
+                  Use our customized Tailwind configuration to easily implement trauma-informed UI components in your projects.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="bg-chrysocolla-green-100 text-chrysocolla-green-900 rounded-full w-8 h-8 flex items-center justify-center font-montserrat font-bold mr-4 flex-shrink-0">4</div>
+              <div>
+                <h4 class="font-montserrat font-bold text-body-large text-azurite-blue-900 mb-2">Test with Diverse Users</h4>
+                <p class="font-montserrat font-regular text-body text-grey-800">
+                  Always validate your implementation with diverse user testing, particularly those with lived experience of trauma.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-azurite-blue-900 to-azurite-blue-800 rounded-xl p-8 md:p-12 text-center">
+      <h2 class="font-playfair font-bold text-h2-mobile md:text-h2-tablet text-selenite-white-50 mb-4">
+        Ready to Create Safer Digital Spaces?
+      </h2>
+      <p class="font-montserrat font-regular text-body-large text-selenite-white-200 mb-8 max-w-2xl mx-auto">
+        Implement trauma-informed design principles in your next project and make digital experiences more accessible and empowering for all users.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="samples.html" class="bg-selenite-white-50 hover:bg-selenite-white-200 text-azurite-blue-900 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-selenite-white-200 focus:ring-offset-2 focus:ring-offset-azurite-blue-900 inline-flex items-center justify-center">
+          View Sample Components
+        </a>
+        <a href="#principles" class="border-2 border-selenite-white-50 text-selenite-white-50 hover:bg-azurite-blue-800 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-selenite-white-200 focus:ring-offset-2 focus:ring-offset-azurite-blue-900 inline-flex items-center justify-center">
+          Learn Design Principles
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-selenite-white-100 border-t border-grey-200 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+          <img src="img/dgl-logo.svg" alt="Dr. G's Lab Logo" class="h-8 w-8 mr-3">
+          <span class="font-playfair font-bold text-small md:text-body text-azurite-blue-900">
+            Dr. G's Lab © 2025
+          </span>
+        </div>
+        <p class="font-montserrat font-light text-small text-grey-700">
+          Empowering trauma-informed digital experiences
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple JavaScript for Toggle Functionality -->
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuButton.addEventListener('click', () => {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Emergency Exit Button Functionality
+    const emergencyExitBtn = document.querySelector('[aria-label="Emergency exit to safe space"]');
+    emergencyExitBtn.addEventListener('click', () => {
+      // In a real implementation, this would redirect to a calming page
+      alert('In a real implementation, this would immediately redirect to a calming "safe space" page without any confirmation dialogs.');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+

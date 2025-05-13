@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Input - Dr G Lab Design System</title>
+  <link href="../../../output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="p-8 bg-selenite-white-100">
+ <!-- Breadcrumb Navigation -->
+ <nav aria-label="Breadcrumb" class="mb-6">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+        <li class="flex items-center">
+            <a href="../../../index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li>
+            <span class="text-grey-700 font-montserrat font-medium">Text Input</span>
+        </li>
+    </ol>
+ </nav>
+
+ <h1 class="text-xl font-bold mb-6">Text Input Component</h1>
+
+ <!-- Main content -->
+ <div class="space-y-8">
+    <!-- Text Input Component -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Standard Text Input</h2>
+      <label for="text-input-example" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+        Text Input Field
+      </label>
+      <input 
+        type="text" 
+        id="text-input-example" 
+        class="w-full border border-grey-300 rounded-md py-3 px-4 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:border-azurite-blue-500 focus:outline-none transition-all duration-300"
+        placeholder="Enter your response here"
+      >
+      <p class="font-montserrat text-caption text-grey-600 mt-1">
+        Optional helper text with additional guidance
+      </p>
+    </div>
+
+    <!-- Text Input Component with Optional Label -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Optional Text Input</h2>
+      <label for="optional-input-example" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+        Optional Field <span class="text-grey-500 font-normal">(optional)</span>
+      </label>
+      <input 
+        type="text" 
+        id="optional-input-example" 
+        class="w-full border border-grey-300 rounded-md py-3 px-4 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:border-azurite-blue-500 focus:outline-none transition-all duration-300"
+        placeholder="Only if you feel comfortable sharing"
+      >
+    </div>
+
+    <!-- Text Input Component with Error State -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Error State Text Input</h2>
+      <label for="error-input-example" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+        Email Address
+      </label>
+      <input 
+        type="email" 
+        id="error-input-example" 
+        class="w-full border border-rhodochrosite-rose-300 rounded-md py-3 px-4 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-rhodochrosite-rose-200 focus:border-rhodochrosite-rose-500 focus:outline-none transition-all duration-300"
+        placeholder="Enter your email address"
+        aria-describedby="error-message"
+        aria-invalid="true"
+      >
+      <p class="font-montserrat text-caption text-rhodochrosite-rose-500 mt-1" id="error-message">
+        Please enter a valid email address
+      </p>
+    </div>
+ </div>
+
+ <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+    <h2 class="text-lg font-medium mb-4">Usage Guidelines</h2>
+    <div class="space-y-4">
+        <div>
+            <h3 class="font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+                <li>For collecting single-line text input from users</li>
+                <li>Common for names, emails, short answers</li>
+                <li>Always pair with descriptive labels</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3 class="font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+                <li>Maintain adequate height for touch targets</li>
+                <li>Use proper label associations with 'for' and 'id'</li>
+                <li>Include descriptive placeholder text</li>
+                <li>Error messages should be associated with inputs using aria-describedby</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3 class="font-medium mb-2">Trauma-informed considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+                <li>Clear labeling reduces uncertainty and anxiety</li>
+                <li>Gentle transitions for focus states avoid jarring changes</li>
+                <li>Generous padding creates visual breathing room</li>
+                <li>Explicitly marking optional fields gives users control</li>
+                <li>Error messages use supportive, non-judgmental language</li>
+                <li>Soft color palette avoids triggering stress responses</li>
+                <li>Rounded corners create a softer, less threatening appearance</li>
+            </ul>
+        </div>
+    </div>
+ </div>
+
+ <!-- Component Navigation Footer -->
+ <footer class="mt-12 pt-4 border-t border-grey-200">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="select.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Select
+          </a>
+          <a href="checkbox.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Checkbox
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

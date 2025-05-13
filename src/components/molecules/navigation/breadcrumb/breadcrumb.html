@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumb Navigation - Dr G Lab Design System</title>
+    <link rel="stylesheet" href="../../../../output.css">
+    <meta name="description" content="Breadcrumb component for Dr G Lab's trauma-informed design system">
+</head>
+<body class="p-8 bg-selenite-white-100">
+    <h1 class="text-xl font-bold mb-6">Breadcrumb Navigation Component</h1>
+    
+    <div class="space-y-8">
+        <!-- Standard Breadcrumb Component -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium mb-4">Standard Breadcrumb</h2>
+            <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-2 text-small">
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Molecules</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="text-grey-700 font-montserrat font-medium">Breadcrumb</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Condensed Breadcrumb (for Mobile) -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium mb-4">Condensed Breadcrumb (Mobile-Friendly)</h2>
+            <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-2 text-small">
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-grey-500 font-montserrat">...</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Molecules</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="text-grey-700 font-montserrat font-medium">Breadcrumb</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Breadcrumb with Icon -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium mb-4">Breadcrumb with Home Icon</h2>
+            <nav aria-label="Breadcrumb" class="mb-4">
+                <ol class="flex items-center flex-wrap gap-2 text-small">
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            Home
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Navigation</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="text-grey-700 font-montserrat font-medium">Breadcrumb</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="text-lg font-medium mb-4">Usage Guidelines</h2>
+        <div class="space-y-4">
+            <div>
+                <h3 class="font-medium mb-2">Usage:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Use breadcrumb navigation to show the user's current location in the site hierarchy</li>
+                    <li>Implement on pages that are nested at least two levels deep in the site structure</li>
+                    <li>Place breadcrumbs at the top of content area, beneath the main navigation</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Accessibility:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Use proper semantic markup with <code>&lt;nav&gt;</code>, <code>&lt;ol&gt;</code> tags</li>
+                    <li>Include aria-label="Breadcrumb" on the navigation element</li>
+                    <li>Ensure sufficient color contrast for text links</li>
+                    <li>Provide visible focus states for keyboard navigation</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Trauma-informed considerations:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Breadcrumbs provide orientation and control, helping users feel grounded within complex interfaces</li>
+                    <li>Clear path visualization reduces digital disorientation that can trigger anxiety</li>
+                    <li>Consistent behavior across pages builds trust and predictability</li>
+                    <li>Consider condensing breadcrumbs on mobile to prevent overwhelming users with limited screen space</li>
+                    <li>Provide clear click targets with adequate spacing to reduce precision stress</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Component Navigation Footer -->
+    <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+                Part of Dr. G's Lab Trauma-Informed Design System
+            </p>
+            
+            <nav aria-label="Component Navigation" class="flex flex-wrap">
+                <a href="../../../molecules/cards/card-footer.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Previous: Card Footer
+                </a>
+                <a href="../desk-menu.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+                    Next: Desktop Menu
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

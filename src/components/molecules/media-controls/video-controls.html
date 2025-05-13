@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+      <!-- Video Controls Component -->
+
+      <!-- Basic Video Controls -->
+      <div class="w-full max-w-xl mx-auto">
+        <p class="font-montserrat font-medium text-azurite-blue-900 mb-md">Basic Video Controls</p>
+        <div class="bg-grey-900 rounded-lg shadow-soft overflow-hidden">
+          <!-- Video placeholder - In a real implementation, this would be a video element -->
+          <div class="aspect-video bg-grey-800 relative">
+            <!-- Content warning overlay (optional, shown before video plays) -->
+            <div class="absolute inset-0 bg-selenite-white-50 bg-opacity-90 flex flex-col items-center justify-center p-lg">
+              <p class="font-montserrat text-body text-grey-800 mb-md text-center">
+                This video contains discussion of trauma responses that some viewers may find sensitive.
+              </p>
+              <div class="flex space-x-sm">
+                <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT">
+                  Play Video
+                </button>
+                <button class="border border-grey-300 bg-selenite-white-50 text-grey-800 px-md py-sm rounded-md hover:bg-selenite-white-100 transition-all duration-DEFAULT">
+                  Show Text Transcript
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Video controls bar -->
+          <div class="bg-grey-900 px-md py-sm flex items-center">
+            <!-- Play/pause button -->
+            <button class="text-selenite-white-50 hover:text-selenite-white-100 mr-md focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Play video">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </button>
+            
+            <!-- Progress bar -->
+            <div class="flex-grow mx-sm">
+              <div class="h-1 bg-grey-700 rounded-full overflow-hidden">
+                <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 30%"></div>
+              </div>
+            </div>
+            
+            <!-- Time display -->
+            <span class="text-selenite-white-50 font-montserrat text-small mr-md">1:45 / 5:30</span>
+            
+            <!-- Volume control -->
+            <button class="text-selenite-white-50 hover:text-selenite-white-100 mr-md focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Adjust volume">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            
+            <!-- Full-screen toggle -->
+            <button class="text-selenite-white-50 hover:text-selenite-white-100 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Toggle fullscreen">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Enhanced Trauma-Informed Video Controls -->
+      <div class="w-full max-w-xl mx-auto mt-8">
+        <p class="font-montserrat font-medium text-azurite-blue-900 mb-md">Trauma-Informed Video Controls</p>
+        <div class="bg-grey-900 rounded-lg shadow-soft overflow-hidden">
+          <!-- Video placeholder with playback options -->
+          <div class="aspect-video bg-grey-800 relative">
+            <!-- Content thumbnail with play button -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/800x450?text=Video+Thumbnail');">
+              <div class="absolute inset-0 bg-grey-900 bg-opacity-30 flex items-center justify-center">
+                <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-16 w-16 rounded-full flex items-center justify-center hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT focus:outline-none focus:ring-4 focus:ring-chrysocolla-green-100" aria-label="Play video">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Enhanced video controls bar -->
+          <div class="bg-grey-900 px-md py-sm">
+            <!-- Progress bar with preview -->
+            <div class="mb-sm">
+              <div class="h-2 bg-grey-700 rounded-full overflow-hidden relative cursor-pointer">
+                <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 30%"></div>
+                <!-- Hover preview tooltip (shown on hover) -->
+                <div class="hidden absolute bottom-full left-1/4 transform -translate-x-1/2 mb-sm bg-grey-800 p-xs rounded shadow-soft">
+                  <img src="https://via.placeholder.com/160x90?text=Preview" alt="Video preview" class="w-40 h-auto rounded">
+                  <div class="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-2 h-2 bg-grey-800"></div>
+                </div>
+                <!-- Current position marker -->
+                <div class="absolute top-1/2 left-[30%] transform -translate-x-1/2 -translate-y-1/2 h-4 w-4 bg-chrysocolla-green-DEFAULT rounded-full border-2 border-selenite-white-50"></div>
+              </div>
+            </div>
+            
+            <!-- Controls row -->
+            <div class="flex items-center justify-between">
+              <!-- Left controls group -->
+              <div class="flex items-center">
+                <!-- Play/pause button -->
+                <button class="text-selenite-white-50 hover:text-selenite-white-100 mr-md focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Pause video">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </button>
+                
+                <!-- Volume control with slider -->
+                <div class="flex items-center mr-md">
+                  <button class="text-selenite-white-50 hover:text-selenite-white-100 mr-xs focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Mute volume">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                    </svg>
+                  </button>
+                  <div class="w-24 h-1 bg-grey-700 rounded-full overflow-hidden">
+                    <div class="h-full bg-selenite-white-50 rounded-full" style="width: 70%"></div>
+                  </div>
+                </div>
+                
+                <!-- Time display -->
+                <span class="text-selenite-white-50 font-montserrat text-small">1:45 / 5:30</span>
+              </div>
+              
+              <!-- Right controls group -->
+              <div class="flex items-center space-x-sm">
+                <!-- Playback speed -->
+                <button class="text-selenite-white-50 hover:text-selenite-white-100 bg-grey-800 px-xs py-0.5 rounded text-caption focus:outline-none focus:ring-2 focus:ring-azurite-blue-300" aria-label="Playback speed">
+                  1.0x
+                </button>
+                
+                <!-- Closed captions toggle -->
+                <button class="text-selenite-white-50 hover:text-selenite-white-100 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Toggle closed captions">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2z" />
+                  </svg>
+                </button>
+                
+                <!-- Emergency exit button -->
+                <button class="bg-rhodochrosite-rose-DEFAULT text-selenite-white-50 px-xs py-0.5 rounded text-caption hover:bg-rhodochrosite-rose-600 transition-all duration-DEFAULT focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300" aria-label="Exit video immediately">
+                  Exit
+                </button>
+                
+                <!-- Full-screen toggle -->
+                <button class="text-selenite-white-50 hover:text-selenite-white-100 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full" aria-label="Toggle fullscreen">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Additional trauma-informed controls -->
+          <div class="bg-grey-800 px-md py-sm flex items-center justify-between">
+            <!-- Alternative format options -->
+            <div class="flex items-center space-x-sm">
+              <span class="text-selenite-white-50 font-montserrat text-caption">Format:</span>
+              <button class="font-montserrat text-caption text-selenite-white-50 bg-azurite-blue-600 hover:bg-azurite-blue-700 px-xs py-0.5 rounded transition-all duration-DEFAULT focus:outline-none focus:ring-2 focus:ring-azurite-blue-300">
+                Video
+              </button>
+              <button class="font-montserrat text-caption text-selenite-white-50 bg-grey-700 hover:bg-grey-600 px-xs py-0.5 rounded transition-all duration-DEFAULT focus:outline-none focus:ring-2 focus:ring-azurite-blue-300">
+                Audio
+              </button>
+              <button class="font-montserrat text-caption text-selenite-white-50 bg-grey-700 hover:bg-grey-600 px-xs py-0.5 rounded transition-all duration-DEFAULT focus:outline-none focus:ring-2 focus:ring-azurite-blue-300">
+                Transcript
+              </button>
+            </div>
+            
+            <!-- Content warning toggle -->
+            <button class="flex items-center text-selenite-white-50 hover:text-selenite-white-100 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded px-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-xs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="font-montserrat text-caption">Content Warning Settings</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Usage notes -->
+      <!-- 
+        Usage:
+        - For video playback with trauma-informed considerations
+        - Provides multiple content format options
+        - Includes emergency exit functionality
+        - Offers content warnings with clear opt-in
+        
+        Variations:
+        - Basic video controls (minimal implementation)
+        - Enhanced trauma-informed controls with additional features
+        - With content warning overlay (optional)
+        - With alternative format options
+        
+        Accessibility:
+        - Controls have proper aria-labels
+        - Keyboard navigable interface
+        - Closed caption support
+        - Multiple content format options for different needs
+      -->
+
+      <!-- Trauma-informed considerations -->
+      <!--
+        - Emergency exit button always available
+        - Content warnings with clear opt-in
+        - Multiple format options (video/audio/text)
+        - Predictable interface with clear visual feedback
+        - Volume and display options for sensory considerations
+        - Playback speed control for processing needs
+        - Preview thumbnails help users prepare for content
+        - Clear indication of video progress and duration
+        - Rounded corners and gentle transitions for visual comfort
+      -->
+
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="../alerts/supportive-message.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Supportive Message
+        </a>
+        <a href="../../organisms/blog/blog-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Blog Card
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

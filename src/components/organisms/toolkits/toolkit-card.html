@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Toolkit Card Component -->
+<div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT">
+  <!-- Toolkit icon - Molecule -->
+  <div class="bg-azurite-blue-50 h-16 w-16 rounded-full flex items-center justify-center mb-md">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+    </svg>
+  </div>
+  
+  <!-- Toolkit title - Atom -->
+  <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+    Trauma-Informed Interview Guide
+  </h3>
+  
+  <!-- Toolkit description - Atom -->
+  <p class="font-montserrat text-grey-800 text-body mb-md">
+    A comprehensive toolkit for conducting research interviews in a trauma-informed way, with templates, scripts, and ethical guidelines.
+  </p>
+  
+  <!-- Toolkit contents - Molecule -->
+  <div class="bg-selenite-white-100 rounded-md p-md mb-lg">
+    <p class="font-montserrat font-medium text-grey-700 mb-xs">Toolkit includes:</p>
+    <ul class="space-y-xs">
+      <li class="font-montserrat text-small text-grey-700 flex items-start">
+        <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+        <span>Interview protocol template (PDF)</span>
+      </li>
+      <li class="font-montserrat text-small text-grey-700 flex items-start">
+        <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+        <span>Consent form examples (DOCX)</span>
+      </li>
+      <li class="font-montserrat text-small text-grey-700 flex items-start">
+        <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+        <span>Distress protocol guide (PDF)</span>
+      </li>
+      <li class="font-montserrat text-small text-grey-700 flex items-start">
+        <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+        <span>Sample scripts for sensitive topics (PDF)</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Download button - Molecule -->
+  <a href="#" class="inline-block bg-azurite-blue-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-azurite-blue-700 transition-all duration-DEFAULT text-center w-full flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-sm" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+    </svg>
+    Download Toolkit
+  </a>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - Use on resource listing pages and related sections
+  - Always include a comprehensive list of what's included in the toolkit
+  - Specify file formats for each resource to set clear expectations
+  - Include a download icon with the button to reinforce the action
+  - Ensure the toolkit icon visually relates to the type of resources provided
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Clear listing of included resources eliminates uncertainty about what will be received
+  - File formats are specified to help users know exactly what to expect
+  - Download button includes an icon that reinforces the action
+  - Ample spacing and organization creates easier cognitive processing
+  - Consistent structure with other cards creates familiarity
+  - Clear differentiation between toolkit contents and description helps users scan
+-->
+
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="../services/service-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Service Card
+        </a>
+        <a href="../safety/safety-toolkit.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Safety Toolkit
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+      <!-- Icon Components -->
+
+      <h2 class="font-playfair font-bold text-h3-mobile md:text-h3-tablet text-azurite-blue-900 mb-lg">Icon Components</h2>
+
+      <!-- Basic Icon Sizes -->
+      <div class="mb-lg">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">Icon Sizes</h3>
+        <div class="flex items-end gap-md">
+          <div>
+            <p class="font-montserrat text-caption text-grey-600 mb-xs">Small (16px)</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-montserrat text-caption text-grey-600 mb-xs">Medium (20px)</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-montserrat text-caption text-grey-600 mb-xs">Large (24px)</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-montserrat text-caption text-grey-600 mb-xs">Extra Large (32px)</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon with Container -->
+      <div class="mb-lg">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">Icon with Container</h3>
+        <div class="flex gap-md">
+          <!-- Circular container - chrysocolla -->
+          <div class="bg-chrysocolla-green-50 h-12 w-12 rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-DEFAULT" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          
+          <!-- Circular container - azurite -->
+          <div class="bg-azurite-blue-50 h-12 w-12 rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          
+          <!-- Circular container - rhodochrosite -->
+          <div class="bg-rhodochrosite-rose-50 h-12 w-12 rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rhodochrosite-rose-DEFAULT" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          
+          <!-- Rounded square container -->
+          <div class="bg-sunstone-orange-50 h-12 w-12 rounded-md flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sunstone-orange-DEFAULT" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon with Text -->
+      <div class="mb-lg">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">Icon with Text</h3>
+        <div class="space-y-sm mb-md">
+          <!-- Left aligned -->
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-xs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="font-montserrat text-small text-grey-800">Icon leading text for directional guidance</span>
+          </div>
+          
+          <!-- Right aligned -->
+          <div class="flex items-center">
+            <span class="font-montserrat text-small text-azurite-blue-600">Learn more about this feature</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-azurite-blue-600 ml-xs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status Icons -->
+      <div class="mb-lg">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">Status Icons</h3>
+        <div class="flex gap-xl">
+          <!-- Completed status -->
+          <div class="flex items-center">
+            <div class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <span class="font-montserrat text-small font-medium text-chrysocolla-green-DEFAULT ml-xs">Completed</span>
+          </div>
+          
+          <!-- In progress status -->
+          <div class="flex items-center">
+            <div class="bg-azurite-blue-300 text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <span class="font-montserrat text-small font-medium text-azurite-blue-600 ml-xs">In Progress</span>
+          </div>
+          
+          <!-- Warning status -->
+          <div class="flex items-center">
+            <div class="bg-sunstone-orange-DEFAULT text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <span class="font-montserrat text-small font-medium text-sunstone-orange-DEFAULT ml-xs">Warning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Icons -->
+      <div class="mb-lg">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">Interactive Icons</h3>
+        <div class="flex gap-md">
+          <!-- Basic button with icon -->
+          <button class="p-2 text-grey-700 hover:bg-grey-100 rounded-md transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+          
+          <!-- Outlined button with icon -->
+          <button class="px-md py-sm border border-grey-300 rounded-md text-grey-700 hover:bg-grey-100 transition-all duration-DEFAULT flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-xs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+            </svg>
+            <span>Back</span>
+          </button>
+          
+          <!-- Filled button with icon -->
+          <button class="px-md py-sm bg-chrysocolla-green-DEFAULT rounded-md text-selenite-white-50 hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+            <span>Next</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Usage notes -->
+      <!-- 
+        Usage:
+        - Use icons consistently across the interface for recognizable patterns
+        - Pair icons with text for clarity whenever possible
+        - Choose icon sizes appropriate to their context and importance
+        - Use color to reinforce meaning, but never rely solely on color
+        - Include appropriate spacing around icons to prevent crowding
+        - Use containers to create visual emphasis when needed
+        - Consider the emotional impact of icons in trauma-informed contexts
+        
+        Variations:
+        - Basic icon in different sizes
+        - Icon with container (circle, rounded square)
+        - Icon with text (leading or trailing)
+        - Status icons with color-coding
+        - Interactive icons in buttons
+      -->
+
+      <!-- Trauma-informed considerations -->
+      <!-- 
+        - Rounded containers soften the appearance of icons
+        - Consistent sizing and positioning creates predictability
+        - Clear spacing prevents overwhelming visual clutter
+        - Color coding helps reinforce meaning without relying solely on shape
+        - Text labels aid comprehension and reduce ambiguity
+        - Gentle transitions for interactive states provide feedback without jarring effects
+        - Status indicators use both color and shape to convey meaning (accessible)
+        - Warning icons avoid sharp or alarming visuals
+      -->
+
+    </div>
+  </main>
+</body>
+</html>

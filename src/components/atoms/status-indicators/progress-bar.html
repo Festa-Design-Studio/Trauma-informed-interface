@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Progress Bar Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <!-- Page Header -->
+    <div class="mb-12">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Progress Bar Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        Progress indicators that provide visual feedback on completion status while maintaining trauma-informed design principles for a sense of safety and predictability.
+      </p>
+    </div>
+
+    <!-- Component Showcase -->
+    <div class="space-y-12">
+      <!-- Standard Progress Bar -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Standard Progress Bar</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <div class="mb-6">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-montserrat font-medium text-small text-grey-800">Course Progress</span>
+              <span class="font-montserrat font-light text-caption text-grey-600">60%</span>
+            </div>
+            <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+              <div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;div class="flex justify-between items-center mb-1"&gt;
+            &lt;span class="font-montserrat font-medium text-small text-grey-800"&gt;Course Progress&lt;/span&gt;
+            &lt;span class="font-montserrat font-light text-caption text-grey-600"&gt;60%&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="h-2 bg-grey-200 rounded-full overflow-hidden"&gt;
+            &lt;div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </section>
+
+      <!-- Progress Bar with Steps -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Progress Bar with Steps</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <div class="mb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-montserrat font-medium text-small text-grey-800">Module Progress</span>
+              <span class="font-montserrat font-light text-caption text-grey-600">Step 3 of 5</span>
+            </div>
+            <div class="flex space-x-1">
+              <div class="h-1.5 rounded-full bg-azurite-blue-500 flex-1"></div>
+              <div class="h-1.5 rounded-full bg-azurite-blue-500 flex-1"></div>
+              <div class="h-1.5 rounded-full bg-azurite-blue-500 flex-1"></div>
+              <div class="h-1.5 rounded-full bg-grey-300 flex-1"></div>
+              <div class="h-1.5 rounded-full bg-grey-300 flex-1"></div>
+            </div>
+          </div>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;div class="flex justify-between items-center mb-2"&gt;
+            &lt;span class="font-montserrat font-medium text-small text-grey-800"&gt;Module Progress&lt;/span&gt;
+            &lt;span class="font-montserrat font-light text-caption text-grey-600"&gt;Step 3 of 5&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="flex space-x-1"&gt;
+            &lt;div class="h-1.5 rounded-full bg-azurite-blue-500 flex-1"&gt;&lt;/div&gt;
+            &lt;div class="h-1.5 rounded-full bg-azurite-blue-500 flex-1"&gt;&lt;/div&gt;
+            &lt;div class="h-1.5 rounded-full bg-azurite-blue-500 flex-1"&gt;&lt;/div&gt;
+            &lt;div class="h-1.5 rounded-full bg-grey-300 flex-1"&gt;&lt;/div&gt;
+            &lt;div class="h-1.5 rounded-full bg-grey-300 flex-1"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </section>
+
+      <!-- Progress Circle -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Progress Circle</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <div class="mb-6 flex items-center space-x-4">
+            <div class="relative h-16 w-16">
+              <svg class="h-full w-full" viewBox="0 0 100 100">
+                <circle 
+                  class="text-grey-200 stroke-current" 
+                  stroke-width="10" 
+                  cx="50" 
+                  cy="50" 
+                  r="40" 
+                  fill="transparent">
+                </circle>
+                <circle 
+                  class="text-chrysocolla-green-500 stroke-current" 
+                  stroke-width="10" 
+                  stroke-linecap="round" 
+                  cx="50" 
+                  cy="50" 
+                  r="40" 
+                  fill="transparent"
+                  stroke-dasharray="251.2"
+                  stroke-dashoffset="75.36"
+                  transform="rotate(-90 50 50)">
+                </circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="font-montserrat font-medium text-small text-grey-800">70%</span>
+              </div>
+            </div>
+            <div>
+              <p class="font-montserrat font-medium text-small text-grey-800">Module Completion</p>
+              <p class="font-montserrat font-light text-caption text-grey-600">7 of 10 lessons completed</p>
+            </div>
+          </div>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;div class="flex items-center space-x-4"&gt;
+            &lt;div class="relative h-16 w-16"&gt;
+              &lt;svg class="h-full w-full" viewBox="0 0 100 100"&gt;
+                &lt;circle class="text-grey-200 stroke-current" stroke-width="10" 
+                  cx="50" cy="50" r="40" fill="transparent"&gt;&lt;/circle&gt;
+                &lt;circle class="text-chrysocolla-green-500 stroke-current" 
+                  stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" 
+                  fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="75.36" 
+                  transform="rotate(-90 50 50)"&gt;&lt;/circle&gt;
+              &lt;/svg&gt;
+              &lt;div class="absolute inset-0 flex items-center justify-center"&gt;
+                &lt;span class="font-montserrat font-medium text-small text-grey-800"&gt;70%&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;p class="font-montserrat font-medium text-small text-grey-800"&gt;Module Completion&lt;/p&gt;
+              &lt;p class="font-montserrat font-light text-caption text-grey-600"&gt;7 of 10 lessons completed&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </section>
+
+      <!-- Interactive Progress Bar with Segments -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Interactive Progress Bar with Segments</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <div class="mb-6">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-montserrat font-medium text-small text-grey-800">Course Journey</span>
+            </div>
+            <div class="flex items-center space-x-1 my-3">
+              <button class="h-2 bg-chrysocolla-green-500 rounded-full flex-1 hover:opacity-80 focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2 focus:outline-none transition-opacity duration-300" aria-label="Module 1: Introduction (Completed)"></button>
+              <button class="h-2 bg-chrysocolla-green-500 rounded-full flex-1 hover:opacity-80 focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2 focus:outline-none transition-opacity duration-300" aria-label="Module 2: Foundations (Completed)"></button>
+              <button class="h-2 bg-azurite-blue-500 rounded-full flex-1 hover:opacity-80 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 focus:outline-none transition-opacity duration-300" aria-label="Module 3: Core Concepts (In progress)"></button>
+              <button class="h-2 bg-grey-300 rounded-full flex-1 hover:bg-grey-400 focus:ring-2 focus:ring-grey-200 focus:ring-offset-2 focus:outline-none transition-all duration-300" aria-label="Module 4: Advanced Topics (Not started)"></button>
+              <button class="h-2 bg-grey-300 rounded-full flex-1 hover:bg-grey-400 focus:ring-2 focus:ring-grey-200 focus:ring-offset-2 focus:outline-none transition-all duration-300" aria-label="Module 5: Conclusion (Not started)"></button>
+            </div>
+            <div class="flex justify-between">
+              <span class="font-montserrat font-light text-caption-small text-grey-600">Start</span>
+              <span class="font-montserrat font-light text-caption-small text-grey-600">Finish</span>
+            </div>
+          </div>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;div class="flex justify-between items-center mb-1"&gt;
+            &lt;span class="font-montserrat font-medium text-small text-grey-800"&gt;Course Journey&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="flex items-center space-x-1 my-3"&gt;
+            &lt;button class="h-2 bg-chrysocolla-green-500 rounded-full flex-1 hover:opacity-80 
+              focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2 focus:outline-none 
+              transition-opacity duration-300" aria-label="Module 1: Introduction (Completed)"&gt;&lt;/button&gt;
+            &lt;!-- Additional button segments --&gt;
+          &lt;/div&gt;
+          &lt;div class="flex justify-between"&gt;
+            &lt;span class="font-montserrat font-light text-caption-small text-grey-600"&gt;Start&lt;/span&gt;
+            &lt;span class="font-montserrat font-light text-caption-small text-grey-600"&gt;Finish&lt;/span&gt;
+          &lt;/div&gt;
+        </code>
+      </section>
+
+      <!-- Secondary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Secondary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <button class="font-montserrat font-medium px-6 py-2 rounded-lg bg-white border border-azurite-blue-500 text-azurite-blue-700 hover:bg-azurite-blue-50 focus:ring-2 focus:ring-azurite-blue-300 focus:outline-none transition-all duration-200">
+            Secondary Action
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;button class="font-montserrat font-medium px-6 py-2 rounded-lg bg-white border border-azurite-blue-500 text-azurite-blue-700 hover:bg-azurite-blue-50 focus:ring-2 focus:ring-azurite-blue-300 focus:outline-none transition-all duration-200"&gt;
+            Secondary Action
+          &lt;/button&gt;
+        </code>
+      </section>
+
+      <!-- Tertiary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Tertiary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <button class="font-montserrat font-medium px-6 py-2 rounded-lg bg-transparent border border-transparent text-azurite-blue-700 hover:bg-azurite-blue-50 focus:ring-2 focus:ring-azurite-blue-300 focus:outline-none transition-all duration-200">
+            Tertiary Action
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;button class="font-montserrat font-medium px-6 py-2 rounded-lg bg-transparent border border-transparent text-azurite-blue-700 hover:bg-azurite-blue-50 focus:ring-2 focus:ring-azurite-blue-300 focus:outline-none transition-all duration-200"&gt;
+            Tertiary Action
+          &lt;/button&gt;
+        </code>
+      </section>
+
+      <!-- Emergency Exit Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Emergency Exit Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6">
+          <button class="font-montserrat font-bold px-6 py-2 rounded-lg bg-coral-red-600 text-white hover:bg-coral-red-700 focus:ring-2 focus:ring-coral-red-300 focus:outline-none transition-all duration-200">
+            Emergency Exit
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;button class="font-montserrat font-bold px-6 py-2 rounded-lg bg-coral-red-600 text-white hover:bg-coral-red-700 focus:ring-2 focus:ring-coral-red-300 focus:outline-none transition-all duration-200"&gt;
+            Emergency Exit
+          &lt;/button&gt;
+        </code>
+      </section>
+
+      <!-- Usage Guidelines -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Usage Guidelines</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>To show progress through courses, modules, or forms</li>
+              <li>To provide orientation within multi-step processes</li>
+              <li>To visualize completion status of tasks</li>
+              <li>To create interactive navigation for course journeys</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Variations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Standard linear progress bar for simple progress indication</li>
+              <li>Step indicators for discrete stages</li>
+              <li>Circle progress for compact displays</li>
+              <li>Interactive segments for navigation through completed portions</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Include text alternatives for screen readers</li>
+              <li>Use sufficient color contrast (minimum 3:1 for UI elements)</li>
+              <li>Make interactive progress elements keyboard accessible</li>
+              <li>Use aria-label for descriptive information on interactive elements</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Progress visualization creates predictability and reduces anxiety</li>
+              <li>Clear indication of current location helps maintain orientation</li>
+              <li>Calm color palette avoids triggering stress responses</li>
+              <li>Rounded shapes create softer, less threatening appearance</li>
+              <li>Completed segments use green to reinforce positive accomplishment</li>
+              <li>Current segments use blue to indicate neutral, non-judgmental status</li>
+              <li>Text descriptions provide reinforcing feedback on progress</li>
+              <li>Step indicators break large tasks into manageable segments</li>
+              <li>Interactive elements allow users to revisit completed content when needed</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

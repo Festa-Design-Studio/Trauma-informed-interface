@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Content Warning Components -->
+
+<!-- Standard Content Warning -->
+<div class="p-4 border border-rhodochrosite-rose-200 bg-rhodochrosite-rose-50 rounded-md mb-6">
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+    <div class="ml-3">
+      <h3 class="font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+        Content Warning: Discussion of Trauma
+      </h3>
+      <div class="mt-2 font-montserrat font-regular text-small text-rhodochrosite-rose-800">
+        <p>
+          This content contains discussions of traumatic experiences that some readers may find difficult. Please proceed with care.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content Warning with Consent Button -->
+<div class="p-4 border border-rhodochrosite-rose-200 bg-rhodochrosite-rose-50 rounded-md mb-6">
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+      </svg>
+    </div>
+    <div class="ml-3">
+      <h3 class="font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+        Content Warning: Descriptions of Abuse
+      </h3>
+      <div class="mt-2 mb-3 font-montserrat font-regular text-small text-rhodochrosite-rose-800">
+        <p>
+          The following module contains descriptions of abuse that some users may find triggering. You can choose to skip this section or access alternative content.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <button 
+          class="bg-grey-100 hover:bg-grey-200 text-grey-900 font-montserrat font-medium text-small py-2 px-4 rounded-md shadow-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-grey-300"
+          aria-label="Skip this content">
+          Skip This Content
+        </button>
+        <button 
+          class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-white font-montserrat font-medium text-small py-2 px-4 rounded-md shadow-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2"
+          aria-label="Acknowledge content warning and proceed">
+          I Understand, Continue
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content Warning with Alternative Options -->
+<div class="p-4 border border-rhodochrosite-rose-200 bg-rhodochrosite-rose-50 rounded-md mb-6">
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+    <div class="ml-3">
+      <h3 class="font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+        Content Warning: Medical Procedures
+      </h3>
+      <div class="mt-2 mb-4 font-montserrat font-regular text-small text-rhodochrosite-rose-800">
+        <p>
+          This section contains information about medical procedures. Please choose your preferred way to engage with this information:
+        </p>
+      </div>
+      <div class="space-y-3">
+        <div>
+          <input type="radio" id="detailed-content" name="content-preference" class="h-4 w-4 border-grey-300 text-azurite-blue-600 focus:ring-azurite-blue-500">
+          <label for="detailed-content" class="ml-2 font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+            Detailed content with specific descriptions
+          </label>
+        </div>
+        <div>
+          <input type="radio" id="summary-content" name="content-preference" class="h-4 w-4 border-grey-300 text-azurite-blue-600 focus:ring-azurite-blue-500" checked>
+          <label for="summary-content" class="ml-2 font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+            General summary without specific details
+          </label>
+        </div>
+        <div>
+          <input type="radio" id="text-only" name="content-preference" class="h-4 w-4 border-grey-300 text-azurite-blue-600 focus:ring-azurite-blue-500">
+          <label for="text-only" class="ml-2 font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+            Text-only version (no images)
+          </label>
+        </div>
+        <div class="pt-2">
+          <button
+            class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-white font-montserrat font-medium text-small py-2 px-4 rounded-md shadow-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2"
+            aria-label="Apply selected content preference">
+            Apply Preference
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dismissible Content Warning -->
+<div class="p-4 border border-rhodochrosite-rose-200 bg-rhodochrosite-rose-50 rounded-md mb-6">
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+    <div class="ml-3 flex-grow">
+      <div class="flex justify-between items-start">
+        <h3 class="font-montserrat font-medium text-small text-rhodochrosite-rose-800">
+          Content Warning: Potentially Triggering Topics
+        </h3>
+        <button class="ml-4 -mt-1 bg-transparent border-0 text-rhodochrosite-rose-500 hover:text-rhodochrosite-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rhodochrosite-rose-500 rounded-md" aria-label="Dismiss this warning">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-2 font-montserrat font-regular text-small text-rhodochrosite-rose-800">
+        <p>
+          This section discusses topics that may be triggering for some readers. Please practice self-care while engaging with this content.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - For alerting users to potentially triggering content
+  - To provide warnings before users engage with difficult material
+  - To offer alternative ways to consume sensitive content
+  - To give users control over their experience
+  
+  Variations:
+  - Standard warning for general notification
+  - Consent-based warning requiring explicit acknowledgment
+  - Options-based warning offering content alternatives
+  - Dismissible warning for recurring visitors
+  
+  Accessibility:
+  - Use adequate color contrast (minimum 4.5:1 for text)
+  - Include descriptive headings and clear instructions
+  - Make buttons large enough for easy interaction
+  - Provide keyboard-accessible controls
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Warning appears before potentially triggering content
+  - Icon reinforces the nature of the warning
+  - Clear but gentle language avoids creating additional stress
+  - Non-alarming visual styling (soft rose rather than bright red)
+  - Offers user control through skipping or alternative versions
+  - Consent is explicit but not pressuring
+  - Multiple options respect different user needs and preferences
+  - Dismissible option for users who don't want repeated warnings
+  - Rounded corners and generous padding create visual breathing room
+-->
+
+    </div>
+</main>
+
+<!-- Component Navigation Footer -->
+<footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="../../molecules/text-groups/list-item.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: List Item
+          </a>
+          <a href="supportive-message.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Supportive Message
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+</footer>
+</body>
+</html>

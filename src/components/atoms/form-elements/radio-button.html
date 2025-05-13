@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button - Dr G Lab Design System</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Breadcrumb Navigation -->
+ <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+        <li class="flex items-center">
+            <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li>
+            <span class="text-grey-700 font-montserrat font-medium">Radio Button</span>
+        </li>
+    </ol>
+ </nav>
+
+ <header class="max-w-6xl mx-auto py-4 px-4 md:px-6 lg:px-8">
+    <h1 class="text-2xl font-playfair font-bold mb-2">Radio Button</h1>
+    <p class="text-grey-700 font-montserrat">Selection controls for mutually exclusive options</p>
+ </header>
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Radio Button Component -->
+<div class="mb-4">
+  <fieldset>
+    <legend class="font-montserrat font-medium text-small text-grey-800 mb-2">
+      Select your preference
+    </legend>
+    <div class="space-y-2">
+      <div class="flex items-start">
+        <div class="flex items-center h-5">
+          <input 
+            id="radio-option-1" 
+            name="radio-group" 
+            type="radio" 
+            class="h-5 w-5 border border-grey-300 rounded-full bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 transition-all duration-300 text-azurite-blue-600"
+            checked
+          >
+        </div>
+        <label for="radio-option-1" class="ml-3 block font-montserrat text-small text-grey-800 cursor-pointer">
+          Option One
+        </label>
+      </div>
+      
+      <div class="flex items-start">
+        <div class="flex items-center h-5">
+          <input 
+            id="radio-option-2" 
+            name="radio-group" 
+            type="radio" 
+            class="h-5 w-5 border border-grey-300 rounded-full bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 transition-all duration-300 text-azurite-blue-600"
+          >
+        </div>
+        <label for="radio-option-2" class="ml-3 block font-montserrat text-small text-grey-800 cursor-pointer">
+          Option Two
+        </label>
+      </div>
+      
+      <div class="flex items-start">
+        <div class="flex items-center h-5">
+          <input 
+            id="radio-option-3" 
+            name="radio-group" 
+            type="radio" 
+            class="h-5 w-5 border border-grey-300 rounded-full bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 transition-all duration-300 text-azurite-blue-600"
+          >
+        </div>
+        <label for="radio-option-3" class="ml-3 block font-montserrat text-small text-grey-800 cursor-pointer">
+          Option Three
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<!-- Radio Button Component with Descriptions -->
+<div class="mb-4">
+  <fieldset>
+    <legend class="font-montserrat font-medium text-small text-grey-800 mb-2">
+      Choose your learning preference
+    </legend>
+    <div class="space-y-3">
+      <div class="flex items-start">
+        <div class="flex items-center h-5 mt-1">
+          <input 
+            id="learning-option-1" 
+            name="learning-preference" 
+            type="radio" 
+            class="h-5 w-5 border border-grey-300 rounded-full bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 transition-all duration-300 text-azurite-blue-600"
+          >
+        </div>
+        <div class="ml-3">
+          <label for="learning-option-1" class="block font-montserrat text-small font-medium text-grey-800 cursor-pointer">
+            Text-based content
+          </label>
+          <p class="font-montserrat text-caption text-grey-600 mt-0.5">
+            Read articles and written materials at your own pace.
+          </p>
+        </div>
+      </div>
+      
+      <div class="flex items-start">
+        <div class="flex items-center h-5 mt-1">
+          <input 
+            id="learning-option-2" 
+            name="learning-preference" 
+            type="radio" 
+            class="h-5 w-5 border border-grey-300 rounded-full bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 transition-all duration-300 text-azurite-blue-600"
+          >
+        </div>
+        <div class="ml-3">
+          <label for="learning-option-2" class="block font-montserrat text-small font-medium text-grey-800 cursor-pointer">
+            Video-based content
+          </label>
+          <p class="font-montserrat text-caption text-grey-600 mt-0.5">
+            Watch video lessons with captions available.
+          </p>
+        </div>
+      </div>
+      
+      <div class="flex items-start">
+        <div class="flex items-center h-5 mt-1">
+          <input 
+            id="learning-option-3" 
+            name="learning-preference" 
+            type="radio" 
+            class="h-5 w-5 border border-grey-300 rounded-full bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 transition-all duration-300 text-azurite-blue-600"
+          >
+        </div>
+        <div class="ml-3">
+          <label for="learning-option-3" class="block font-montserrat text-small font-medium text-grey-800 cursor-pointer">
+            Interactive exercises
+          </label>
+          <p class="font-montserrat text-caption text-grey-600 mt-0.5">
+            Engage with interactive quizzes and activities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<!-- Radio Button Card-Style Component -->
+<div class="mb-4">
+  <fieldset>
+    <legend class="font-montserrat font-medium text-small text-grey-800 mb-2">
+      Content intensity preference
+    </legend>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div>
+        <input 
+          type="radio" 
+          name="intensity" 
+          id="intensity-low" 
+          class="peer sr-only"
+        >
+        <label 
+          for="intensity-low" 
+          class="block p-4 border border-grey-300 rounded-md bg-selenite-white-50 cursor-pointer transition-all duration-300 hover:bg-selenite-white-100 peer-checked:border-azurite-blue-500 peer-checked:bg-azurite-blue-50 peer-focus:ring-2 peer-focus:ring-azurite-blue-300"
+        >
+          <div class="font-montserrat font-medium text-small text-grey-800">Low Intensity</div>
+          <p class="font-montserrat text-caption text-grey-600 mt-1">
+            Gentle introduction with minimal detailed content
+          </p>
+        </label>
+      </div>
+      
+      <div>
+        <input 
+          type="radio" 
+          name="intensity" 
+          id="intensity-medium" 
+          class="peer sr-only"
+          checked
+        >
+        <label 
+          for="intensity-medium" 
+          class="block p-4 border border-grey-300 rounded-md bg-selenite-white-50 cursor-pointer transition-all duration-300 hover:bg-selenite-white-100 peer-checked:border-azurite-blue-500 peer-checked:bg-azurite-blue-50 peer-focus:ring-2 peer-focus:ring-azurite-blue-300"
+        >
+          <div class="font-montserrat font-medium text-small text-grey-800">Medium Intensity</div>
+          <p class="font-montserrat text-caption text-grey-600 mt-1">
+            Balanced approach with moderate level of detail
+          </p>
+        </label>
+      </div>
+      
+      <div>
+        <input 
+          type="radio" 
+          name="intensity" 
+          id="intensity-high" 
+          class="peer sr-only"
+        >
+        <label 
+          for="intensity-high" 
+          class="block p-4 border border-grey-300 rounded-md bg-selenite-white-50 cursor-pointer transition-all duration-300 hover:bg-selenite-white-100 peer-checked:border-azurite-blue-500 peer-checked:bg-azurite-blue-50 peer-focus:ring-2 peer-focus:ring-azurite-blue-300"
+        >
+          <div class="font-montserrat font-medium text-small text-grey-800">High Intensity</div>
+          <p class="font-montserrat text-caption text-grey-600 mt-1">
+            In-depth content with detailed information
+          </p>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - For selecting one option from a list of mutually exclusive choices
+  - For preference selections where only one option can be chosen
+  - For branching paths in content or learning journeys
+  
+  Variations:
+  - Standard radio buttons for simple choices
+  - Radio buttons with descriptions for more complex options
+  - Card-style radio buttons for visual emphasis and larger touch targets
+  
+  Accessibility:
+  - Group related radio buttons with fieldset and legend
+  - Use proper label associations with 'for' and 'id' 
+  - Maintain adequate size for touch targets
+  - Ensure focus states are clearly visible
+  - Card-style variants should use the "peer" classes for accessible styling
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Clear descriptions help users make informed choices
+  - Visual card style options create more space and reduce cognitive load
+  - Labels are descriptive and non-judgmental
+  - Content intensity options let users control their experience
+  - Options are presented equally without suggesting a "correct" choice
+  - Subtle but clear visual feedback for selected state
+  - Smooth transitions prevent jarring visual changes
+-->
+
+    </div>
+
+    <!-- Usage Guidelines Section -->
+    <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="text-lg font-medium mb-4">Usage Guidelines</h2>
+        <div class="space-y-4">
+            <div>
+                <h3 class="font-medium mb-2">Usage:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>For selecting one option from a list of mutually exclusive choices</li>
+                    <li>For preference selections where only one option can be chosen</li>
+                    <li>For branching paths in content or learning journeys</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Accessibility:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Group related radio buttons with fieldset and legend</li>
+                    <li>Use proper label associations with 'for' and 'id'</li>
+                    <li>Maintain adequate size for touch targets</li>
+                    <li>Ensure focus states are clearly visible</li>
+                    <li>Card-style variants should use the "peer" classes for accessible styling</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Trauma-informed considerations:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Clear descriptions help users make informed choices</li>
+                    <li>Visual card style options create more space and reduce cognitive load</li>
+                    <li>Labels are descriptive and non-judgmental</li>
+                    <li>Content intensity options let users control their experience</li>
+                    <li>Options are presented equally without suggesting a "correct" choice</li>
+                    <li>Subtle but clear visual feedback for selected state</li>
+                    <li>Smooth transitions prevent jarring visual changes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="checkbox.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Checkbox
+          </a>
+          <a href="select.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Select
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

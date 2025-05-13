@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Dr. G's Lab</title>
+  <link href="../../output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+
+    <!-- Projects Page Template with Trauma-Informed Spacing -->
+<div class="bg-selenite-white-50 min-h-screen">
+    <!-- Header Navigation Organism -->
+    <header class="bg-selenite-white-50 border-b border-grey-200 sticky top-0 z-50">
+      <div class="container mx-auto py-md">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <a href="/" class="flex items-center">
+            <img src="/src/img/dgl-logo.svg" alt="Dr. G's Lab" class="h-10" />
+          </a>
+          
+          <!-- Main Navigation -->
+          <nav class="hidden md:flex space-x-lg">
+            <a href="/" class="font-montserrat text-body text-grey-700 hover:text-chrysocolla-green-DEFAULT transition-all duration-DEFAULT">Home</a>
+            <a href="/about" class="font-montserrat text-body text-grey-700 hover:text-chrysocolla-green-DEFAULT transition-all duration-DEFAULT">About</a>
+            <a href="/services" class="font-montserrat text-body text-grey-700 hover:text-chrysocolla-green-DEFAULT transition-all duration-DEFAULT">Services</a>
+            <a href="/projects" class="font-montserrat text-body font-medium text-azurite-blue-900 border-b-2 border-chrysocolla-green-DEFAULT">Projects</a>
+            <a href="/blog" class="font-montserrat text-body text-grey-700 hover:text-chrysocolla-green-DEFAULT transition-all duration-DEFAULT">Blog</a>
+            <a href="/resources" class="font-montserrat text-body text-grey-700 hover:text-chrysocolla-green-DEFAULT transition-all duration-DEFAULT">Resources</a>
+          </nav>
+          
+          <!-- CTA and Mobile Menu Button -->
+          <div class="flex items-center space-x-md">
+            <a href="/courses" class="hidden md:inline-block bg-sunstone-orange-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-sunstone-orange-600 transition-all duration-DEFAULT">
+              Explore Courses
+            </a>
+            <button class="md:hidden text-grey-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Page Hero Section Organism -->
+    <section class="bg-gradient-to-r from-azurite-blue-50 to-selenite-white-50 p-24">
+      <div class="container mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="font-playfair font-bold text-azurite-blue-900 text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-md">
+            Our Projects
+          </h1>
+          <p class="font-montserrat text-grey-800 text-body-large">
+            Explore our case studies showcasing how trauma-informed design principles have been applied to create safer, more empowering digital experiences across various industries.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Project Filters Section -->
+    <section class="px-24 p-24 bg-selenite-white-50 border-grey-200">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <button class="bg-azurite-blue-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-azurite-blue-700 transition-all duration-DEFAULT font-montserrat text-small">
+            All Projects
+          </button>
+          <button class="bg-selenite-white-50 text-grey-700 px-md py-sm rounded-md hover:bg-azurite-blue-50 transition-all duration-DEFAULT font-montserrat text-small">
+            Healthcare
+          </button>
+          <button class="bg-selenite-white-50 text-grey-700 px-md py-sm rounded-md hover:bg-azurite-blue-50 transition-all duration-DEFAULT font-montserrat text-small">
+            Education
+          </button>
+          <button class="bg-selenite-white-50 text-grey-700 px-md py-sm rounded-md hover:bg-azurite-blue-50 transition-all duration-DEFAULT font-montserrat text-small">
+            Public Services
+          </button>
+          <button class="bg-selenite-white-50 text-grey-700 px-md py-sm rounded-md hover:bg-azurite-blue-50 transition-all duration-DEFAULT font-montserrat text-small">
+            Financial Services
+          </button>
+          <button class="bg-selenite-white-50 text-grey-700 px-md py-sm rounded-md hover:bg-azurite-blue-50 transition-all duration-DEFAULT font-montserrat text-small">
+            Social Impact
+          </button>
+        </div>
+      </div>
+    </section>
+  
+   
+    <!-- Projects Grid Section -->
+    <section class="p-24 bg-gradient-selenite">
+      <div class=" mx-auto">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-trauma-safe overflow-hidden hover:shadow-medium transition-all duration-DEFAULT group">
+            <!-- Project image with gentle transition - Molecule -->
+            <div class="relative aspect-ratio-16/9 overflow-hidden">
+              <img src="/src/img/soft-skills.jpg" alt="Educational platform redesign" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            </div>
+            
+            <!-- Project content - Collection of molecules -->
+            <div class="p-lg">
+              <!-- Project category - Atom -->
+              <div class="mb-sm">
+                <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                  Case Study
+                </span>
+              </div>
+              
+              <!-- Project title - Atom -->
+              <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+                Trauma-Informed Educational Platform
+              </h3>
+              
+              <!-- Project summary - Atom -->
+              <p class="font-montserrat text-grey-800 text-body mb-md">
+                Redesigning an online learning platform to better support students who have experienced trauma, creating safer spaces for education.
+              </p>
+              
+              <!-- Project tags - Molecule -->
+              <div class="flex flex-wrap gap-xs mb-lg">
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Education</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Learning Platform</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Web App</span>
+              </div>
+              
+              <!-- Project link - Molecule -->
+              <a href="/projects/educational-platform" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+                View Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Project Card 2 -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-trauma-safe overflow-hidden hover:shadow-medium transition-all duration-DEFAULT group">
+            <!-- Project image with gentle transition - Molecule -->
+            <div class="relative aspect-ratio-16/9 overflow-hidden">
+              <img src="/src/img/redesign-1.jpg" alt="Financial services portal" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            </div>
+            
+            <!-- Project content - Collection of molecules -->
+            <div class="p-lg">
+              <!-- Project category - Atom -->
+              <div class="mb-sm">
+                <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                  Case Study
+                </span>
+              </div>
+              
+              <!-- Project title - Atom -->
+              <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+                Financial Services Portal Redesign
+              </h3>
+              
+              <!-- Project summary - Atom -->
+              <p class="font-montserrat text-grey-800 text-body mb-md">
+                Creating a more supportive, empowering experience for users accessing financial assistance and resources during challenging times.
+              </p>
+              
+              <!-- Project tags - Molecule -->
+              <div class="flex flex-wrap gap-xs mb-lg">
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Financial Services</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Customer Portal</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Web App</span>
+              </div>
+              
+              <!-- Project link - Molecule -->
+              <a href="/projects/financial-portal" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+                View Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Project Card 3 -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-trauma-safe overflow-hidden hover:shadow-medium transition-all duration-DEFAULT group">
+            <!-- Project image with gentle transition - Molecule -->
+            <div class="relative aspect-ratio-16/9 overflow-hidden">
+              <img src="/src/img/soft-skills.jpg" alt="Government services portal" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            </div>
+            
+            <!-- Project content - Collection of molecules -->
+            <div class="p-lg">
+              <!-- Project category - Atom -->
+              <div class="mb-sm">
+                <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                  Case Study
+                </span>
+              </div>
+              
+              <!-- Project title - Atom -->
+              <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+                Government Services Portal
+              </h3>
+              
+              <!-- Project summary - Atom -->
+              <p class="font-montserrat text-grey-800 text-body mb-md">
+                Transforming access to social services through a trauma-informed digital interface that centers dignity and user agency.
+              </p>
+              
+              <!-- Project tags - Molecule -->
+              <div class="flex flex-wrap gap-xs mb-lg">
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Public Services</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Government</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Web Platform</span>
+              </div>
+              
+              <!-- Project link - Molecule -->
+              <a href="/projects/government-portal" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+                View Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Project Card 4 -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-trauma-safe overflow-hidden hover:shadow-medium transition-all duration-DEFAULT group">
+            <!-- Project image with gentle transition - Molecule -->
+            <div class="relative aspect-ratio-16/9 overflow-hidden">
+              <img src="/src/img/redesign-1.jpg" alt="Healthcare patient portal" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            </div>
+            
+            <!-- Project content - Collection of molecules -->
+            <div class="p-lg">
+              <!-- Project category - Atom -->
+              <div class="mb-sm">
+                <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                  Case Study
+                </span>
+              </div>
+              
+              <!-- Project title - Atom -->
+              <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+                Patient Portal Redesign
+              </h3>
+              
+              <!-- Project summary - Atom -->
+              <p class="font-montserrat text-grey-800 text-body mb-md">
+                Reimagining a healthcare system's patient portal to provide a more empathetic, supportive experience for users managing their health.
+              </p>
+              
+              <!-- Project tags - Molecule -->
+              <div class="flex flex-wrap gap-xs mb-lg">
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Healthcare</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Patient Portal</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Web App</span>
+              </div>
+              
+              <!-- Project link - Molecule -->
+              <a href="/projects/patient-portal" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+                View Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Project Card 5 -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-trauma-safe overflow-hidden hover:shadow-medium transition-all duration-DEFAULT group">
+            <!-- Project image with gentle transition - Molecule -->
+            <div class="relative aspect-ratio-16/9 overflow-hidden">
+              <img src="/src/img/soft-skills.jpg" alt="Nonprofit donation platform" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            </div>
+            
+            <!-- Project content - Collection of molecules -->
+            <div class="p-lg">
+              <!-- Project category - Atom -->
+              <div class="mb-sm">
+                <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                  Case Study
+                </span>
+              </div>
+              
+              <!-- Project title - Atom -->
+              <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+                Nonprofit Donation Platform
+              </h3>
+              
+              <!-- Project summary - Atom -->
+              <p class="font-montserrat text-grey-800 text-body mb-md">
+                Creating an ethical, trauma-informed donation platform for a nonprofit supporting survivors of domestic violence.
+              </p>
+              
+              <!-- Project tags - Molecule -->
+              <div class="flex flex-wrap gap-xs mb-lg">
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Social Impact</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Nonprofit</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Web Platform</span>
+              </div>
+              
+              <!-- Project link - Molecule -->
+              <a href="/projects/nonprofit-platform" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+                View Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Project Card 6 -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-trauma-safe overflow-hidden hover:shadow-medium transition-all duration-DEFAULT group">
+            <!-- Project image with gentle transition - Molecule -->
+            <div class="relative aspect-ratio-16/9 overflow-hidden">
+              <img src="/src/img/redesign-1.jpg" alt="Crisis resource app" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            </div>
+            
+            <!-- Project content - Collection of molecules -->
+            <div class="p-lg">
+              <!-- Project category - Atom -->
+              <div class="mb-sm">
+                <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                  Case Study
+                </span>
+              </div>
+              
+              <!-- Project title - Atom -->
+              <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+                Crisis Resource Mobile App
+              </h3>
+              
+              <!-- Project summary - Atom -->
+              <p class="font-montserrat text-grey-800 text-body mb-md">
+                Designing an accessible mobile application that connects users to crisis resources while prioritizing safety and user agency.
+              </p>
+              
+              <!-- Project tags - Molecule -->
+              <div class="flex flex-wrap gap-xs mb-lg">
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Crisis Support</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Social Services</span>
+                <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Mobile App</span>
+              </div>
+              
+              <!-- Project link - Molecule -->
+              <a href="/projects/crisis-app" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+                View Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="flex justify-center mt-xl">
+          <nav class="inline-flex rounded-md shadow-sm">
+            <a href="#" class="bg-selenite-white-50 text-grey-700 hover:bg-azurite-blue-50 px-md py-sm rounded-l-md border border-grey-200 font-montserrat text-small transition-all duration-DEFAULT">
+              Previous
+            </a>
+            <a href="#" class="bg-azurite-blue-600 text-selenite-white-50 px-md py-sm border border-azurite-blue-600 font-montserrat text-small transition-all duration-DEFAULT">
+              1
+            </a>
+            <a href="#" class="bg-selenite-white-50 text-grey-700 hover:bg-azurite-blue-50 px-md py-sm border border-grey-200 font-montserrat text-small transition-all duration-DEFAULT">
+              2
+            </a>
+            <a href="#" class="bg-selenite-white-50 text-grey-700 hover:bg-azurite-blue-50 px-md py-sm rounded-r-md border border-grey-200 font-montserrat text-small transition-all duration-DEFAULT">
+              Next
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Collaboration CTA Section -->
+    <section class="p-24 bg-selenite-white-50">
+      <div class="container mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="font-playfair font-bold text-chrysocolla-green-DEFAULT text-h2-mobile md:text-h2-tablet lg:text-h2-desktop mb-md">
+            Let's Create a Safer Digital Experience Together
+          </h2>
+          <p class="font-montserrat text-grey-800 text-body mb-lg">
+            Interested in working with us to transform your digital product with trauma-informed design principles? We'd love to collaborate with you.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-md">
+            <a href="/contact" class="bg-sunstone-orange-DEFAULT text-selenite-white-50 px-xl py-md rounded-md hover:bg-sunstone-orange-600 transition-all duration-DEFAULT font-montserrat font-medium">
+              Start a Conversation
+            </a>
+            <a href="/services" class="border-2 border-chrysocolla-green-DEFAULT text-chrysocolla-green-DEFAULT px-xl py-md rounded-md hover:bg-chrysocolla-green-50 transition-all duration-DEFAULT font-montserrat font-medium">
+              View Our Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer Organism -->
+    <footer class="bg-azurite-blue-900 text-selenite-white-50 p-24">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+            <!-- Column 1: Logo and Description -->
+            <div class="mb-lg md:mb-0">
+              <img src="/src/img/dgl-logomark.svg" alt="Dr. G's Lab" class="w-16 mb-md" />
+              <p class="font-montserrat text-selenite-white-200 text-small mb-lg mt-lg">
+                Empowering designers and organizations to create trauma-informed digital experiences that support all users.
+              </p>
+              <div class="flex space-x-md">
+                <a href="#" class="text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                  </svg>
+                </a>
+                <a href="#" class="text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.007 10.007 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+                  </svg>
+                </a>
+                <a href="#" class="text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Column 2: Quick Links -->
+            <div class="mb-lg md:mb-0">
+              <h3 class="font-montserrat font-medium text-selenite-white-50 mb-md">Quick Links</h3>
+              <ul class="space-y-sm">
+                <li>
+                  <a href="/about" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">About Us</a>
+                </li>
+                <li>
+                  <a href="/courses" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Courses</a>
+                </li>
+                <li>
+                  <a href="/services" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Services</a>
+                </li>
+                <li>
+                  <a href="/blog" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Blog</a>
+                </li>
+                <li>
+                  <a href="/resources" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Resources</a>
+                </li>
+                <li>
+                  <a href="/contact" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Contact</a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Column 3: Resources -->
+            <div class="mb-lg md:mb-0">
+              <h3 class="font-montserrat font-medium text-selenite-white-50 mb-md">Resources</h3>
+              <ul class="space-y-sm">
+                <li>
+                  <a href="/resources/toolkits" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Free Toolkits</a>
+                </li>
+                <li>
+                  <a href="/resources/webinars" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Webinar Recordings</a>
+                </li>
+                <li>
+                  <a href="/resources/research" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Research Papers</a>
+                </li>
+                <li>
+                  <a href="/resources/guidelines" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Design Guidelines</a>
+                </li>
+                <li>
+                  <a href="/newsletter" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">Newsletter</a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Column 4: Contact -->
+            <div>
+              <h3 class="font-montserrat font-medium text-selenite-white-50 mb-md">Contact Us</h3>
+              <ul class="space-y-sm">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-selenite-white-200 mr-sm mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <a href="mailto:info@drgslab.com" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">info@drgslab.com</a>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-selenite-white-200 mr-sm mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <a href="tel:+15551234567" class="font-montserrat text-selenite-white-200 hover:text-selenite-white-50 transition-all duration-DEFAULT">(555) 123-4567</a>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-selenite-white-200 mr-sm mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <address class="font-montserrat text-selenite-white-200 not-italic">
+                    123 Design Street<br>
+                    San Francisco, CA 94103
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-2xl pt-6 border-t border-selenite-white-800 text-center">
+            <p class="font-montserrat text-selenite-white-300 text-small">
+              &copy; 2025 Dr. G's Lab. All rights reserved.
+            </p>
+            <div class="mt-md">
+              <a href="/privacy" class="font-montserrat text-selenite-white-300 text-small hover:text-selenite-white-50 transition-all duration-DEFAULT mx-md">Privacy Policy</a>
+              <a href="/terms" class="font-montserrat text-selenite-white-300 text-small hover:text-selenite-white-50 transition-all duration-DEFAULT mx-md">Terms of Service</a>
+              <a href="/accessibility" class="font-montserrat text-selenite-white-300 text-small hover:text-selenite-white-50 transition-all duration-DEFAULT mx-md">Accessibility</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- Emergency Exit Button - Fixed Position -->
+    <div class="fixed bottom-md right-md z-50">
+      <a href="https://www.google.com" class="bg-rhodochrosite-rose-DEFAULT text-selenite-white-50 px-md py-sm rounded-md shadow-trauma-safe hover:bg-rhodochrosite-rose-600 transition-all duration-DEFAULT font-montserrat font-medium flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-sm" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Quick Exit
+      </a>
+    </div>
+  </div>
+
+
+</body>
+</html>

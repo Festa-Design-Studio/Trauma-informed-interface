@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - List Item Text Group</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        List Item Text Group Component
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A molecule component for various list item patterns, designed to present information in structured, accessible formats following trauma-informed design principles.
+      </p>
+
+      <!-- List Item Components -->
+      <div class="space-y-12 mt-8">
+        <!-- Basic List Item with Icon -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Basic List Item with Icon</h2>
+          
+          <ul class="space-y-xs max-w-prose mb-6">
+            <li class="font-montserrat text-small text-grey-800 flex items-start">
+              <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+              <span>Clear visual hierarchy with proper spacing helps users easily scan content</span>
+            </li>
+            <li class="font-montserrat text-small text-grey-800 flex items-start">
+              <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+              <span>Consistent font styles maintain readability across the platform</span>
+            </li>
+            <li class="font-montserrat text-small text-grey-800 flex items-start">
+              <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+              <span>Gentle color indicators enhance scanning without overwhelming users</span>
+            </li>
+          </ul>
+          
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+&lt;ul class="space-y-xs max-w-prose"&gt;
+  &lt;li class="font-montserrat text-small text-grey-800 flex items-start"&gt;
+    &lt;span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5"&gt;•&lt;/span&gt;
+    &lt;span&gt;Clear visual hierarchy with proper spacing helps users easily scan content&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;!-- Additional list items follow the same pattern --&gt;
+&lt;/ul&gt;
+          </code>
+        </div>
+
+        <!-- Feature List Item with Check Mark -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Feature List Item with Check Mark</h2>
+          
+          <ul class="space-y-sm max-w-prose mb-6">
+            <li class="font-montserrat text-body text-grey-800 flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-sm flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Expert-designed grounding exercises that can be accessed at any time during the experience</span>
+            </li>
+            <li class="font-montserrat text-body text-grey-800 flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-sm flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Persistent emergency exit buttons that remain accessible throughout every page</span>
+            </li>
+          </ul>
+          
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+&lt;ul class="space-y-sm max-w-prose"&gt;
+  &lt;li class="font-montserrat text-body text-grey-800 flex items-start"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-sm flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+      &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /&gt;
+    &lt;/svg&gt;
+    &lt;span&gt;Expert-designed grounding exercises that can be accessed at any time during the experience&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;!-- Additional list items follow the same pattern --&gt;
+&lt;/ul&gt;
+          </code>
+        </div>
+
+        <!-- Module Content List -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Module Content List</h2>
+          
+          <div class="mb-6 max-w-prose">
+            <p class="font-montserrat font-medium text-grey-700 mb-xs">Module includes:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Video lesson (15 min)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Interactive exercise</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Reflection questions</span>
+              </li>
+            </ul>
+          </div>
+          
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+&lt;div class="max-w-prose"&gt;
+  &lt;p class="font-montserrat font-medium text-grey-700 mb-xs"&gt;Module includes:&lt;/p&gt;
+  &lt;ul class="space-y-xs"&gt;
+    &lt;li class="font-montserrat text-small text-grey-600 flex items-start"&gt;
+      &lt;span class="text-azurite-blue-600 mr-xs mt-0.5"&gt;•&lt;/span&gt;
+      &lt;span&gt;Video lesson (15 min)&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;!-- Additional list items follow the same pattern --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Toolkit Contents List -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Toolkit Contents List</h2>
+          
+          <div class="bg-selenite-white-100 rounded-md p-md mb-6 max-w-prose">
+            <p class="font-montserrat font-medium text-grey-700 mb-xs">Toolkit includes:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Interview protocol template (PDF)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Consent form examples (DOCX)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Distress protocol guide (PDF)</span>
+              </li>
+            </ul>
+          </div>
+          
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+&lt;div class="bg-selenite-white-100 rounded-md p-md max-w-prose"&gt;
+  &lt;p class="font-montserrat font-medium text-grey-700 mb-xs"&gt;Toolkit includes:&lt;/p&gt;
+  &lt;ul class="space-y-xs"&gt;
+    &lt;li class="font-montserrat text-small text-grey-700 flex items-start"&gt;
+      &lt;span class="text-azurite-blue-600 mr-xs mt-0.5"&gt;•&lt;/span&gt;
+      &lt;span&gt;Interview protocol template (PDF)&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;!-- Additional list items follow the same pattern --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Benefits List with Icons -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Benefits List with Icons</h2>
+          
+          <ul class="space-y-4 max-w-prose mb-6">
+            <li class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <div>
+                <strong class="font-medium">Safety-first priority:</strong> These components are designed to be immediately accessible without requiring complex interactions that might increase stress.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <div>
+                <strong class="font-medium">Choice and control:</strong> These components always provide users with meaningful choices about their content exposure, reinforcing their sense of agency.
+              </div>
+            </li>
+          </ul>
+          
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+&lt;ul class="space-y-4 max-w-prose"&gt;
+  &lt;li class="flex items-start gap-3"&gt;
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+      &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /&gt;
+    &lt;/svg&gt;
+    &lt;div&gt;
+      &lt;strong class="font-medium"&gt;Safety-first priority:&lt;/strong&gt; These components are designed to be immediately accessible without requiring complex interactions that might increase stress.
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;!-- Additional list items follow the same pattern --&gt;
+&lt;/ul&gt;
+          </code>
+        </div>
+      </div>
+
+      <!-- Component Documentation -->
+      <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Use list items to organize related information in scannable formats</li>
+              <li>Choose appropriate list style based on content importance and visual hierarchy</li>
+              <li>For feature lists with check marks, use when highlighting key benefits</li>
+              <li>For complex information requiring more description, use the benefits list with icons</li>
+              <li>Maintain consistent spacing within each list type</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Always use semantic &lt;ul&gt; and &lt;li&gt; elements for proper screen reader interpretation</li>
+              <li>Ensure sufficient color contrast for icons and text</li>
+              <li>Provide text alternatives for meaningful icons (via aria-label or visible text)</li>
+              <li>Maintain minimum text size of 14px (text-small) for readability</li>
+              <li>Use flexbox alignment to ensure proper spacing with assistive technologies</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Lists provide predictable structure that helps reduce cognitive load</li>
+              <li>Clear visual indicators (bullets, icons) support quick scanning without overwhelm</li>
+              <li>Soft color palette for indicators avoids triggering stress responses</li>
+              <li>Generous spacing creates visual breathing room between items</li>
+              <li>Consistent patterns across list types build user trust through familiarity</li>
+              <li>Inclusive, supportive language in list content fosters psychological safety</li>
+              <li>Different list styles accommodate varying information complexity needs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main>
+
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="title-subtitle.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Title-Subtitle
+          </a>
+          <a href="../../molecules/alerts/content-warning.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Content Warning
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Badge - Dr G Lab Design System</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <meta name="description" content="Status badge component for Dr G Lab's trauma-informed design system">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="p-8 bg-selenite-white-100">
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="Breadcrumb" class="mb-6">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+      <li class="flex items-center">
+        <a href="../../../index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li class="flex items-center">
+        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li class="flex items-center">
+        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li>
+        <span class="text-grey-700 font-montserrat font-medium">Status Badge</span>
+      </li>
+    </ol>
+  </nav>
+
+  <h1 class="text-xl font-bold mb-6">Status Badge Component</h1>
+
+  <div class="space-y-8">
+    <!-- Status Badges: Standard Style -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Standard Status Badges</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-chrysocolla-green-100 text-chrysocolla-green-800">
+          Completed
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-azurite-blue-100 text-azurite-blue-800">
+          In Progress
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-grey-200 text-grey-700">
+          Not Started
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-sunstone-orange-100 text-sunstone-orange-800">
+          Optional
+        </span>
+      </div>
+      <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-3">
+&lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-[color]-100 text-[color]-800"&gt;
+  Status Text
+&lt;/span&gt;
+      </code>
+    </div>
+
+    <!-- Status Badges: With Icons -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Status Badges with Icons</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-chrysocolla-green-100 text-chrysocolla-green-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          Completed
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-azurite-blue-100 text-azurite-blue-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          In Progress
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-rhodochrosite-rose-100 text-rhodochrosite-rose-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77-1.333.192 3 1.732 3z" />
+          </svg>
+          Content Warning
+        </span>
+      </div>
+      <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-3">
+&lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-[color]-100 text-[color]-800"&gt;
+  &lt;svg class="h-3.5 w-3.5 mr-1"&gt;...&lt;/svg&gt;
+  Status Text
+&lt;/span&gt;
+      </code>
+    </div>
+
+    <!-- Content Warning Badge -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Content Warning Badge</h2>
+      <div>
+        <div class="inline-flex items-center px-3 py-1 rounded-md text-sm font-montserrat font-medium bg-rhodochrosite-rose-50 text-rhodochrosite-rose-800 border border-rhodochrosite-rose-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Content Warning: Discussion of trauma
+        </div>
+      </div>
+      <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-3">
+&lt;div class="inline-flex items-center px-3 py-1 rounded-md text-sm font-montserrat font-medium bg-rhodochrosite-rose-50 text-rhodochrosite-rose-800 border border-rhodochrosite-rose-200"&gt;
+  &lt;svg class="h-4 w-4 mr-1.5"&gt;...&lt;/svg&gt;
+  Content Warning: Discussion of trauma
+&lt;/div&gt;
+      </code>
+    </div>
+
+    <!-- Category Badges -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Category Badges</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+          Course
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+          Resource
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-100">
+          Community
+        </span>
+      </div>
+      <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-3">
+&lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-[color]-50 text-[color]-800 border border-[color]-100"&gt;
+  Category Name
+&lt;/span&gt;
+      </code>
+    </div>
+
+    <!-- Difficulty Level Badges -->
+    <div class="mb-6">
+      <h2 class="text-lg font-medium mb-4">Difficulty Level Badges</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-100 text-grey-700 border border-grey-200">
+          Beginner
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-100 text-grey-700 border border-grey-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-grey-300 mr-1"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-grey-300 mr-1"></span>
+          Beginner
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-100 text-grey-700 border border-grey-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-grey-300 mr-1"></span>
+          Intermediate
+        </span>
+        
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-100 text-grey-700 border border-grey-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"></span>
+          Advanced
+        </span>
+      </div>
+      <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-3">
+&lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-100 text-grey-700 border border-grey-200"&gt;
+  &lt;span class="w-1.5 h-1.5 rounded-full bg-chrysocolla-green-500 mr-1"&gt;&lt;/span&gt;
+  &lt;!-- More indicators depending on level --&gt;
+  Level Name
+&lt;/span&gt;
+      </code>
+    </div>
+  </div>
+
+  <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+    <h2 class="text-lg font-medium mb-4">Usage Guidelines</h2>
+    <div class="space-y-4">
+      <div>
+        <h3 class="font-medium mb-2">Usage:</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>For indicating status of items (completed, in progress, etc.)</li>
+          <li>For categorizing content (courses, resources, etc.)</li>
+          <li>For highlighting important information (content warnings)</li>
+          <li>For indicating difficulty or intensity level</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="font-medium mb-2">Variations:</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Round badges for status indicators</li>
+          <li>Rounded rectangle badges for categories</li>
+          <li>Icon badges for enhanced meaning</li>
+          <li>Visual difficulty indicators</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="font-medium mb-2">Accessibility:</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Use sufficient color contrast (minimum 4.5:1 for normal text)</li>
+          <li>Don't rely solely on color to convey meaning</li>
+          <li>Keep text size readable (minimum 12px)</li>
+          <li>Ensure icons have appropriate alt text or aria-label</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="font-medium mb-2">Trauma-informed considerations:</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Status badges use gentle, non-alarming colors</li>
+          <li>Content warnings are visually distinct without being alarming</li>
+          <li>Icons reinforce meaning for better comprehension</li>
+          <li>Difficulty indicators use visual cues beyond just text</li>
+          <li>Consistent styling creates predictability</li>
+          <li>Rounded shapes create softer, less threatening appearance</li>
+          <li>Subtle border on certain badges creates clear boundaries</li>
+          <li>Generous padding improves readability and reduces visual stress</li>
+          <li>Limited color palette avoids overwhelming sensory experience</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component Navigation Footer -->
+  <footer class="mt-12 pt-4 border-t border-grey-200">
+    <nav aria-label="Component Navigation" class="flex flex-wrap justify-between">
+      <a href="/src/components/atoms/status-indicators/progress-bar.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Previous: Progress Bar
+      </a>
+      <a href="/src/components/atoms/status-indicators/tag-pills.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+        Next: Tag Pills
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Category Badge Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Category Badge Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        Category badges help users quickly identify the type of content they are viewing, making navigation more predictable and safe. These badges create visual cues that support trauma-informed content categorization.
+      </p>
+    </div>
+
+    <!-- Category Badge Components -->
+    <div class="space-y-12">
+      <!-- Blog Category Badges -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Blog Category Badges</h2>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="inline-flex items-center px-sm py-xs rounded-md text-xs font-montserrat bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+            Research & Insights
+          </span>
+          <span class="inline-flex items-center px-sm py-xs rounded-md text-xs font-montserrat  bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+            Best Practices
+          </span>
+          <span class="inline-flex items-center px-sm py-xs rounded-md text-xs font-montserrat  bg-rhodochrosite-rose-50 text-rhodochrosite-rose-800 border border-rhodochrosite-rose-100">
+            Case Studies
+          </span>
+          <span class="inline-flex items-center px-sm py-xs rounded-md text-xs font-montserrat  bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-100">
+            Community
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="inline-flex items-center px-sm py-xs rounded-md text-xs font-montserrat bg-[color]-50 text-[color]-800 border border-[color]-100"&gt;
+            Category name
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Course Category Badges -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Course Category Badges</h2>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+            Core Course
+          </span>
+          <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+            UX Research Specialization
+          </span>
+          <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-sm py-xs rounded-md text-caption">
+            Design Principles
+          </span>
+          <span class="bg-sunstone-orange-50 text-sunstone-orange-DEFAULT px-sm py-xs rounded-md text-caption">
+            Advanced Module
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="bg-[color]-50 text-[color]-DEFAULT px-sm py-xs rounded-md text-caption"&gt;
+            Course category
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Project Category Badges -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Project Category Badges</h2>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+            Case Study
+          </span>
+          <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+            Research Project
+          </span>
+          <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-sm py-xs rounded-md text-caption">
+            Design System
+          </span>
+          <span class="bg-sunstone-orange-50 text-sunstone-orange-DEFAULT px-sm py-xs rounded-md text-caption">
+            Workshop Materials
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="bg-[color]-50 text-[color]-DEFAULT px-sm py-xs rounded-md text-caption"&gt;
+            Project category
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Category Badges with Icons -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Category Badges with Icons</h2>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+            Research
+          </span>
+          <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            Settings
+          </span>
+          <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-montserrat font-medium bg-rhodochrosite-rose-50 text-rhodochrosite-rose-800 border border-rhodochrosite-rose-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            Content Warning
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-montserrat font-medium bg-[color]-50 text-[color]-800 border border-[color]-100"&gt;
+            &lt;svg class="h-3.5 w-3.5 mr-1.5"&gt;...&lt;/svg&gt;
+            Category with icon
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Usage Example in Cards -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Usage Example in Cards</h2>
+        
+        <!-- Blog Card Example -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden mb-6">
+          <div class="relative aspect-ratio-16/9 bg-grey-100">
+            <!-- Placeholder for image -->
+            <div class="w-full h-full flex items-center justify-center">
+              <span class="text-grey-500 font-montserrat">Blog Image</span>
+            </div>
+          </div>
+          <div class="p-lg">
+            <!-- Category Badge -->
+            <div class="mb-sm">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+                Research & Insights
+              </span>
+            </div>
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h4-mobile mb-sm">
+              Building Trust Through Design
+            </h3>
+            <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-2">
+              Example blog content showing proper placement of the category badge at the top of the card.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Usage Guidelines -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Usage Guidelines</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>At the top of content cards to clearly identify content type</li>
+              <li>Use specific color coding to distinguish between different content categories</li>
+              <li>Place in a consistent location (typically top of card under the image)</li>
+              <li>Keep category names concise and descriptive</li>
+              <li>Use rounded-md for category badges vs. rounded-full for tag pills</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Color Coding Guidelines:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Azurite blue: Research, educational, and informational content</li>
+              <li>Chrysocolla green: Practical applications, tools, and resources</li>
+              <li>Rhodochrosite rose: Case studies, personal stories, and sensitive content</li>
+              <li>Sunstone orange: Community content and special topics</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Ensure sufficient color contrast between text and background</li>
+              <li>Don't rely solely on color to convey meaning</li>
+              <li>Use consistent visual styles across all categories</li>
+              <li>Consider adding icons for enhanced recognition</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Clear categorization helps users make informed choices about content</li>
+              <li>Consistent placement builds predictability and reduces cognitive load</li>
+              <li>Soft color palettes reduce visual stress while still providing distinction</li>
+              <li>Subtle borders and rounded corners create a sense of containment and safety</li>
+              <li>Category identification helps users avoid potentially triggering content</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

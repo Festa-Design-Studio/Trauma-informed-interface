@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+
+<!-- Safety Toolkit Component -->
+
+<!-- Safety Toolkit Container -->
+<div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-md">
+  <!-- Toolkit Header -->
+  <div class="p-5 border-b border-grey-200">
+    <div class="flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-azurite-blue-700 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+      <h2 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet text-azurite-blue-900">
+        Safety Toolkit
+      </h2>
+    </div>
+    <p class="font-montserrat text-body text-grey-700 mt-2">
+      Tools and resources to support your wellbeing throughout your journey.
+    </p>
+  </div>
+
+  <!-- Quick Exit Button Section -->
+  <div class="p-5 border-b border-grey-200 bg-grey-50">
+    <p class="font-montserrat font-medium text-small text-grey-800 mb-3">
+      Need to leave quickly? Use the emergency exit button at any time.
+    </p>
+    <button 
+      class="w-full bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium py-3 px-4 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2 flex items-center justify-center gap-2"
+      aria-label="Emergency exit to neutral website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Emergency Exit
+    </button>
+  </div>
+
+  <!-- Grounding Tools Section -->
+  <div class="p-5 border-b border-grey-200">
+    <h3 class="font-montserrat font-medium text-h5-mobile text-chrysocolla-green-900 mb-3">
+      Grounding Exercises
+    </h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <!-- Grounding Exercise Card 1 -->
+      <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+        <div class="p-4">
+          <h4 class="font-montserrat font-medium text-small text-grey-900 mb-2">
+            5-4-3-2-1 Technique
+          </h4>
+          <p class="font-montserrat text-small text-grey-700 mb-2">
+            A quick sensory grounding exercise to reconnect with your surroundings.
+          </p>
+          <button 
+            class="w-full bg-chrysocolla-green-500 hover:bg-chrysocolla-green-600 text-selenite-white-50 font-montserrat font-medium text-small py-2 px-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2"
+            aria-label="Start 5-4-3-2-1 grounding exercise">
+            Begin Exercise
+          </button>
+        </div>
+      </div>
+      
+      <!-- Grounding Exercise Card 2 -->
+      <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+        <div class="p-4">
+          <h4 class="font-montserrat font-medium text-small text-grey-900 mb-2">
+            Guided Breathing
+          </h4>
+          <p class="font-montserrat text-small text-grey-700 mb-2">
+            A 1-minute guided breathing exercise to help regulate emotions.
+          </p>
+          <button 
+            class="w-full bg-chrysocolla-green-500 hover:bg-chrysocolla-green-600 text-selenite-white-50 font-montserrat font-medium text-small py-2 px-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2"
+            aria-label="Start guided breathing exercise">
+            Begin Exercise
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#" class="font-montserrat text-small text-azurite-blue-700 hover:text-azurite-blue-900 underline underline-offset-2 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2 rounded-sm inline-block">
+      View all grounding exercises →
+    </a>
+  </div>
+
+  <!-- Support Resources Section -->
+  <div class="p-5 border-b border-grey-200">
+    <h3 class="font-montserrat font-medium text-h5-mobile text-chrysocolla-green-900 mb-3">
+      Support Resources
+    </h3>
+    
+    <ul class="space-y-4">
+      <li>
+        <a href="#" class="flex items-start p-3 bg-selenite-white-100 rounded-md hover:bg-selenite-white-200 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 group">
+          <span class="mr-3 text-chrysocolla-green-700 flex-shrink-0 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+            </svg>
+          </span>
+          <div>
+            <h4 class="font-montserrat font-medium text-small text-grey-900 group-hover:text-azurite-blue-900 transition-colors duration-300">
+              Community Support Forum
+            </h4>
+            <p class="font-montserrat text-small text-grey-700 mt-1">
+              Connect with others in a moderated, safe environment.
+            </p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#" class="flex items-start p-3 bg-selenite-white-100 rounded-md hover:bg-selenite-white-200 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 group">
+          <span class="mr-3 text-chrysocolla-green-700 flex-shrink-0 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </span>
+          <div>
+            <h4 class="font-montserrat font-medium text-small text-grey-900 group-hover:text-azurite-blue-900 transition-colors duration-300">
+              Crisis Support Helplines
+            </h4>
+            <p class="font-montserrat text-small text-grey-700 mt-1">
+              24/7 confidential support resources for moments of crisis.
+            </p>
+          </div>
+        </a>
+      </li>
+      <!-- New Resource: Self-Care Guide -->
+      <li>
+        <a href="#" class="flex items-start p-3 bg-selenite-white-100 rounded-md hover:bg-selenite-white-200 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 group">
+          <span class="mr-3 text-chrysocolla-green-700 flex-shrink-0 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div>
+            <h4 class="font-montserrat font-medium text-small text-grey-900 group-hover:text-azurite-blue-900 transition-colors duration-300">
+              Self-Care Guide
+            </h4>
+            <p class="font-montserrat text-small text-grey-700 mt-1">
+              Personalized self-care strategies and resources.
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Content Preferences Section -->
+  <div class="p-5">
+    <h3 class="font-montserrat font-medium text-h5-mobile text-chrysocolla-green-900 mb-3">
+      Content Preferences
+    </h3>
+    
+    <div class="mb-4">
+      <label class="font-montserrat font-medium text-small text-grey-800 mb-2 block">
+        Content Detail Level
+      </label>
+      <div class="flex flex-col space-y-2">
+        <div>
+          <input type="radio" id="content-basic" name="content-level" class="h-4 w-4 border-grey-300 text-chrysocolla-green-600 focus:ring-chrysocolla-green-500" checked>
+          <label for="content-basic" class="ml-2 font-montserrat text-small text-grey-800">
+            Basic - Gentle overview without specific details
+          </label>
+        </div>
+        <div>
+          <input type="radio" id="content-standard" name="content-level" class="h-4 w-4 border-grey-300 text-chrysocolla-green-600 focus:ring-chrysocolla-green-500">
+          <label for="content-standard" class="ml-2 font-montserrat text-small text-grey-800">
+            Standard - Moderate level of detail
+          </label>
+        </div>
+        <div>
+          <input type="radio" id="content-detailed" name="content-level" class="h-4 w-4 border-grey-300 text-chrysocolla-green-600 focus:ring-chrysocolla-green-500">
+          <label for="content-detailed" class="ml-2 font-montserrat text-small text-grey-800">
+            Detailed - In-depth content with specific information
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex flex-wrap gap-2">
+      <div class="flex items-center">
+        <input type="checkbox" id="content-warnings" class="h-4 w-4 border-grey-300 rounded text-chrysocolla-green-600 focus:ring-chrysocolla-green-500" checked>
+        <label for="content-warnings" class="ml-2 font-montserrat text-small text-grey-800">
+          Show content warnings
+        </label>
+      </div>
+      <div class="flex items-center">
+        <input type="checkbox" id="auto-pause" class="h-4 w-4 border-grey-300 rounded text-chrysocolla-green-600 focus:ring-chrysocolla-green-500" checked>
+        <label for="auto-pause" class="ml-2 font-montserrat text-small text-grey-800">
+          Enable break reminders
+        </label>
+      </div>
+      <!-- New Option: Text-to-Speech -->
+      <div class="flex items-center">
+        <input type="checkbox" id="text-to-speech" class="h-4 w-4 border-grey-300 rounded text-chrysocolla-green-600 focus:ring-chrysocolla-green-500">
+        <label for="text-to-speech" class="ml-2 font-montserrat text-small text-grey-800">
+          Enable text-to-speech
+        </label>
+      </div>
+    </div>
+    
+    <button 
+      class="mt-4 bg-azurite-blue-500 hover:bg-azurite-blue-600 text-selenite-white-50 font-montserrat font-medium text-small py-2 px-4 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2"
+      aria-label="Save your content preferences">
+      Save Preferences
+    </button>
+  </div>
+</div>
+
+<!-- Minimized Floating Safety Toolkit -->
+<div class="fixed bottom-6 right-6 z-50">
+  <!-- Collapsed State -->
+  <div class="bg-selenite-white-50 border border-chrysocolla-green-200 shadow-lg rounded-full p-3 cursor-pointer hover:shadow-xl transition-all duration-300 group" id="safety-toolkit-toggle" aria-label="Open safety toolkit" role="button" tabindex="0">
+    <div class="flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-chrysocolla-green-600 group-hover:text-chrysocolla-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+      <span class="ml-2 font-montserrat font-medium text-small text-grey-800 hidden group-hover:inline-block whitespace-nowrap">Safety Toolkit</span>
+    </div>
+  </div>
+  
+  <!-- Quick Actions Menu (On Hover/Click) -->
+  <div class="hidden bg-selenite-white-50 border border-grey-200 rounded-lg shadow-lg p-3 mt-2 w-64" id="safety-toolkit-quick-actions">
+    <h4 class="font-montserrat font-medium text-small text-grey-900 mb-2">Quick Actions</h4>
+    
+    <!-- Emergency Exit Button -->
+    <button 
+      class="w-full mb-2 bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium text-small py-2 px-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2 flex items-center justify-center gap-2"
+      aria-label="Emergency exit to neutral website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Emergency Exit
+    </button>
+    
+    <!-- Quick Grounding Button -->
+    <button 
+      class="w-full mb-2 bg-chrysocolla-green-500 hover:bg-chrysocolla-green-600 text-selenite-white-50 font-montserrat font-medium text-small py-2 px-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2"
+      aria-label="Start quick breathing exercise">
+      Quick Breathing Exercise
+    </button>
+    
+    <!-- Open Full Toolkit Button -->
+    <button 
+      class="w-full bg-azurite-blue-500 hover:bg-azurite-blue-600 text-selenite-white-50 font-montserrat font-medium text-small py-2 px-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-2"
+      aria-label="Open full safety toolkit">
+      Open Full Toolkit
+    </button>
+  </div>
+</div>
+
+</div>
+</main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="../toolkits/toolkit-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Toolkit Card
+        </a>
+        <a href="../../templates/learning-module.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Learning Module Template
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

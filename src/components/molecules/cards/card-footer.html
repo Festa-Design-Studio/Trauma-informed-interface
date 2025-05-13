@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Card Footer Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Card Footer Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A collection of card footer components designed for trauma-informed digital experiences. Card footers provide actions and supplementary information for card content.
+      </p>
+
+      <!-- Card Footer Components -->
+      <div class="space-y-12 mt-8">
+        <!-- Standard Card Footer with Single Button -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Standard Card Footer with Single Button</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Content</div>
+            <div class="p-5 border-t border-grey-200">
+              <button 
+                class="w-full bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2"
+                aria-label="Continue to module">
+                Continue
+              </button>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-t border-grey-200"&gt;
+              &lt;button 
+                class="w-full bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2"
+                aria-label="Continue to module"&gt;
+                Continue
+              &lt;/button&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Footer with Two Buttons -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Footer with Two Buttons</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Content</div>
+            <div class="p-5 border-t border-grey-200">
+              <div class="flex flex-col sm:flex-row gap-3">
+                <button 
+                  class="flex-1 bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2"
+                  aria-label="Start learning this module">
+                  Start Learning
+                </button>
+                <button 
+                  class="flex-1 border-2 border-chrysocolla-green-900 text-chrysocolla-green-900 hover:bg-chrysocolla-green-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2"
+                  aria-label="Save this module for later">
+                  Save for Later
+                </button>
+              </div>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-t border-grey-200"&gt;
+              &lt;div class="flex flex-col sm:flex-row gap-3"&gt;
+                &lt;button 
+                  class="flex-1 bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2"
+                  aria-label="Start learning this module"&gt;
+                  Start Learning
+                &lt;/button&gt;
+                &lt;button 
+                  class="flex-1 border-2 border-chrysocolla-green-900 text-chrysocolla-green-900 hover:bg-chrysocolla-green-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-chrysocolla-green-300 focus:ring-offset-2"
+                  aria-label="Save this module for later"&gt;
+                  Save for Later
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Footer with Text and Button -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Footer with Text and Button</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Content</div>
+            <div class="p-5 border-t border-grey-200">
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p class="font-montserrat font-light text-small text-grey-700">
+                  Last updated: May 5, 2025
+                </p>
+                <button 
+                  class="bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-2 px-4 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2 text-small"
+                  aria-label="View details of this item">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-t border-grey-200"&gt;
+              &lt;div class="flex flex-col sm:flex-row items-center justify-between gap-3"&gt;
+                &lt;p class="font-montserrat font-light text-small text-grey-700"&gt;
+                  Last updated: May 5, 2025
+                &lt;/p&gt;
+                &lt;button 
+                  class="bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-2 px-4 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2 text-small"
+                  aria-label="View details of this item"&gt;
+                  View Details
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Footer with Tags -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Footer with Tags</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Content</div>
+            <div class="p-5 border-t border-grey-200">
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+                  Self-care
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+                  Beginner
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-100">
+                  Resource
+                </span>
+              </div>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-t border-grey-200"&gt;
+              &lt;div class="flex flex-wrap gap-2"&gt;
+                &lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100"&gt;
+                  Self-care
+                &lt;/span&gt;
+                &lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100"&gt;
+                  Beginner
+                &lt;/span&gt;
+                &lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-montserrat font-medium bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-100"&gt;
+                  Resource
+                &lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Footer with Progress and Button -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Footer with Progress and Button</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Content</div>
+            <div class="p-5 border-t border-grey-200">
+              <div class="flex flex-col gap-3">
+                <div>
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="font-montserrat font-medium text-caption text-grey-800">Your progress</span>
+                    <span class="font-montserrat font-light text-caption text-grey-600">60% complete</span>
+                  </div>
+                  <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+                    <div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"></div>
+                  </div>
+                </div>
+                <button 
+                  class="w-full bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2 flex items-center justify-center gap-2"
+                  aria-label="Continue learning this module">
+                  Continue Learning
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 border-t border-grey-200"&gt;
+              &lt;div class="flex flex-col gap-3"&gt;
+                &lt;div&gt;
+                  &lt;div class="flex justify-between items-center mb-1"&gt;
+                    &lt;span class="font-montserrat font-medium text-caption text-grey-800"&gt;Your progress&lt;/span&gt;
+                    &lt;span class="font-montserrat font-light text-caption text-grey-600"&gt;60% complete&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="h-2 bg-grey-200 rounded-full overflow-hidden"&gt;
+                    &lt;div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;button 
+                  class="w-full bg-sunstone-orange-500 hover:bg-sunstone-orange-600 text-selenite-white-50 font-montserrat font-medium py-3 px-6 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-300 focus:ring-offset-2 flex items-center justify-center gap-2"
+                  aria-label="Continue learning this module"&gt;
+                  Continue Learning
+                  &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+                    &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+      </div>
+
+      <!-- Component Documentation -->
+      <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>For card actions and secondary information</li>
+              <li>Typically contains buttons, links, or metadata</li>
+              <li>Placed at the bottom of the card</li>
+              <li>Can include tags, progress indicators, or timestamps</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Variations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Single button for primary action</li>
+              <li>Multiple buttons for action choices</li>
+              <li>Text and button combinations for context with action</li>
+              <li>Tag collections for categorization</li>
+              <li>Progress with action for learning content</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Ensure buttons have descriptive aria-labels</li>
+              <li>Maintain sufficient contrast for text and buttons</li>
+              <li>Make sure interactive elements have adequate size</li>
+              <li>Provide keyboard focus states for all interactive elements</li>
+              <li>Stack elements vertically on small screens for touch targets</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Clear separation from main content with subtle border</li>
+              <li>Consistent padding creates visual stability</li>
+              <li>Non-pressuring action button language</li>
+              <li>Progress indicators provide reinforcing feedback</li>
+              <li>Multiple options when appropriate to provide user control</li>
+              <li>Tags help users find relevant content based on needs</li>
+              <li>Responsive design adapts to different screen sizes</li>
+              <li>Adequate spacing between interactive elements prevents mis-taps</li>
+              <li>Soft color palette avoids triggering stress responses</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main>
+
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="card-body.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Card Body
+          </a>
+          <a href="../../molecules/navigation/breadcrumb/breadcrumb.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Breadcrumb
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

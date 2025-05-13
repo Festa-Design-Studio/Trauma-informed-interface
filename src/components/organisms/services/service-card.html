@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Services Card Component -->
+<div class="bg-gradient-to-r from-selenite-white-50 to-selenite-white-100 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT">
+  <!-- Service icon - Molecule -->
+  <div class="bg-chrysocolla-green-50 h-16 w-16 rounded-full flex items-center justify-center mb-md">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-chrysocolla-green-DEFAULT" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+    </svg>
+  </div>
+  
+  <!-- Service title - Atom -->
+  <h3 class="font-playfair font-bold text-chrysocolla-green-DEFAULT text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+    Trauma-Informed UX Audit
+  </h3>
+  
+  <!-- Service description - Atom -->
+  <p class="font-montserrat text-grey-800 text-body mb-md">
+    A comprehensive evaluation of your digital product through a trauma-informed lens, identifying potential triggers and opportunities to enhance safety and user control.
+  </p>
+  
+  <!-- Service features - Molecule (list group) -->
+  <ul class="space-y-xs mb-lg">
+    <li class="font-montserrat text-small text-grey-700 flex items-start">
+      <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">✓</span>
+      <span>Expert evaluation by certified professionals</span>
+    </li>
+    <li class="font-montserrat text-small text-grey-700 flex items-start">
+      <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">✓</span>
+      <span>Detailed report with actionable recommendations</span>
+    </li>
+    <li class="font-montserrat text-small text-grey-700 flex items-start">
+      <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">✓</span>
+      <span>Prioritized improvement roadmap</span>
+    </li>
+  </ul>
+  
+  <!-- Service CTA - Atom -->
+  <a href="#" class="inline-block border-2 border-chrysocolla-green-DEFAULT text-chrysocolla-green-DEFAULT px-md py-sm rounded-md hover:bg-chrysocolla-green-50 transition-all duration-DEFAULT text-center w-full">
+    Learn More
+  </a>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - Use on service listing pages and related sections
+  - Ensure the service icon visually relates to the service being offered
+  - Always include a clear, detailed list of what's included in the service
+  - Use invitational language like "Learn More" rather than directive language
+  - Maintain consistent structure across all service cards for predictability
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Clear, direct language about what the service provides eliminates uncertainty
+  - Detailed listing of what's included sets proper expectations with no surprises
+  - Soft gradient background creates visual interest without overwhelming
+  - Secondary button style is less demanding than primary CTAs
+  - "Learn More" language invites exploration without pressure
+  - Check marks provide positive reinforcement of included features
+-->
+
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="../projects/project-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Project Card
+        </a>
+        <a href="../toolkits/toolkit-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Toolkit Card
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

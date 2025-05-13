@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Typography Heading Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Breadcrumb Navigation -->
+ <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+        <li class="flex items-center">
+            <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li>
+            <span class="text-grey-700 font-montserrat font-medium">Headings</span>
+        </li>
+    </ol>
+ </nav>
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Typography Heading Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A collection of heading styles using the Playfair Display and Montserrat typefaces, designed for trauma-informed digital experiences with clear visual hierarchy.
+      </p>
+
+      <!-- Heading Components -->
+      <div class="space-y-12 mt-8">
+        <!-- H1 Heading -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">H1 Heading</h2>
+          <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+            H1: Primary Heading
+          </h1>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6"&gt;H1: Primary Heading&lt;/h1&gt;
+          </code>
+        </div>
+
+        <!-- H2 Heading -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">H2 Heading</h2>
+          <h2 class="font-playfair font-bold text-h2-mobile md:text-h2-tablet lg:text-h2-desktop text-chrysocolla-green-900 mb-5">
+            H2: Section Heading
+          </h2>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;h2 class="font-playfair font-bold text-h2-mobile md:text-h2-tablet lg:text-h2-desktop text-chrysocolla-green-900 mb-5"&gt;H2: Section Heading&lt;/h2&gt;
+          </code>
+        </div>
+
+        <!-- H3 Heading -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">H3 Heading</h2>
+          <h3 class="font-playfair font-bold text-h3-mobile md:text-h3-tablet lg:text-h3-desktop text-azurite-blue-900 mb-4">
+            H3: Subsection Heading
+          </h3>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;h3 class="font-playfair font-bold text-h3-mobile md:text-h3-tablet lg:text-h3-desktop text-azurite-blue-900 mb-4"&gt;H3: Subsection Heading&lt;/h3&gt;
+          </code>
+        </div>
+
+        <!-- H4 Heading -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">H4 Heading</h2>
+          <h4 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet lg:text-h4-desktop text-grey-900 mb-3">
+            H4: Content Heading
+          </h4>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;h4 class="font-montserrat font-bold text-h4-mobile md:text-h4-tablet lg:text-h4-desktop text-grey-900 mb-3"&gt;H4: Content Heading&lt;/h4&gt;
+          </code>
+        </div>
+
+        <!-- H5 Heading -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">H5 Heading</h2>
+          <h5 class="font-montserrat font-medium text-h5-mobile md:text-h5-tablet lg:text-h5-desktop text-grey-800 mb-3">
+            H5: Minor Heading
+          </h5>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;h5 class="font-montserrat font-medium text-h5-mobile md:text-h5-tablet lg:text-h5-desktop text-grey-800 mb-3"&gt;H5: Minor Heading&lt;/h5&gt;
+          </code>
+        </div>
+
+        <!-- H6 Heading -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">H6 Heading</h2>
+          <h6 class="font-montserrat font-medium text-h6-mobile md:text-h6-tablet lg:text-h6-desktop text-grey-700 mb-2">
+            H6: Small Heading
+          </h6>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;h6 class="font-montserrat font-medium text-h6-mobile md:text-h6-tablet lg:text-h6-desktop text-grey-700 mb-2"&gt;H6: Small Heading&lt;/h6&gt;
+          </code>
+        </div>
+      </div>
+
+      <!-- Component Documentation -->
+      <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Create clear visual hierarchy with appropriate heading levels</li>
+              <li>Always use headings in sequential order (H1 → H2 → H3, etc.)</li>
+              <li>H1 for page titles, H2 for major sections, H3+ for subsections</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Proper heading hierarchy is essential for screen reader navigation</li>
+              <li>Don't skip heading levels (e.g., don't jump from H2 to H4)</li>
+              <li>Use semantic heading elements (h1-h6) rather than styled paragraphs</li>
+              <li>Maintain sufficient contrast ratios (minimum 4.5:1 for normal text)</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Font choices avoid overly decorative or difficult-to-read styles</li>
+              <li>Playfair Display for major headings provides elegant, balanced appearance</li>
+              <li>Montserrat for smaller headings maintains clean readability</li>
+              <li>Generous line height and letter spacing improve readability</li>
+              <li>Consistent color system creates predictable visual hierarchy</li>
+              <li>Progressive size reduction creates clear information structure</li>
+              <li>Adequate margin provides visual breathing room</li>
+              <li>Responsive sizing ensures readability across devices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main>
+ 
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="body-text.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Body Text
+          </a>
+          <a href="captions.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Captions
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

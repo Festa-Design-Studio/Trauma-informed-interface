@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Exit Button - Dr G Lab Design System</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <meta name="description" content="Emergency exit button component for Dr G Lab's trauma-informed design system">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+      <li class="flex items-center">
+        <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li class="flex items-center">
+        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li class="flex items-center">
+        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li>
+        <span class="text-grey-700 font-montserrat font-medium">Emergency Exit Button</span>
+      </li>
+    </ol>
+  </nav>
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <!-- Page Header -->
+    <div class="mb-12">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Emergency Exit Button Component
+      </h1>
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        The emergency exit button provides an immediate, always-accessible escape route for users who feel triggered or overwhelmed. It is a key trauma-informed safety feature.
+      </p>
+    </div>
+    <!-- Component Showcase -->
+    <div class="space-y-12">
+      <!-- Default Emergency Exit Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Default Emergency Exit Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium px-md py-sm rounded-md shadow-md transition-all duration-300 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+            Exit to Safe Space
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-rhodochrosite-rose-600 ... flex items-center gap-2&quot;&gt;&lt;svg ... /&gt;Exit to Safe Space&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use for immediate, always-accessible escape routes for users who feel triggered or overwhelmed. The rose color signals urgency without using alarming red, supporting user safety and calm.</p>
+      </section>
+      <!-- Full-width Emergency Exit Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Full-width Emergency Exit Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="w-full bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium px-md py-sm rounded-md shadow-md transition-all duration-300 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+            Exit to Safe Space
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;w-full bg-rhodochrosite-rose-600 ... flex items-center gap-2&quot;&gt;&lt;svg ... /&gt;Exit to Safe Space&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use full-width for maximum visibility and accessibility, especially in mobile or modal contexts where a quick exit is critical for user safety.</p>
+      </section>
+      <!-- Small Emergency Exit Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Small Emergency Exit Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium py-xs px-sm rounded shadow-md transition-all duration-300 flex items-center gap-2 text-small">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+            Exit
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-rhodochrosite-rose-600 ... py-xs px-sm ... text-small flex items-center gap-2&quot;&gt;&lt;svg ... /&gt;Exit&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use for compact layouts or sticky/fixed positions where space is limited but immediate access is still required.</p>
+      </section>
+      <!-- Disabled Emergency Exit Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Disabled Emergency Exit Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-rhodochrosite-rose-200 text-selenite-white-50 font-montserrat font-medium px-md py-sm rounded-md opacity-60 cursor-not-allowed flex items-center gap-2" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+            Exit to Safe Space
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-rhodochrosite-rose-200 ... opacity-60 cursor-not-allowed flex items-center gap-2&quot; disabled&gt;&lt;svg ... /&gt;Exit to Safe Space&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use to indicate the emergency exit is temporarily unavailable. The faded color and cursor communicate that the action is not possible, but the button remains visible for reassurance.</p>
+      </section>
+      <!-- Loading State Emergency Exit Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Loading State Emergency Exit Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-rhodochrosite-rose-600 text-selenite-white-50 font-montserrat font-medium px-md py-sm rounded-md flex items-center justify-center gap-2" disabled>
+            <svg class="animate-spin h-4 w-4 text-selenite-white-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>
+            Exiting...
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;... flex items-center ...&quot; disabled&gt;&lt;svg class=&quot;animate-spin ...&quot; ... /&gt;Exiting...&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use when the emergency exit is processing. The spinner and disabled state provide clear, non-alarming feedback that the system is working.</p>
+      </section>
+      <!-- Buttons on Colored Backgrounds & Dark Mode -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Buttons on Colored Backgrounds & Dark Mode</h2>
+        <div class="space-y-8">
+          <!-- On Colored Background -->
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">On Colored Backgrounds</h3>
+            <div class="bg-azurite-blue-700 p-6 rounded-md mb-4 flex justify-center">
+              <button class="bg-rhodochrosite-rose-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-rhodochrosite-rose-600 transition-all duration-DEFAULT font-montserrat font-medium shadow">
+                Emergency Exit
+              </button>
+            </div>
+            <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-rhodochrosite-rose-DEFAULT text-selenite-white-50 ...&quot;&gt;Emergency Exit&lt;/button&gt;</code>
+            <p class="font-montserrat text-small text-grey-700 mt-2">On colored backgrounds, use a strong, high-contrast color (e.g., rose) for the emergency exit button to ensure it stands out and is always visible.</p>
+          </div>
+          <!-- In Dark Mode -->
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">In Dark Mode</h3>
+            <div class="bg-grey-900 p-6 rounded-md mb-4 flex justify-center">
+              <button class="bg-rhodochrosite-rose-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-rhodochrosite-rose-400 transition-all duration-DEFAULT font-montserrat font-medium shadow dark:bg-rhodochrosite-rose-400 dark:text-grey-900">
+                Emergency Exit
+              </button>
+            </div>
+            <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-rhodochrosite-rose-600 text-selenite-white-50 ... dark:bg-rhodochrosite-rose-400 dark:text-grey-900&quot;&gt;Emergency Exit&lt;/button&gt;</code>
+            <p class="font-montserrat text-small text-grey-700 mt-2">For dark mode, use a saturated rose color and ensure the text remains readable. Use <code>dark:</code> classes for Tailwind or custom CSS for other frameworks.</p>
+          </div>
+          <!-- Accessibility Note -->
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Emergency exit buttons must always be visible and accessible.</li>
+              <li>Use high-contrast colors and large touch targets.</li>
+              <li>Test on all backgrounds and in dark mode for visibility.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Component Navigation Footer -->
+    <footer class="mt-12 pt-4 border-t border-grey-200">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+          Part of Dr. G's Lab Trauma-Informed Design System
+        </p>
+        <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="tertiary-button.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Previous: Tertiary Button
+          </a>
+          <a href="../form-elements/checkbox.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+            Next: Checkbox
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

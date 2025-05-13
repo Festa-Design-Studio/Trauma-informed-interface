@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Module Component -->
+<div class="bg-gradient-to-r from-selenite-white-50 to-selenite-white-100 border border-grey-200 rounded-lg shadow-soft p-lg mb-lg">
+  <!-- Module number and title - Molecule (header with icon) -->
+  <div class="flex items-center mb-md">
+    <div class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-8 w-8 flex items-center justify-center rounded-full font-montserrat font-medium">
+      1
+    </div>
+    <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop ml-sm">
+      What is Trauma?
+    </h3>
+  </div>
+  
+  <!-- Module description - Atom (body text) -->
+  <p class="font-montserrat text-grey-800 text-body mb-lg">
+    This module explores definitions and types of trauma, prevalence in different populations, and addresses common myths and misconceptions.
+  </p>
+  
+  <!-- Module content list - Molecule (list group) -->
+  <div class="mb-lg">
+    <p class="font-montserrat font-medium text-grey-700 mb-xs">Module includes:</p>
+    <ul class="space-y-xs">
+      <li class="font-montserrat text-small text-grey-600 flex items-start">
+        <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+        <span>Video lesson (15 min)</span>
+      </li>
+      <li class="font-montserrat text-small text-grey-600 flex items-start">
+        <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+        <span>Interactive exercise</span>
+      </li>
+      <li class="font-montserrat text-small text-grey-600 flex items-start">
+        <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+        <span>Reflection questions</span>
+      </li>
+      <li class="font-montserrat text-small text-grey-600 flex items-start">
+        <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+        <span>Additional resources</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Module status - Molecule (status indicator with navigation) -->
+  <div class="mt-lg pt-md border-t border-grey-200 flex justify-between items-center">
+    <!-- In Progress State -->
+    <div class="flex items-center">
+      <div class="bg-azurite-blue-300 text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-1 11a1 1 0 11-2 0 1 1 0 012 0zm0-8a1 1 0 00-1 1v4a1 1 0 102 0V7a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <span class="font-montserrat text-small font-medium text-azurite-blue-600 ml-xs">In Progress</span>
+    </div>
+    
+    <a href="#" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT underline">
+      Continue Learning
+    </a>
+  </div>
+</div>
+
+<!-- Status Variations Examples -->
+<div class="space-y-4">
+  <!-- Completed Status -->
+  <div class="bg-selenite-white-50 border border-grey-200 rounded-md p-md">
+    <div class="flex items-center">
+      <div class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <span class="font-montserrat text-small font-medium text-chrysocolla-green-DEFAULT ml-xs">Completed</span>
+    </div>
+  </div>
+  
+  <!-- Not Started Status -->
+  <div class="bg-selenite-white-50 border border-grey-200 rounded-md p-md">
+    <div class="flex items-center">
+      <div class="bg-grey-300 text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <span class="font-montserrat text-small font-medium text-grey-600 ml-xs">Not Started</span>
+    </div>
+  </div>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - Use on course detail pages to display available modules
+  - Ensure the module number is clearly displayed for orientation and progress tracking
+  - Always include content preview to set clear expectations about activities
+  - Use the status indicator to show completion state (not started, in progress, completed)
+  - Provide appropriate action links based on module status
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Clear module numbering provides predictability and orientation
+  - Content preview reduces uncertainty about what to expect
+  - Non-pressuring progress indicators focus on progress rather than completion percentages
+  - Gentle gradient background creates visual interest without overwhelming
+  - Supportive language like "Continue Learning" is invitational rather than demanding
+  - Clear status indicators help users understand where they are in their journey
+-->
+
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="core-course-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Core Course Card
+        </a>
+        <a href="progress-tracker.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Progress Tracker
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

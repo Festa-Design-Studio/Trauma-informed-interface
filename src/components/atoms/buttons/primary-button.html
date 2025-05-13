@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary Button - Dr G Lab Design System</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <meta name="description" content="Primary button component for Dr G Lab's trauma-informed design system">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+      <li class="flex items-center">
+        <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li class="flex items-center">
+        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li class="flex items-center">
+        <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </li>
+      <li>
+        <span class="text-grey-700 font-montserrat font-medium">Primary Button</span>
+      </li>
+    </ol>
+  </nav>
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <!-- Page Header -->
+    <div class="mb-12">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Primary Button Component
+      </h1>
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        The primary button is used for main actions and calls to action. It is designed for clarity, accessibility, and trauma-informed interaction.
+      </p>
+    </div>
+    <!-- Component Showcase -->
+    <div class="space-y-12">
+      <!-- Default / Filled Primary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Default Primary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-montserrat font-medium">
+            Continue
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-montserrat font-medium&quot;&gt;Continue&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use for main actions such as submitting forms or continuing to the next step. The green color signals safety and progress, and the gentle hover transition provides reassuring feedback.</p>
+      </section>
+      <!-- Full-width Primary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Full-width Primary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="w-full bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-montserrat font-medium">
+            Complete Registration
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;w-full bg-chrysocolla-green-DEFAULT ...&quot;&gt;Complete Registration&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use full-width for forms and cards to create a clear, accessible target and reduce decision fatigue. This is especially helpful for trauma-affected users who benefit from clear, prominent actions.</p>
+      </section>
+      <!-- Primary Button with Right Icon -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Primary Button with Icon</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-montserrat font-medium flex items-center gap-2">
+            Continue
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;... flex items-center gap-2&quot;&gt;Continue &lt;svg ... /&gt;&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use an icon to clarify the action (e.g., next, download). Icons reinforce meaning and support users with lower literacy or language barriers.</p>
+      </section>
+      <!-- Small/Compact Primary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Small Primary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 py-xs px-sm rounded hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-montserrat font-medium text-small">
+            Save
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-chrysocolla-green-DEFAULT ... py-xs px-sm ... text-small&quot;&gt;Save&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use for secondary actions in toolbars or tight spaces. Still provides clear feedback and accessibility.</p>
+      </section>
+      <!-- Disabled Primary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Disabled Primary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-chrysocolla-green-200 text-selenite-white-50 px-md py-sm rounded-md opacity-60 cursor-not-allowed font-montserrat font-medium" disabled>
+            Continue
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-chrysocolla-green-200 ... opacity-60 cursor-not-allowed&quot; disabled&gt;Continue&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use for unavailable actions. The faded color and cursor indicate the action is not currently possible, reducing frustration and confusion.</p>
+      </section>
+      <!-- Loading State Primary Button -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Loading State Primary Button</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md font-montserrat font-medium flex items-center justify-center gap-2" disabled>
+            <svg class="animate-spin h-4 w-4 text-selenite-white-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>
+            Loading...
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;... flex items-center ...&quot; disabled&gt;&lt;svg class=&quot;animate-spin ...&quot; ... /&gt;Loading...&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use when an action is processing. The spinner and disabled state provide clear, non-alarming feedback that the system is working.</p>
+      </section>
+      <!-- Primary Button with Left Icon -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Primary Button with Left Icon</h2>
+        <div class="bg-selenite-white-50 p-6 rounded-md mb-6 flex justify-center">
+          <button class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-montserrat font-medium flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 20 20" stroke="currentColor"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+            Download Toolkit
+          </button>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;... flex items-center gap-2&quot;&gt;&lt;svg ... /&gt;Download Toolkit&lt;/button&gt;</code>
+        <p class="font-montserrat text-small text-grey-700 mt-4">Use a left icon for actions like download or back. Icons help users quickly recognize the action, supporting accessibility and clarity.</p>
+      </section>
+      <!-- Usage Guidelines -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Usage Guidelines</h2>
+        <div class="space-y-4 font-montserrat text-small text-grey-700">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Use for main actions and calls to action, such as submitting forms, continuing to the next step, or starting a course.</li>
+              <li>Use icon variants to clarify direction or reinforce meaning (e.g., arrows for next, download icons for downloads).</li>
+              <li>Use the small variant for toolbars or compact layouts.</li>
+              <li>Use the disabled and loading states to indicate unavailable or processing actions, reducing user frustration.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Ensure sufficient color contrast between button and text.</li>
+              <li>Maintain a minimum touch target size (44x44px).</li>
+              <li>Use aria-labels for icon-only or ambiguous buttons.</li>
+              <li>Provide visible focus states for keyboard navigation.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Gentle color transitions on hover provide predictable, calming feedback and reinforce user control.</li>
+              <li>Consistent button placement and sizing reduce cognitive load and decision fatigue.</li>
+              <li>Disabled and loading states prevent confusion and help users feel safe to pause or wait.</li>
+              <li>Icons support users with lower literacy or language barriers.</li>
+              <li>Soft, rounded corners and calm color palette avoid triggering stress responses.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Buttons on Colored Backgrounds & Dark Mode -->
+      <section class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Buttons on Colored Backgrounds & Dark Mode</h2>
+        <div class="space-y-8">
+          <!-- On Colored Background -->
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">On Colored Backgrounds</h3>
+            <div class="bg-azurite-blue-700 p-6 rounded-md mb-4 flex justify-center">
+              <button class="bg-selenite-white-50 text-chrysocolla-green-DEFAULT px-md py-sm rounded-md hover:bg-selenite-white-100 transition-all duration-DEFAULT font-montserrat font-medium shadow">
+                Continue
+              </button>
+            </div>
+            <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-selenite-white-50 text-chrysocolla-green-DEFAULT ...&quot;&gt;Continue&lt;/button&gt;</code>
+            <p class="font-montserrat text-small text-grey-700 mt-2">When placing a primary button on a dark or colored background, use a light button background (e.g., <code>bg-selenite-white-50</code>) and colored text for contrast and accessibility.</p>
+          </div>
+          <!-- In Dark Mode -->
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">In Dark Mode</h3>
+            <div class="bg-grey-900 p-6 rounded-md mb-4 flex justify-center">
+              <button class="bg-chrysocolla-green-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-500 transition-all duration-DEFAULT font-montserrat font-medium shadow dark:bg-chrysocolla-green-400 dark:text-grey-900">
+                Continue
+              </button>
+            </div>
+            <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">&lt;button class=&quot;bg-chrysocolla-green-600 text-selenite-white-50 ... dark:bg-chrysocolla-green-400 dark:text-grey-900&quot;&gt;Continue&lt;/button&gt;</code>
+            <p class="font-montserrat text-small text-grey-700 mt-2">For dark mode, use a more saturated button color (e.g., <code>bg-chrysocolla-green-600</code>) and ensure text remains readable. Use <code>dark:</code> classes for Tailwind or custom CSS for other frameworks.</p>
+          </div>
+          <!-- Accessibility Note -->
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Always check color contrast (WCAG AA: 4.5:1 for text).</li>
+              <li>Test button focus and hover states on all backgrounds.</li>
+              <li>Use visible outlines or shadows for focus in dark mode.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Component Navigation Footer -->
+    <footer class="mt-12 pt-4 border-t border-grey-200">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+          Part of Dr. G's Lab Trauma-Informed Design System
+        </p>
+        <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="../../../index.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7-7-7" />
+            </svg>
+            Previous
+          </a>
+          <a href="secondary-button.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+            Next: Secondary Button
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
+

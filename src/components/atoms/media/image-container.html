@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+      <!-- Image Container Components -->
+
+      <!-- Standard Image Container -->
+      <div class="aspect-ratio-16/9 bg-grey-100 rounded-md overflow-hidden">
+        <img src="/src/img/placeholder-project.jpg" alt="Standard image with descriptive alt text" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Image Container with Gentle Hover Effect -->
+      <div class="mt-8">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">With Hover Effect</h3>
+        <div class="aspect-ratio-16/9 bg-grey-100 rounded-md overflow-hidden group">
+          <img src="/src/img/placeholder-project.jpg" alt="Image with hover effect" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT">
+        </div>
+      </div>
+
+      <!-- Image Container with Content Warning Overlay -->
+      <div class="mt-8">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">With Content Warning</h3>
+        <div class="relative aspect-ratio-16/9 bg-grey-100 rounded-md overflow-hidden">
+          <img src="/src/img/placeholder-project.jpg" alt="Image with content warning" class="w-full h-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-rhodochrosite-rose-50 bg-opacity-90 px-sm py-xs">
+            <p class="font-montserrat text-caption text-rhodochrosite-rose-DEFAULT">
+              Contains potentially sensitive content
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Container with Blur/Reveal Option -->
+      <div class="mt-8">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">With Blur/Reveal Option</h3>
+        <div class="relative aspect-ratio-16/9 bg-grey-100 rounded-md overflow-hidden">
+          <img id="blurred-image" src="/src/img/placeholder-project.jpg" alt="Blurred image with reveal option" class="w-full h-full object-cover filter blur-sm transition-all duration-500">
+          <!-- Overlay with reveal option -->
+          <div id="image-overlay" class="absolute inset-0 bg-grey-900 bg-opacity-40 flex items-center justify-center">
+            <button id="reveal-btn" class="bg-selenite-white-50 bg-opacity-90 text-grey-900 font-montserrat font-medium text-small py-2 px-4 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white">
+              Reveal Image
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Container with Caption -->
+      <div class="mt-8">
+        <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-md">With Caption</h3>
+        <figure>
+          <div class="aspect-ratio-16/9 bg-grey-100 rounded-md overflow-hidden">
+            <img src="/src/img/placeholder-project.jpg" alt="Image with caption" class="w-full h-full object-cover">
+          </div>
+          <figcaption class="mt-2 font-montserrat font-light text-caption text-grey-600">
+            Descriptive caption providing context about the image content and source attribution when needed.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Usage notes -->
+      <!-- 
+        Usage:
+        - Use consistent aspect ratios across similar content types for visual predictability
+        - Always include descriptive alt text for accessibility
+        - Add content warnings when images contain potentially triggering content
+        - Consider blurring sensitive images by default with opt-in to view
+        - Include captions when additional context would be helpful
+        - Keep hover effects subtle and smooth with appropriate transition duration
+        
+        Variations:
+        - Standard image container for basic image display
+        - Hover effect for interactive elements
+        - Content warning overlay for sensitive content
+        - Blur/reveal for high-risk content
+        - Captioned images for additional context
+      -->
+
+      <!-- Trauma-informed considerations -->
+      <!-- 
+        - Consistent aspect ratios create visual predictability
+        - Rounded corners soften the appearance
+        - Content warnings allow users to prepare for sensitive content
+        - Blur/reveal pattern gives users control over exposure to potentially triggering content
+        - Subtle hover effects provide feedback without jarring animation
+        - Clear captions offer context and reduce uncertainty
+        - Proper alt text ensures accessibility for screen reader users
+        - Default protective measures with opt-in to view sensitive content respects user agency
+      -->
+
+      <!-- Interactive script for blur/reveal demo -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const revealBtn = document.getElementById('reveal-btn');
+          const blurredImage = document.getElementById('blurred-image');
+          const imageOverlay = document.getElementById('image-overlay');
+
+          if (revealBtn) {
+            revealBtn.addEventListener('click', () => {
+              // Change button text to confirm user intent
+              revealBtn.textContent = "Confirm reveal?";
+              revealBtn.classList.add('bg-sunstone-orange-100');
+              
+              // Create one-time event for second confirmation
+              const confirmReveal = () => {
+                blurredImage.classList.remove('blur-sm');
+                imageOverlay.classList.add('opacity-0');
+                
+                // Fully hide overlay after transition
+                setTimeout(() => {
+                  imageOverlay.classList.add('hidden');
+                }, 300);
+                
+                // Remove this event listener after use
+                revealBtn.removeEventListener('click', confirmReveal);
+              };
+              
+              // Replace original click handler with confirmation handler
+              revealBtn.removeEventListener('click', revealBtn.onclick);
+              revealBtn.addEventListener('click', confirmReveal);
+            });
+          }
+        });
+      </script>
+
+    </div>
+  </main>
+</body>
+</html>

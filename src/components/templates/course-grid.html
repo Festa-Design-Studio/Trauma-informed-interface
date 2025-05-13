@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Grid Template - Trauma-Informed Design</title>
+  <link href="../../output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+  <!-- Emergency Exit Button - Always visible -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button 
+      class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2 flex items-center gap-2"
+      aria-label="Emergency exit to neutral website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Emergency Exit
+    </button>
+  </div>
+
+  <!-- Header -->
+
+ <header class="bg-selenite-white-50 border-b border-grey-200 sticky top-0 z-40">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="../../img/dgl-logomark.svg" alt="Dr G Lab" class="h-10">
+        <span class="ml-3 text-azurite-blue-900 font-playfair text-xl font-bold">Dr. G's Lab</span>
+      </div>
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-medium transition-all duration-DEFAULT">Courses</a>
+        <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Resources</a>
+        <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Blog</a>
+        <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Services</a>
+      </nav>
+      <!-- User Menu -->
+      <div class="flex items-center space-x-4">
+        
+        <a href="#" class="hidden md:flex items-center px-4 py-2 rounded-md border border-chrysocolla-green-DEFAULT text-chrysocolla-green-DEFAULT hover:bg-chrysocolla-green-50 transition-all duration-DEFAULT">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.776-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          My Learning
+        </a>
+        <!-- Settings Button -->
+        <button class="p-2 rounded-full hover:bg-grey-100 transition-all duration-DEFAULT">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </button>
+        <div class="relative">
+          <button class="h-8 w-8 rounded-full bg-azurite-blue-100 flex items-center justify-center text-azurite-blue-600 font-medium">
+            JD
+          </button>
+        </div>
+        <button class="md:hidden p-2 rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Page Header -->
+    <div class="mb-10">
+      <h1 class="font-playfair font-bold text-azurite-blue-900 text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-4">Courses & Learning Paths</h1>
+      <p class="text-grey-700 text-lg max-w-3xl">Explore our trauma-informed design courses and specializations. Each course is designed to be accessible and adaptable to your learning preferences and needs.</p>
+    </div>
+
+    <!-- Course Filtering & Search -->
+    <div class="mb-8 bg-selenite-white-100 border border-grey-200 rounded-lg p-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-4">
+          <!-- Course Type Filter -->
+          <div>
+            <label for="course-type" class="block text-sm font-medium text-grey-700 mb-1">Course Type</label>
+            <select id="course-type" class="rounded-md border-grey-300 py-2 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <option>All Courses</option>
+              <option>Core Courses</option>
+              <option>Specializations</option>
+              <option>Quick Courses</option>
+            </select>
+          </div>
+
+          <!-- Level Filter -->
+          <div>
+            <label for="level" class="block text-sm font-medium text-grey-700 mb-1">Level</label>
+            <select id="level" class="rounded-md border-grey-300 py-2 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <option>All Levels</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+          
+          <!-- Duration Filter -->
+          <div>
+            <label for="duration" class="block text-sm font-medium text-grey-700 mb-1">Duration</label>
+            <select id="duration" class="rounded-md border-grey-300 py-2 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <option>Any Duration</option>
+              <option>Under 1 hour</option>
+              <option>1-3 hours</option>
+              <option>3-10 hours</option>
+              <option>10+ hours</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div class="w-full md:w-auto">
+          <label for="search" class="block text-sm font-medium text-grey-700 mb-1">Search Courses</label>
+          <div class="relative">
+            <input type="text" id="search" placeholder="Search by keyword or topic" class="w-full md:w-64 rounded-md border-grey-300 py-2 pl-3 pr-10 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Path Section -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-6">Recommended Learning Path</h2>
+      
+      <div class="bg-gradient-to-r from-azurite-blue-50 to-azurite-blue-100 border border-azurite-blue-200 rounded-lg p-lg">
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Path Information -->
+          <div class="md:w-1/2">
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h2-mobile md:text-h2-tablet lg:text-h2-desktop mb-md">
+              Trauma-Informed Design Practitioner
+            </h3>
+            
+            <p class="font-montserrat text-grey-800 text-body mb-lg">
+              Become a certified trauma-informed design practitioner with this structured learning path. These courses build on each other to provide a comprehensive understanding of creating safe, inclusive digital experiences.
+            </p>
+            
+            <div class="bg-selenite-white-50 bg-opacity-80 rounded-md p-md mb-lg">
+              <ul class="space-y-sm">
+                <li class="flex items-start">
+                  <div class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full font-montserrat font-medium mt-0.5 flex-shrink-0">
+                    1
+                  </div>
+                  <div class="ml-sm">
+                    <p class="font-montserrat font-medium text-grey-900">Introduction to Trauma-Informed Design</p>
+                    <p class="font-montserrat text-caption text-grey-600">Foundational course - 4 hours</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full font-montserrat font-medium mt-0.5 flex-shrink-0">
+                    2
+                  </div>
+                  <div class="ml-sm">
+                    <p class="font-montserrat font-medium text-grey-900">Understanding Trauma & Its Effects</p>
+                    <p class="font-montserrat text-caption text-grey-600">Core course - 6 hours</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 h-6 w-6 flex items-center justify-center rounded-full font-montserrat font-medium mt-0.5 flex-shrink-0">
+                    3
+                  </div>
+                  <div class="ml-sm">
+                    <p class="font-montserrat font-medium text-grey-900">Advanced Trauma-Informed UX Practices</p>
+                    <p class="font-montserrat text-caption text-grey-600">Specialization - 10 hours</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <a href="#" class="inline-block bg-azurite-blue-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-azurite-blue-700 transition-all duration-DEFAULT">
+              Explore Learning Path
+            </a>
+          </div>
+          
+          <!-- Path Progress/Benefits -->
+          <div class="md:w-1/2 bg-selenite-white-50 bg-opacity-80 rounded-lg p-lg">
+            <h4 class="font-playfair font-medium text-azurite-blue-900 text-lg mb-md">
+              Upon completion, you'll be able to:
+            </h4>
+            
+            <ul class="space-y-md mb-lg">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azurite-blue-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-sm text-grey-800">Identify potential triggers in digital experiences and implement effective mitigation strategies</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azurite-blue-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-sm text-grey-800">Create design systems that prioritize user agency, control, and emotional safety</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azurite-blue-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-sm text-grey-800">Conduct user research with vulnerable populations in an ethical and supportive manner</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azurite-blue-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-sm text-grey-800">Earn a verified certification as a Trauma-Informed Design Practitioner</span>
+              </li>
+            </ul>
+            
+            <div class="flex items-center p-sm bg-azurite-blue-50 rounded-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-azurite-blue-600 mr-sm" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p class="text-small text-azurite-blue-800">
+                All courses can be taken individually or as part of this learning path
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Courses Section -->
+    <section class="mb-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl">Core Courses</h2>
+        <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-montserrat text-small flex items-center">
+          View all core courses
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Core Course Card 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-azurite-blue-100 rounded-t-md group-hover:bg-azurite-blue-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course level indicator -->
+          <div class="mb-sm">
+            <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">Core Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Introduction to Trauma-Informed Design
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-lg line-clamp-3">
+            This foundational course introduces trauma-informed design principles and their importance in creating safe, inclusive, and empowering user experiences.
+          </p>
+          
+          <!-- Course modules preview -->
+          <div class="mb-lg">
+            <p class="font-montserrat font-medium text-grey-700 text-small mb-xs">Course Modules:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Why Trauma-Informed Design Matters</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Principles of Trauma-Informed Care in Design</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Creating Safe Digital Spaces</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Course metadata -->
+          <div class="flex justify-between items-center mb-lg">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              4 hours
+            </span>
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Beginner
+            </span>
+          </div>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              Explore Course
+            </a>
+          </div>
+        </div>
+
+        <!-- Core Course Card 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-azurite-blue-100 rounded-t-md group-hover:bg-azurite-blue-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course level indicator -->
+          <div class="mb-sm">
+            <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">Core Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Understanding Trauma & Its Effects
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-lg line-clamp-3">
+            Learn about different types of trauma, their psychological and neurobiological impacts, and how trauma affects the way people interact with digital experiences.
+          </p>
+          
+          <!-- Course modules preview -->
+          <div class="mb-lg">
+            <p class="font-montserrat font-medium text-grey-700 text-small mb-xs">Course Modules:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>What is Trauma?</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>The Neurobiology of Trauma</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Trauma's Impact on User Experience</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Course metadata -->
+          <div class="flex justify-between items-center mb-lg">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              6 hours
+            </span>
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Intermediate
+            </span>
+          </div>
+          
+          <!-- Content notice -->
+          <div class="bg-rhodochrosite-rose-50 p-sm rounded-md mb-lg flex items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-DEFAULT mr-xs flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="text-caption text-rhodochrosite-rose-DEFAULT">
+              This course includes discussions of trauma and its effects. Content warnings are provided before sensitive material.
+            </p>
+          </div>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              Explore Course
+            </a>
+          </div>
+        </div>
+
+        <!-- Core Course Card 3 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-azurite-blue-100 rounded-t-md group-hover:bg-azurite-blue-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course level indicator -->
+          <div class="mb-sm">
+            <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">Core Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Inclusive & Accessible Design Foundations
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-lg line-clamp-3">
+            Build a strong foundation in creating inclusive digital experiences that accommodate diverse needs, preferences, and accessibility requirements.
+          </p>
+          
+          <!-- Course modules preview -->
+          <div class="mb-lg">
+            <p class="font-montserrat font-medium text-grey-700 text-small mb-xs">Course Modules:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Principles of Inclusive Design</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Accessibility Best Practices</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-600 flex items-start">
+                <span class="text-chrysocolla-green-DEFAULT mr-xs mt-0.5">•</span>
+                <span>Designing for Neurodiversity</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Course metadata -->
+          <div class="flex justify-between items-center mb-lg">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              5 hours
+            </span>
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              All Levels
+            </span>
+          </div>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              Explore Course
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Specialization Courses Section -->
+    <section class="mb-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl">Specialization Courses</h2>
+        <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-montserrat text-small flex items-center">
+          View all specializations
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Specialization Course Card 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-rhodochrosite-rose-100 rounded-t-md group-hover:bg-rhodochrosite-rose-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">UX Research Specialization</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Trauma-Informed Interviewing & Observation
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+            Learn techniques for conducting interviews and observations with trauma-affected populations in an ethical, compassionate manner.
+          </p>
+          
+          <!-- Prerequisites notice -->
+          <div class="bg-azurite-blue-50 border border-azurite-blue-100 rounded-md p-sm mb-lg">
+            <p class="font-montserrat text-small text-azurite-blue-700">
+              <span class="font-medium">Prerequisites:</span> Introduction to Trauma-Informed Design, Understanding Trauma and Its Effects
+            </p>
+          </div>
+          
+          <!-- Course metadata -->
+          <div class="flex justify-between items-center mb-lg">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              8 hours
+            </span>
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Advanced
+            </span>
+          </div>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              View Specialization
+            </a>
+          </div>
+        </div>
+        
+        <!-- Specialization Course Card 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-rhodochrosite-rose-100 rounded-t-md group-hover:bg-rhodochrosite-rose-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">Design Systems Specialization</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Building Trauma-Informed Design Systems
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+            Learn how to create and implement design systems that integrate trauma-informed principles at every level, from color and typography to interaction patterns.
+          </p>
+          
+          <!-- Prerequisites notice -->
+          <div class="bg-azurite-blue-50 border border-azurite-blue-100 rounded-md p-sm mb-lg">
+            <p class="font-montserrat text-small text-azurite-blue-700">
+              <span class="font-medium">Prerequisites:</span> Introduction to Trauma-Informed Design, Inclusive & Accessible Design Foundations
+            </p>
+          </div>
+          
+          <!-- Course metadata -->
+          <div class="flex justify-between items-center mb-lg">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              10 hours
+            </span>
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Intermediate
+            </span>
+          </div>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              View Specialization
+            </a>
+          </div>
+        </div>
+        
+        <!-- Specialization Course Card 3 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-rhodochrosite-rose-100 rounded-t-md group-hover:bg-rhodochrosite-rose-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">Content Strategy Specialization</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Trauma-Informed Content Strategy
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+            Develop strategies for creating and structuring content that respects and supports users with trauma histories, including appropriate content warnings and formatting.
+          </p>
+          
+          <!-- Prerequisites notice -->
+          <div class="bg-azurite-blue-50 border border-azurite-blue-100 rounded-md p-sm mb-lg">
+            <p class="font-montserrat text-small text-azurite-blue-700">
+              <span class="font-medium">Prerequisites:</span> Introduction to Trauma-Informed Design
+            </p>
+          </div>
+          
+          <!-- Course metadata -->
+          <div class="flex justify-between items-center mb-lg">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              6 hours
+            </span>
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Intermediate
+            </span>
+          </div>
+          
+          <!-- Content notice -->
+          <div class="bg-rhodochrosite-rose-50 p-sm rounded-md mb-lg flex items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-DEFAULT mr-xs flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="text-caption text-rhodochrosite-rose-DEFAULT">
+              This course includes examples of potentially triggering content (with warnings).
+            </p>
+          </div>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              View Specialization
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Quick Courses Section -->
+    <section class="mb-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl">Quick Courses & Workshops</h2>
+        <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-montserrat text-small flex items-center">
+          View all quick courses
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Quick Course Card 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-md hover:shadow transition-all duration-DEFAULT group flex flex-col h-full">
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-xs rounded-md text-caption">Quick Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-lg mb-sm">
+            Content Warnings: Best Practices
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-700 text-small mb-auto">
+            Learn when and how to implement effective content warnings in digital experiences.
+          </p>
+          
+          <!-- Course duration -->
+          <div class="mt-md pt-md border-t border-grey-200">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              45 minutes
+            </span>
+          </div>
+        </div>
+        
+        <!-- Quick Course Card 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-md hover:shadow transition-all duration-DEFAULT group flex flex-col h-full">
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-xs rounded-md text-caption">Quick Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-lg mb-sm">
+            Form Design for Reduced Anxiety
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-700 text-small mb-auto">
+            Practical techniques for designing forms that reduce user anxiety and increase completion rates.
+          </p>
+          
+          <!-- Course duration -->
+          <div class="mt-md pt-md border-t border-grey-200">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              60 minutes
+            </span>
+          </div>
+        </div>
+        
+        <!-- Quick Course Card 3 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-md hover:shadow transition-all duration-DEFAULT group flex flex-col h-full">
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-xs rounded-md text-caption">Quick Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-lg mb-sm">
+            Error Messages That Support
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-700 text-small mb-auto">
+            Craft error messages that validate user feelings and provide clear guidance on next steps.
+          </p>
+          
+          <!-- Course duration -->
+          <div class="mt-md pt-md border-t border-grey-200">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              30 minutes
+            </span>
+          </div>
+        </div>
+        
+        <!-- Quick Course Card 4 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-md hover:shadow transition-all duration-DEFAULT group flex flex-col h-full">
+          <!-- Course type indicator -->
+          <div class="mb-sm">
+            <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-xs rounded-md text-caption">Quick Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-lg mb-sm">
+            Color Psychology for Emotional Safety
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-700 text-small mb-auto">
+            Understand how color choices impact emotional responses and learn to create soothing, supportive palettes.
+          </p>
+          
+          <!-- Course duration -->
+          <div class="mt-md pt-md border-t border-grey-200">
+            <span class="font-montserrat text-caption text-grey-600 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              45 minutes
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Certification Section -->
+    <section class="mb-16">
+      <div class="bg-selenite-white-100 border border-grey-200 rounded-lg p-lg">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <div class="md:w-2/3">
+            <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Earn Your Certification</h2>
+            <p class="font-montserrat text-grey-800 mb-6">
+              Complete the full Trauma-Informed Design Practitioner learning path to earn a verified certification. This credential demonstrates your expertise in creating more inclusive, supportive digital experiences for all users.
+            </p>
+            <div class="bg-selenite-white-50 border border-grey-200 p-md rounded-md mb-6">
+              <h3 class="font-medium text-azurite-blue-900 mb-2">Certification includes:</h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Digital certificate to share on social profiles</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Access to the Certified Practitioners Community</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-DEFAULT mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Listing in our public directory of certified practitioners</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT">
+              Learn More About Certification
+            </a>
+          </div>
+          <div class="md:w-1/3 flex justify-center">
+            <div class="bg-selenite-white-50 border-4 border-chrysocolla-green-100 rounded-lg p-8 shadow-soft transform rotate-3 max-w-xs">
+              <div class="text-center">
+                <div class="mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-chrysocolla-green-DEFAULT" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 class="font-playfair font-bold text-azurite-blue-900 text-xl mb-2">Certified Trauma-Informed Design Practitioner</h3>
+                <p class="font-montserrat text-small text-grey-700 mb-4">
+                  Jane Doe has successfully completed all requirements for certification in Trauma-Informed Design.
+                </p>
+                <p class="font-montserrat text-caption text-grey-600">
+                  Issued April 2025
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-selenite-white-200 border-t border-grey-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-grey-600 text-sm">© 2025 Dr G's Lab. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Help & Support</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Accessibility</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Component Documentation -->
+  <div class="max-w-6xl mx-auto mt-16 p-8 bg-azurite-blue-50 rounded-lg mb-16">
+    <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Course Grid Template Documentation</h2>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Usage</h3>
+      <p>This template is designed to showcase available courses in a structured, browsable format. It allows users to explore different course offerings while providing clear information about course content, prerequisites, and potential content warnings.</p>
+    </div>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Key Components</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Emergency exit button for quick navigation away from the platform</li>
+        <li>Course filtering and search capabilities for personalized browsing</li>
+        <li>Learning path section that presents recommended course sequences</li>
+        <li>Structured course cards with clear visual hierarchy of information</li>
+        <li>Different styling for core courses vs. specializations</li>
+        <li>Condensed quick course format for shorter learning experiences</li>
+        <li>Certification information section with visual certificate representation</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Clear content warnings on courses that include potentially triggering material</li>
+        <li>Transparent listing of prerequisites to prevent frustration or confusion</li>
+        <li>Gentle hover states that provide feedback without jarring animations</li>
+        <li>Consistent color-coding to clearly differentiate course types</li>
+        <li>Course duration information helps users plan their learning experience</li>
+        <li>Supportive language that emphasizes exploration rather than demands</li>
+        <li>Filter tools that give users control over the types of courses they see</li>
+        <li>Spacious layout that prevents visual overwhelm and cognitive overload</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

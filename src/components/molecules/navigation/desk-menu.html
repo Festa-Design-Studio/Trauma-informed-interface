@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+
+<!-- Desktop Navigation Components -->
+
+<!-- Standard Desktop Navigation -->
+<div class="bg-selenite-white-50 shadow-sm border-b border-grey-200 py-4 px-6 w-full mx-auto">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <!-- Logo and site name -->
+    <div class="flex items-center">
+      <div class="mr-3 text-azurite-blue-900">
+        <!-- Replaced placeholder SVG with actual Dr. G's Lab logo -->
+        <img src="/src/img/dgl-logo.svg" alt="Dr. G's Lab" class="h-8">
+      </div>
+      <a href="#" class="font-playfair font-bold text-h4-desktop text-azurite-blue-900 hover:text-azurite-blue-700 transition-colors duration-300">Dr. G's Lab</a>
+    </div>
+    
+    <!-- Desktop Navigation Links -->
+    <nav aria-label="Desktop navigation">
+      <ul class="hidden md:flex items-center space-x-8">
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-chrysocolla-green-900 border-b-2 border-chrysocolla-green-900 pb-1 transition-all duration-300" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Courses
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Resources
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            About
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="hidden md:flex items-center space-x-4">
+      <!-- Search button -->
+      <button class="bg-transparent border-none text-grey-700 hover:text-chrysocolla-green-900 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md p-1 transition-all duration-300" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      
+      <!-- User menu -->
+      <div class="relative">
+        <button class="flex items-center space-x-1 text-grey-800 hover:text-chrysocolla-green-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md p-1" aria-expanded="false" aria-controls="user-menu">
+          <span class="font-montserrat font-medium text-small">My Account</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Dropdown menu - hidden by default -->
+        <div id="user-menu" class="hidden absolute right-0 mt-2 w-48 bg-selenite-white-50 border border-grey-200 rounded-md shadow-trauma-safe py-2 z-10">
+          <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+            Profile
+          </a>
+          <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+            My Courses
+          </a>
+          <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+            Settings
+          </a>
+          <div class="border-t border-grey-200 my-1"></div>
+          <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+            Sign Out
+          </a>
+        </div>
+      </div>
+      
+      <!-- Emergency exit -->
+      <button 
+        class="bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-300 hover:bg-sunstone-orange-100 font-montserrat font-medium text-small px-3 py-1.5 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-500"
+        aria-label="Emergency exit to safe space">
+        Exit to Safe Space
+      </button>
+    </div>
+    
+    <!-- Mobile menu button - shown only on smaller screens -->
+    <button class="md:hidden bg-transparent border-none text-grey-800 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md p-1" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="sr-only">Open main menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Desktop Navigation with Dropdown Menus -->
+<div class="bg-selenite-white-50 shadow-sm border-b border-grey-200 py-4 px-6 w-full mx-auto mt-12">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <!-- Logo and site name -->
+    <div class="flex items-center">
+      <div class="mr-3 text-azurite-blue-900">
+        <!-- Replaced placeholder SVG with actual Dr. G's Lab logo -->
+        <img src="/src/img/dgl-logo.svg" alt="Dr. G's Lab" class="h-8">
+      </div>
+      <a href="#" class="font-playfair font-bold text-h4-desktop text-azurite-blue-900 hover:text-azurite-blue-700 transition-colors duration-300">Dr. G's Lab</a>
+    </div>
+    
+    <!-- Desktop Navigation Links with Dropdown -->
+    <nav aria-label="Desktop navigation with dropdowns">
+      <ul class="hidden md:flex items-center space-x-8">
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-chrysocolla-green-900 border-b-2 border-chrysocolla-green-900 pb-1 transition-all duration-300" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li class="relative group">
+          <button 
+            class="flex items-center font-montserrat font-medium text-body text-grey-800 group-hover:text-chrysocolla-green-900 border-b-2 border-transparent group-hover:border-chrysocolla-green-900 pb-1 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-azurite-blue-300"
+            aria-expanded="false"
+            aria-controls="courses-dropdown">
+            <span>Courses</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Dropdown menu - hidden by default, shown on hover -->
+          <div id="courses-dropdown" class="hidden group-hover:block absolute left-0 mt-2 w-64 bg-selenite-white-50 border border-grey-200 rounded-md shadow-trauma-safe py-2 z-10">
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              Beginning Your Journey
+            </a>
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              Core Concepts
+            </a>
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              Advanced Topics
+            </a>
+            <div class="border-t border-grey-200 my-1"></div>
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              View All Courses
+            </a>
+          </div>
+        </li>
+        <li class="relative group">
+          <button 
+            class="flex items-center font-montserrat font-medium text-body text-grey-800 group-hover:text-chrysocolla-green-900 border-b-2 border-transparent group-hover:border-chrysocolla-green-900 pb-1 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-azurite-blue-300"
+            aria-expanded="false"
+            aria-controls="resources-dropdown">
+            <span>Resources</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Dropdown menu - hidden by default, shown on hover -->
+          <div id="resources-dropdown" class="hidden group-hover:block absolute left-0 mt-2 w-64 bg-selenite-white-50 border border-grey-200 rounded-md shadow-trauma-safe py-2 z-10">
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              Articles
+            </a>
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              Guided Practices
+            </a>
+            <a href="#" class="block font-montserrat text-small text-grey-800 hover:bg-selenite-white-100 hover:text-chrysocolla-green-900 px-4 py-2 transition-all duration-300">
+              Downloads
+            </a>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            About
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="hidden md:flex items-center space-x-4">
+      <!-- User profile image -->
+      <div class="flex items-center space-x-3">
+        <div class="h-8 w-8 rounded-full bg-chrysocolla-green-100 flex items-center justify-center text-chrysocolla-green-700 overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </div>
+        <span class="font-montserrat font-medium text-small text-grey-800">Jamie Smith</span>
+      </div>
+      
+      <!-- Emergency exit -->
+      <button 
+        class="bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-300 hover:bg-sunstone-orange-100 font-montserrat font-medium text-small px-3 py-1.5 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-500"
+        aria-label="Emergency exit to safe space">
+        Exit to Safe Space
+      </button>
+    </div>
+    
+    <!-- Mobile menu button - shown only on smaller screens -->
+    <button class="md:hidden bg-transparent border-none text-grey-800 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md p-1" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="sr-only">Open main menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Desktop Navigation with User Progress -->
+<div class="bg-selenite-white-50 shadow-sm border-b border-grey-200 py-4 px-6 w-full mx-auto mt-12">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <!-- Logo and site name -->
+    <div class="flex items-center">
+      <div class="mr-3 text-azurite-blue-900">
+        <!-- Replaced placeholder SVG with actual Dr. G's Lab logo -->
+        <img src="/src/img/dgl-logo.svg" alt="Dr. G's Lab" class="h-8">
+      </div>
+      <a href="#" class="font-playfair font-bold text-h4-desktop text-azurite-blue-900 hover:text-azurite-blue-700 transition-colors duration-300">Dr. G's Lab</a>
+    </div>
+    
+    <!-- Center section with progress -->
+    <div class="hidden md:block flex-1 max-w-md mx-8">
+      <div class="flex justify-between items-center mb-1">
+        <span class="font-montserrat font-medium text-caption text-grey-800">Course Progress</span>
+        <span class="font-montserrat font-light text-caption text-grey-600">60%</span>
+      </div>
+      <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+        <div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"></div>
+      </div>
+    </div>
+    
+    <!-- Desktop Navigation Links -->
+    <nav aria-label="Desktop navigation with course progress">
+      <ul class="hidden md:flex items-center space-x-8">
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-chrysocolla-green-900 border-b-2 border-chrysocolla-green-900 pb-1 transition-all duration-300" aria-current="page">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Current Course
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-montserrat font-medium text-body text-grey-800 hover:text-chrysocolla-green-900 border-b-2 border-transparent hover:border-chrysocolla-green-900 pb-1 transition-all duration-300">
+            Resources
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="hidden md:flex items-center space-x-4">
+      <!-- Notifications -->
+      <button class="relative bg-transparent border-none text-grey-700 hover:text-chrysocolla-green-900 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md p-1 transition-all duration-300" aria-label="Notifications">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v0.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+        <span class="absolute top-0 right-0 h-2.5 w-2.5 bg-sunstone-orange-500 rounded-full border-2 border-selenite-white-50"></span>
+      </button>
+      
+      <!-- User profile image -->
+      <div class="flex items-center space-x-3">
+        <div class="h-8 w-8 rounded-full bg-chrysocolla-green-100 flex items-center justify-center text-chrysocolla-green-700 overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Emergency exit -->
+      <button 
+        class="bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-300 hover:bg-sunstone-orange-100 font-montserrat font-medium text-small px-3 py-1.5 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sunstone-orange-500"
+        aria-label="Emergency exit to safe space">
+        Exit to Safe Space
+      </button>
+    </div>
+    
+    <!-- Mobile menu button - shown only on smaller screens -->
+    <button class="md:hidden bg-transparent border-none text-grey-800 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-md p-1" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="sr-only">Open main menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - For primary site navigation on desktop/larger screens
+  - To provide clear access to main site areas
+  - For displaying user information and progress
+  - Should always include emergency exit option
+  
+  Variations:
+  - Standard navigation with simple links
+  - Navigation with dropdown menus for deeper content hierarchy
+  - Navigation with user progress information
+  
+  Implementation:
+  - Dropdowns should have smooth transitions
+  - Clear visual states for current page
+  - Emergency exit should be consistently placed and styled
+  
+  Accessibility:
+  - Use proper aria-current for current page
+  - Ensure all interactive elements are keyboard accessible
+  - Dropdown menus should use proper aria-expanded and aria-controls
+  - Provide sufficient color contrast for all text
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Gentle visual hierarchy helps with orientation
+  - Border treatments create visual separation without harsh lines
+  - Clear states for active, hover, and focus provide predictability
+  - Emergency exit is always visible and easily accessible
+  - User progress is clearly indicated to maintain progress awareness
+  - Dropdown animations should be subtle to avoid jarring transitions
+  - Generous spacing reduces cognitive load
+  - Clean, minimal design avoids overwhelming users
+  - Current location is clearly indicated to maintain orientation
+  - Visual indicators (borders, background changes) are subtle but clear
+-->
+
+
+</div>
+</main>
+
+<!-- Component Navigation Footer -->
+<footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+      Part of Dr. G's Lab Trauma-Informed Design System
+    </p>
+    
+    <nav aria-label="Component Navigation" class="flex flex-wrap">
+      <a href="breadcrumb/breadcrumb.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Previous: Breadcrumb
+      </a>
+      <a href="mobile-menu.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+        Next: Mobile Menu
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Example JavaScript for dropdown toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // This would be expanded in a full implementation to handle dropdown toggles,
+    // keyboard navigation, and other interactive features
+    
+    // For example, non-hover based dropdown toggle:
+    const userMenuButton = document.querySelector('[aria-controls="user-menu"]');
+    const userMenu = document.getElementById('user-menu');
+    
+    if (userMenuButton && userMenu) {
+      userMenuButton.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        userMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>
+</body>
+</html>

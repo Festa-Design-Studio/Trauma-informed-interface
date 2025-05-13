@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Dashboard Template - Trauma-Informed Design</title>
+  <link href="../../output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+  <!-- Emergency Exit Button - Always visible -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button 
+      class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2 flex items-center gap-2"
+      aria-label="Emergency exit to neutral website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Emergency Exit
+    </button>
+  </div>
+
+  <!-- Dashboard Header -->
+
+  <header class="bg-selenite-white-50 border-b border-grey-200 sticky top-0 z-40">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="../../img/dgl-logomark.svg" alt="Dr G Lab" class="h-10">
+          <span class="ml-3 text-azurite-blue-900 font-playfair text-xl font-bold">Dr. G's Lab</span>
+        </div>
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-medium transition-all duration-DEFAULT">Courses</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Resources</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Blog</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Services</a>
+        </nav>
+        <!-- User Menu -->
+        <div class="flex items-center space-x-4">
+          
+          <a href="#" class="hidden md:flex items-center px-4 py-2 rounded-md border border-chrysocolla-green-DEFAULT text-chrysocolla-green-DEFAULT hover:bg-chrysocolla-green-50 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.776-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            My Learning
+          </a>
+          <!-- Settings Button -->
+          <button class="p-2 rounded-full hover:bg-grey-100 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+          <div class="relative">
+            <button class="h-8 w-8 rounded-full bg-azurite-blue-100 flex items-center justify-center text-azurite-blue-600 font-medium">
+              JD
+            </button>
+          </div>
+          <button class="md:hidden p-2 rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Dashboard Header -->
+    <div class="mb-10">
+      <h1 class="font-playfair font-bold text-azurite-blue-900 text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-4">Your Learning Dashboard</h1>
+      <p class="text-grey-700 text-lg">Track your progress and continue your learning journey.</p>
+    </div>
+
+    <!-- Progress Overview Section -->
+    <section class="mb-12">
+      <div class="bg-selenite-white-100 border border-grey-200 rounded-lg p-6">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-6">Overall Progress</h2>
+        
+        <div class="flex flex-col md:flex-row gap-6 mb-8">
+          <!-- Current Course -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-5 flex-1">
+            <h3 class="font-medium text-azurite-blue-800 mb-4">Current Course</h3>
+            <div class="flex items-center mb-4">
+              <div class="h-2 flex-grow rounded-full bg-grey-200 overflow-hidden">
+                <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 45%"></div>
+              </div>
+              <span class="text-small text-grey-600 ml-2">45%</span>
+            </div>
+            <h4 class="font-playfair font-bold text-azurite-blue-900 text-xl mb-2">Introduction to Trauma-Informed Design</h4>
+            <p class="text-small text-grey-600 mb-4">3 of 7 modules completed</p>
+            <a href="#" class="inline-block text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-medium transition-all duration-DEFAULT">Continue Learning →</a>
+          </div>
+
+          <!-- Learning Stats -->
+          <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-5 flex-1">
+            <h3 class="font-medium text-azurite-blue-800 mb-4">Your Learning Stats</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="text-small text-grey-600">Courses Enrolled</p>
+                <p class="text-2xl font-medium text-azurite-blue-900">3</p>
+              </div>
+              <div>
+                <p class="text-small text-grey-600">Courses Completed</p>
+                <p class="text-2xl font-medium text-azurite-blue-900">1</p>
+              </div>
+              <div>
+                <p class="text-small text-grey-600">Learning Time</p>
+                <p class="text-2xl font-medium text-azurite-blue-900">12h 15m</p>
+              </div>
+              <div>
+                <p class="text-small text-grey-600">Last Activity</p>
+                <p class="text-2xl font-medium text-azurite-blue-900">Today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Supportive Message -->
+        <div class="bg-chrysocolla-green-50 rounded-md p-4">
+          <p class="font-montserrat text-small text-grey-800">
+            <span class="font-medium">Learning at your pace:</span> Remember that quality learning is more important than speed. Take time to absorb concepts and practice skills in ways that work best for you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Progress Section -->
+    <section class="mb-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl">Your Courses</h2>
+        <div class="flex items-center">
+          <label for="course-filter" class="block text-sm font-medium text-grey-700 mr-2">View:</label>
+          <select id="course-filter" name="course-filter" class="rounded-md border-grey-300 py-1 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT sm:text-sm">
+            <option>All Courses</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+            <option>Not Started</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Progress Tracker Component -->
+      <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-lg mb-lg">
+        <div class="flex justify-between items-center mb-md">
+          <h3 class="font-montserrat font-medium text-azurite-blue-900">Introduction to Trauma-Informed Design</h3>
+          <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-sm py-xs rounded-md text-caption font-medium">
+            45% Complete
+          </span>
+        </div>
+        
+        <!-- Overall Progress Bar -->
+        <div class="mb-lg">
+          <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+            <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 45%"></div>
+          </div>
+          <p class="font-montserrat text-caption text-grey-600 mt-xs">
+            3 of 7 modules completed - You're making steady progress!
+          </p>
+        </div>
+        
+        <!-- Module Progress Cards -->
+        <div class="space-y-md">
+          <!-- Module 1 - Completed -->
+          <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md">
+            <div class="flex justify-between items-center mb-xs">
+              <h4 class="font-montserrat font-medium text-grey-800">Module 1: Understanding Trauma</h4>
+              <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-0.5 rounded text-caption">
+                Completed
+              </span>
+            </div>
+            <div class="h-1 bg-grey-200 rounded-full overflow-hidden">
+              <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+          
+          <!-- Module 2 - In Progress -->
+          <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md">
+            <div class="flex justify-between items-center mb-xs">
+              <h4 class="font-montserrat font-medium text-grey-800">Module 2: Impact on Users</h4>
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-0.5 rounded text-caption">
+                In Progress
+              </span>
+            </div>
+            <div class="h-1 bg-grey-200 rounded-full overflow-hidden">
+              <div class="h-full bg-azurite-blue-600 rounded-full" style="width: 60%"></div>
+            </div>
+            <div class="flex justify-between items-center mt-xs">
+              <span class="font-montserrat text-caption text-grey-600">3 of 5 lessons completed</span>
+              <a href="#" class="font-montserrat text-caption text-azurite-blue-600 hover:text-azurite-blue-700">
+                Continue
+              </a>
+            </div>
+          </div>
+          
+          <!-- Module 3 - Not Started -->
+          <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md">
+            <div class="flex justify-between items-center mb-xs">
+              <h4 class="font-montserrat font-medium text-grey-800">Module 3: Design Principles</h4>
+              <span class="bg-grey-100 text-grey-600 px-xs py-0.5 rounded text-caption">
+                Not Started
+              </span>
+            </div>
+            <div class="h-1 bg-grey-200 rounded-full overflow-hidden">
+              <div class="h-full bg-grey-400 rounded-full" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course Action Buttons -->
+        <div class="mt-lg pt-lg border-t border-grey-200 flex flex-wrap gap-4">
+          <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT">Continue Course</a>
+          <a href="#" class="inline-block border border-grey-300 text-grey-700 px-md py-sm rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">Course Details</a>
+        </div>
+      </div>
+
+      <!-- Second Course (Different Status) -->
+      <div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-lg mb-lg">
+        <div class="flex justify-between items-center mb-md">
+          <h3 class="font-montserrat font-medium text-azurite-blue-900">Trauma-Informed Research Methods</h3>
+          <span class="bg-grey-100 text-grey-600 px-sm py-xs rounded-md text-caption font-medium">
+            Not Started
+          </span>
+        </div>
+        
+        <!-- Placeholder Progress Bar -->
+        <div class="mb-lg">
+          <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+            <div class="h-full bg-grey-400 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="font-montserrat text-caption text-grey-600 mt-xs">
+            0 of 5 modules completed
+          </p>
+        </div>
+        
+        <!-- Course Action Buttons -->
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="inline-block bg-azurite-blue-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-azurite-blue-700 transition-all duration-DEFAULT">Start Course</a>
+          <a href="#" class="inline-block border border-grey-300 text-grey-700 px-md py-sm rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">Course Details</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Recommended Courses Section -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-6">Recommended For You</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Recommended Course 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-azurite-blue-100 rounded-t-md group-hover:bg-azurite-blue-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course level indicator -->
+          <div class="mb-sm">
+            <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">Specialization</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Trauma-Informed UX Writing
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-lg line-clamp-3">
+            Learn to create supportive, clear, and empowering content that accommodates users with trauma histories.
+          </p>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              Explore Course
+            </a>
+          </div>
+        </div>
+
+        <!-- Recommended Course 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT group">
+          <!-- Safe hover indicator -->
+          <div class="w-full h-1 bg-azurite-blue-100 rounded-t-md group-hover:bg-azurite-blue-300 transition-all duration-DEFAULT"></div>
+          
+          <!-- Course level indicator -->
+          <div class="mb-sm">
+            <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">Core Course</span>
+          </div>
+          
+          <!-- Course title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Ethical Considerations in Trauma-Informed Design
+          </h3>
+          
+          <!-- Course description -->
+          <p class="font-montserrat text-grey-800 text-body mb-lg line-clamp-3">
+            Navigate the ethical considerations and responsibilities when designing for trauma-affected populations.
+          </p>
+          
+          <!-- Action button -->
+          <div class="mt-lg pt-md border-t border-grey-200">
+            <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center w-full">
+              Explore Course
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-selenite-white-200 border-t border-grey-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-grey-600 text-sm">© 2025 Dr G's Lab. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Help & Support</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Accessibility</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Component Documentation -->
+  <div class="max-w-6xl mx-auto mt-16 p-8 bg-azurite-blue-50 rounded-lg mb-16">
+    <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Progress Dashboard Template Documentation</h2>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Usage</h3>
+      <p>This template provides a comprehensive dashboard for users to track their learning progress across multiple courses. It serves as a central hub for learning management and progress visualization.</p>
+    </div>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Key Components</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Emergency exit button (consistent with other pages)</li>
+        <li>Overall progress visualization section</li>
+        <li>Course-specific progress trackers</li>
+        <li>Module-level completion status indicators</li>
+        <li>Supportive messaging that emphasizes self-paced learning</li>
+        <li>Course recommendations based on user interests/progress</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Non-pressuring language focused on progress rather than deficits</li>
+        <li>Supportive messaging that validates different learning paces</li>
+        <li>Clear, consistent visual progress indicators</li>
+        <li>Gentle color distinctions between completion states</li>
+        <li>Focus on achievement rather than incomplete work</li>
+        <li>Easy navigation to continue learning from where the user left off</li>
+        <li>Spacious layout that prevents cognitive overwhelm</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

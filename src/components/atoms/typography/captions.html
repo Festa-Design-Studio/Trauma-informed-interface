@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Caption Typography Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Breadcrumb Navigation -->
+ <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+        <li class="flex items-center">
+            <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li>
+            <span class="text-grey-700 font-montserrat font-medium">Captions</span>
+        </li>
+    </ol>
+ </nav>
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Caption Typography Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A collection of caption styles using the Montserrat typeface, designed for trauma-informed digital experiences with appropriate visual hierarchy for supplementary information.
+      </p>
+
+      <!-- Caption Components -->
+      <div class="space-y-12 mt-8">
+        <!-- Standard Caption Text -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Standard Caption Text</h2>
+          <p class="font-montserrat font-light text-caption text-grey-600 mt-1 mb-4">
+            Standard caption text used for form field descriptions, image captions, and supplementary information.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-light text-caption text-grey-600 mt-1 mb-4"&gt;
+              Standard caption text used for form field descriptions, image captions, and supplementary information.
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Image Caption -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Image Caption</h2>
+          <figure class="mb-6">
+            <div class="bg-grey-200 h-48 w-full flex items-center justify-center rounded-md mb-2">
+              <span class="text-grey-500 font-montserrat text-small">Image placeholder</span>
+            </div>
+            <figcaption class="font-montserrat font-light text-caption text-grey-600">
+              Caption for image: Descriptive text providing context and additional information about the image content.
+            </figcaption>
+          </figure>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;figure class="mb-6"&gt;
+              &lt;div class="bg-grey-200 h-48 w-full flex items-center justify-center rounded-md mb-2"&gt;
+                &lt;span class="text-grey-500 font-montserrat text-small"&gt;Image placeholder&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;figcaption class="font-montserrat font-light text-caption text-grey-600"&gt;
+                Caption for image: Descriptive text providing context and additional information.
+              &lt;/figcaption&gt;
+            &lt;/figure&gt;
+          </code>
+        </div>
+
+        <!-- Timestamp Caption -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Timestamp Caption</h2>
+          <p class="font-montserrat font-light text-caption-small text-grey-500 mb-1">
+            Last updated: May 5, 2025 • 3 min read
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-light text-caption-small text-grey-500 mb-1"&gt;
+              Last updated: May 5, 2025 • 3 min read
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Helper Text Caption -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Helper Text Caption</h2>
+          <div class="mb-4">
+            <label for="caption-example-input" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+              Input Field Example
+            </label>
+            <input 
+              type="text" 
+              id="caption-example-input" 
+              class="w-full border border-grey-300 rounded-md py-3 px-4 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:border-azurite-blue-500 focus:outline-none transition-all duration-300"
+              placeholder="Enter text here"
+            >
+            <p class="font-montserrat text-caption text-grey-600 mt-1">
+              Helper caption text providing additional guidance about the expected input.
+            </p>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;label for="input-id" class="block font-montserrat font-medium text-small text-grey-800 mb-2"&gt;
+              Input Field Example
+            &lt;/label&gt;
+            &lt;input type="text" id="input-id" class="..."&gt;
+            &lt;p class="font-montserrat text-caption text-grey-600 mt-1"&gt;
+              Helper caption text providing additional guidance about the expected input.
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Warning Caption -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Warning Caption</h2>
+          <p class="font-montserrat font-light text-caption text-rhodochrosite-rose-600 mt-1 mb-4 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77-1.333.192 3 1.732 3z" />
+            </svg>
+            Warning caption text for indicating important information that requires attention.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-light text-caption text-rhodochrosite-rose-600 mt-1 mb-4 flex items-center"&gt;
+              &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+                &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77-1.333.192 3 1.732 3z" /&gt;
+              &lt;/svg&gt;
+              Warning caption text for indicating important information that requires attention.
+            &lt;/p&gt;
+          </code>
+        </div>
+      </div>
+
+      <!-- Component Documentation -->
+      <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>For supplementary information such as form help text</li>
+              <li>For image descriptions and attributions</li>
+              <li>For metadata such as timestamps and reading time</li>
+              <li>For subtle warning or informational messages</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Maintain sufficient color contrast ratio (minimum 4.5:1)</li>
+              <li>Don't rely solely on color to convey meaning (use icons or patterns)</li>
+              <li>Captions should be programmatically associated with their related content</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Lighter font weight creates appropriate visual hierarchy</li>
+              <li>Subdued but readable color reduces visual noise</li>
+              <li>Clear association with primary content reduces confusion</li>
+              <li>Warning captions use gentle indicators rather than alarming colors</li>
+              <li>Consistent positioning creates predictability</li>
+              <li>Adequate spacing improves readability</li>
+              <li>Small but readable text size maintains accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ </main>
+
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="headings.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Headings
+          </a>
+          <div class="py-2 px-4 text-grey-400 font-montserrat font-medium inline-flex items-center">
+              Next
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </div>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>
+
+

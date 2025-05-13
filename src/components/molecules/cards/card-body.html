@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Card Body Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Card Body Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A collection of card body components designed for trauma-informed digital experiences. Card bodies present the main content with clear, readable layouts.
+      </p>
+
+      <!-- Card Body Components -->
+      <div class="space-y-12 mt-8">
+        <!-- Standard Card Body with Text -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Standard Card Body with Text</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Header</div>
+            <div class="p-5">
+              <p class="font-montserrat font-regular text-body text-grey-800">
+                Card body content with standard text styling. The content is clear and easy to read with appropriate line height and spacing to reduce cognitive load.
+              </p>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5"&gt;
+              &lt;p class="font-montserrat font-regular text-body text-grey-800"&gt;
+                Card body content with standard text styling. The content is clear and easy to read with appropriate line height and spacing to reduce cognitive load.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Body with Image and Text -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Body with Image and Text</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Header</div>
+            <div class="p-5 space-y-4">
+              <div class="aspect-video bg-grey-200 rounded-md overflow-hidden">
+                <img src="#" alt="Descriptive alt text for the image" class="w-full h-full object-cover">
+              </div>
+              <p class="font-montserrat font-regular text-body text-grey-800">
+                Card body with an image followed by descriptive text. Images should always include proper alt text and maintain a consistent aspect ratio for predictability.
+              </p>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 space-y-4"&gt;
+              &lt;div class="aspect-video bg-grey-200 rounded-md overflow-hidden"&gt;
+                &lt;img src="#" alt="Descriptive alt text for the image" class="w-full h-full object-cover"&gt;
+              &lt;/div&gt;
+              &lt;p class="font-montserrat font-regular text-body text-grey-800"&gt;
+                Card body with an image followed by descriptive text. Images should always include proper alt text and maintain a consistent aspect ratio for predictability.
+              &lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Body with List -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Body with List</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Header</div>
+            <div class="p-5">
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-700 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-montserrat font-regular text-body text-grey-800">First item in the list with checkmark icon</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-700 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-montserrat font-regular text-body text-grey-800">Second item in the list with additional details for context and explanation</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-700 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-montserrat font-regular text-body text-grey-800">Third item in the list provides additional information</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5"&gt;
+              &lt;ul class="space-y-3"&gt;
+                &lt;li class="flex items-start"&gt;
+                  &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-chrysocolla-green-700 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;
+                    &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /&gt;
+                  &lt;/svg&gt;
+                  &lt;span class="font-montserrat font-regular text-body text-grey-800"&gt;First item in the list with checkmark icon&lt;/span&gt;
+                &lt;/li&gt;
+                &lt;!-- Additional list items --&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Body with Highlighted Content -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Body with Highlighted Content</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Header</div>
+            <div class="p-5 space-y-4">
+              <p class="font-montserrat font-regular text-body text-grey-800">
+                Standard text content introducing the highlighted section below.
+              </p>
+              <div class="p-4 bg-selenite-white-100 rounded-md border border-grey-200">
+                <p class="font-montserrat font-regular text-body text-grey-800">
+                  Highlighted content in a gentle container provides emphasis without creating visual stress. This is useful for important information, quotes, or key takeaways.
+                </p>
+              </div>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 space-y-4"&gt;
+              &lt;p class="font-montserrat font-regular text-body text-grey-800"&gt;
+                Standard text content introducing the highlighted section below.
+              &lt;/p&gt;
+              &lt;div class="p-4 bg-selenite-white-100 rounded-md border border-grey-200"&gt;
+                &lt;p class="font-montserrat font-regular text-body text-grey-800"&gt;
+                  Highlighted content in a gentle container provides emphasis without creating visual stress.
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <!-- Card Body with Progress Indicator -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Card Body with Progress Indicator</h2>
+          <div class="border border-grey-200 rounded-md overflow-hidden bg-selenite-white-50 shadow-sm">
+            <div class="border-b border-grey-200 p-4 font-montserrat text-small font-medium text-grey-700">Example Card Header</div>
+            <div class="p-5 space-y-4">
+              <p class="font-montserrat font-regular text-body text-grey-800">
+                Card content showing progress through a series of items or lessons.
+              </p>
+              <div class="mt-4">
+                <div class="flex justify-between items-center mb-1">
+                  <span class="font-montserrat font-medium text-small text-grey-800">Progress</span>
+                  <span class="font-montserrat font-light text-caption text-grey-600">3 of 5 complete</span>
+                </div>
+                <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800 mt-4">
+            &lt;div class="p-5 space-y-4"&gt;
+              &lt;p class="font-montserrat font-regular text-body text-grey-800"&gt;
+                Card content showing progress through a series of items or lessons.
+              &lt;/p&gt;
+              &lt;div class="mt-4"&gt;
+                &lt;div class="flex justify-between items-center mb-1"&gt;
+                  &lt;span class="font-montserrat font-medium text-small text-grey-800"&gt;Progress&lt;/span&gt;
+                  &lt;span class="font-montserrat font-light text-caption text-grey-600"&gt;3 of 5 complete&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="h-2 bg-grey-200 rounded-full overflow-hidden"&gt;
+                  &lt;div class="h-full bg-azurite-blue-500 rounded-full" style="width: 60%"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+      </div>
+
+      <!-- Component Documentation -->
+      <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>For presenting the main content of a card</li>
+              <li>Can contain text, images, lists, progress indicators, etc.</li>
+              <li>Should maintain consistent padding and spacing</li>
+              <li>Can include highlighted sections for important information</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Variations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Text-only for simple content</li>
+              <li>Image and text for visual reinforcement</li>
+              <li>Lists for structured content</li>
+              <li>Highlighted sections for emphasis</li>
+              <li>Progress indicators for tracking completion</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Ensure text has sufficient contrast (minimum 4.5:1)</li>
+              <li>Include descriptive alt text for images</li>
+              <li>Use semantic HTML elements for content structure</li>
+              <li>Maintain adequate spacing between elements</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Clear, readable text reduces cognitive load</li>
+              <li>Consistent padding creates visual stability</li>
+              <li>Gentle highlighting avoids jarring visual emphasis</li>
+              <li>Progress indicators provide orientation and predictability</li>
+              <li>Lists break down information into manageable chunks</li>
+              <li>Rounded corners create softer, less threatening appearance</li>
+              <li>Neutral color palette avoids triggering stress responses</li>
+              <li>Generous spacing improves readability and reduces visual stress</li>
+              <li>Images maintain consistent aspect ratio for visual predictability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main>
+
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="card-header.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Card Header
+          </a>
+          <a href="card-footer.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Card Footer
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

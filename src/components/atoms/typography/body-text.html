@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Body Text Typography Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Breadcrumb Navigation -->
+ <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+        <li class="flex items-center">
+            <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li>
+            <span class="text-grey-700 font-montserrat font-medium">Body Text</span>
+        </li>
+    </ol>
+ </nav>
+
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Body Text Typography Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        A collection of body text styles using the Montserrat typeface, designed for trauma-informed digital experiences with excellent readability.
+      </p>
+
+      <!-- Body Text Components -->
+      <div class="space-y-12 mt-8">
+        <!-- Regular Body Text -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Regular Body Text</h2>
+          <p class="font-montserrat font-regular text-body text-grey-800 mb-4 max-w-prose">
+            This is standard body text, designed for optimal readability with comfortable line length and spacing. The Montserrat font provides excellent legibility while maintaining a warm, approachable feeling that helps create psychological safety.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-regular text-body text-grey-800 mb-4 max-w-prose"&gt;
+              This is standard body text, designed for optimal readability with comfortable line length and spacing.
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Lead Paragraph Text -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Lead Paragraph Text</h2>
+          <p class="font-montserrat font-regular text-lead text-grey-900 mb-6 max-w-prose leading-relaxed">
+            This is lead paragraph text, slightly larger and with increased line spacing. This style is ideal for introductory paragraphs or important information that requires extra emphasis without creating visual stress.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-regular text-lead text-grey-900 mb-6 max-w-prose leading-relaxed"&gt;
+              This is lead paragraph text, slightly larger and with increased line spacing.
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Body Text with Link -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Body Text with Link</h2>
+          <p class="font-montserrat font-regular text-body text-grey-800 mb-4 max-w-prose">
+            Body text can include 
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 underline underline-offset-2 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-1 rounded-sm">
+              inline links
+            </a> 
+            that use a distinctive but non-jarring style. The underline creates clear affordance while the subtle hover effect provides feedback without being visually disruptive.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-regular text-body text-grey-800 mb-4 max-w-prose"&gt;
+              Body text can include 
+              &lt;a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 underline underline-offset-2 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 focus:ring-offset-1 rounded-sm"&gt;
+                inline links
+              &lt;/a&gt;
+              that use a distinctive but non-jarring style.
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Body Text with Emphasis -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Body Text with Emphasis</h2>
+          <p class="font-montserrat font-regular text-body text-grey-800 mb-4 max-w-prose">
+            Body text can include <em class="font-italic">emphasized text</em> for subtle highlights and <strong class="font-medium">stronger emphasis</strong> when needed, while maintaining an overall balanced appearance.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-regular text-body text-grey-800 mb-4 max-w-prose"&gt;
+              Body text can include &lt;em class="font-italic"&gt;emphasized text&lt;/em&gt; for subtle highlights 
+              and &lt;strong class="font-medium"&gt;stronger emphasis&lt;/strong&gt; when needed.
+            &lt;/p&gt;
+          </code>
+        </div>
+
+        <!-- Body Text with Small Text -->
+        <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+          <h2 class="font-montserrat font-medium text-grey-800 mb-4">Body Text with Small Text</h2>
+          <p class="font-montserrat font-regular text-body text-grey-800 mb-2 max-w-prose">
+            Body text paragraph with standard spacing and styling.
+          </p>
+          <p class="font-montserrat font-light text-small text-grey-700 mb-4 max-w-prose">
+            A smaller text variant for supplementary information that doesn't need the same visual weight as the main content but maintains excellent readability.
+          </p>
+          <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+            &lt;p class="font-montserrat font-regular text-body text-grey-800 mb-2 max-w-prose"&gt;
+              Body text paragraph with standard spacing and styling.
+            &lt;/p&gt;
+            &lt;p class="font-montserrat font-light text-small text-grey-700 mb-4 max-w-prose"&gt;
+              A smaller text variant for supplementary information.
+            &lt;/p&gt;
+          </code>
+        </div>
+      </div>
+
+      <!-- Component Documentation -->
+      <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="font-montserrat font-medium text-h3-mobile mb-4">Usage Guidelines</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Regular body text for most content</li>
+              <li>Lead paragraph for introductions or important content</li>
+              <li>Include links, emphasis, and small text as needed</li>
+              <li>Always maintain maximum width for optimal readability</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Maintain sufficient font size (minimum 16px/1rem for body text)</li>
+              <li>Ensure adequate line spacing (1.5 times font size minimum)</li>
+              <li>Use adequate color contrast (minimum 4.5:1 for normal text)</li>
+              <li>Links should be distinguishable by more than color alone</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Clean, readable font reduces cognitive load</li>
+              <li>Generous line height improves readability and reduces visual stress</li>
+              <li>Maximum width constraint (max-w-prose) prevents overwhelming line lengths</li>
+              <li>Consistent visual patterns create predictability</li>
+              <li>Subtle but clear link styling indicates interactivity without disruption</li>
+              <li>Smooth transitions for interactive elements avoid jarring changes</li>
+              <li>Warm, neutral color palette avoids triggering stress responses</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main>
+
+ <!-- Component Navigation Footer -->
+ <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <div class="py-2 px-4 text-grey-400 font-montserrat font-medium inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous
+          </div>
+          <a href="headings.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Headings
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+ </footer>
+</body>
+</html>

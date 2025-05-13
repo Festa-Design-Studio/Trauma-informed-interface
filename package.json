@@ -1,0 +1,17 @@
+{
+  "name": "drglab-design-system",
+  "version": "1.0.0",
+  "description": "Dr G Lab Design System",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch & npx serve src",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001717"
+  }
+}

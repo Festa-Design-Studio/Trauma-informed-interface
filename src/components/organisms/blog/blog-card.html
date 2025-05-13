@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Blog Card Component -->
+<div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT group">
+  <!-- Blog image with gentle transition - Molecule -->
+  <div class="relative aspect-ratio-16/9 overflow-hidden">
+    <img src="/src/img/placeholder-blog.jpg" alt="Trauma-informed design principles" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+    <!-- Optional content warning overlay for sensitive topics - Atom -->
+    <div class="absolute bottom-0 left-0 right-0 bg-rhodochrosite-rose-50 bg-opacity-90 px-sm py-xs">
+      <p class="font-montserrat text-caption text-rhodochrosite-rose-DEFAULT">
+        Contains discussion of trauma responses
+      </p>
+    </div>
+  </div>
+  
+  <!-- Blog content - Collection of molecules -->
+  <div class="p-lg">
+    <!-- Blog category - Atom -->
+    <div class="mb-sm">
+      <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+        Research & Insights
+      </span>
+    </div>
+    
+    <!-- Blog title - Atom -->
+    <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+      Building Trust Through Transparent Design
+    </h3>
+    
+    <!-- Blog excerpt - Atom -->
+    <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+      Explore how transparency in design processes can help create more trustworthy digital experiences for trauma-affected users.
+    </p>
+    
+    <!-- Blog metadata - Molecule -->
+    <div class="flex items-center justify-between mt-md pt-md border-t border-grey-200">
+      <div class="flex items-center">
+        <img src="/src/img/placeholder-avatar.jpg" alt="Author name" class="h-8 w-8 rounded-full object-cover" />
+        <span class="font-montserrat text-small text-grey-600 ml-sm">
+          Dr. Sarah Johnson
+        </span>
+      </div>
+      <span class="font-montserrat text-caption text-grey-500">
+        May 2, 2025
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card Without Warning -->
+<div class="mt-6 bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden">
+  <div class="relative aspect-ratio-16/9 overflow-hidden">
+    <img src="/src/img/placeholder-blog.jpg" alt="Blog image without warning" class="w-full h-full object-cover" />
+    <!-- No content warning overlay -->
+  </div>
+  <div class="p-md">
+    <div class="mb-sm">
+      <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+        Design Theory
+      </span>
+    </div>
+    <h3 class="font-playfair font-bold text-azurite-blue-900 text-body mb-sm">Basic Blog Card Example</h3>
+    <p class="font-montserrat text-small text-grey-800 line-clamp-2">
+      Use this variation for content that doesn't contain potentially sensitive topics.
+    </p>
+  </div>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - Use content warning overlays for posts containing potentially triggering content
+  - Keep excerpt text brief and non-triggering even if the full article contains sensitive content
+  - Always include author information to create a sense of human connection
+  - Ensure the category badge clearly identifies the content type
+  - Maintain gentle hover animations that are subtle and not jarring
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Content warnings clearly displayed for posts with potentially triggering content
+  - Subtle image zoom on hover provides feedback without jarring movements
+  - Visual organization helps users navigate content easily
+  - Author information creates a sense of relationship and trust
+  - Content categorization helps users choose content that feels safe
+  - Clear typography and spacing prevents overwhelming users
+-->
+
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="../../molecules/media-controls/video-controls.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Video Controls
+        </a>
+        <a href="../course/core-course-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Core Course Card
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

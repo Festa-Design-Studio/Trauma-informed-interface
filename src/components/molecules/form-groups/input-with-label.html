@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link rel="stylesheet" href="../../../output.css">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+      <!-- Input with Label Components -->
+
+      <!-- Standard Input with Label -->
+      <div class="mb-6">
+        <label for="standard-input" class="block font-montserrat font-medium text-small text-grey-800 mb-xs">
+          Full Name
+        </label>
+        <input
+          type="text"
+          id="standard-input"
+          class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT"
+          placeholder="Enter your full name"
+        />
+      </div>
+
+      <!-- Input with Helper Text -->
+      <div class="mb-6">
+        <label for="helper-input" class="block font-montserrat font-medium text-small text-grey-800 mb-xs">
+          Email Address
+        </label>
+        <input
+          type="email"
+          id="helper-input"
+          class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT"
+          placeholder="yourname@example.com"
+        />
+        <p class="mt-xs font-montserrat text-caption text-grey-600">
+          We'll never share your email with anyone else.
+        </p>
+      </div>
+
+      <!-- Required Input with Label -->
+      <div class="mb-6">
+        <div class="flex items-center mb-xs">
+          <label for="required-input" class="font-montserrat font-medium text-small text-grey-800">
+            Username
+          </label>
+          <span class="text-rhodochrosite-rose-DEFAULT ml-1" aria-hidden="true">*</span>
+        </div>
+        <input
+          type="text"
+          id="required-input"
+          required
+          aria-required="true"
+          class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT"
+          placeholder="Choose a username"
+        />
+        <p class="mt-xs font-montserrat text-caption text-rhodochrosite-rose-DEFAULT">
+          <span class="text-rhodochrosite-rose-DEFAULT mr-1">*</span>Required field
+        </p>
+      </div>
+
+      <!-- Input with Error State -->
+      <div class="mb-6">
+        <label for="error-input" class="block font-montserrat font-medium text-small text-grey-800 mb-xs">
+          Password
+        </label>
+        <input
+          type="password"
+          id="error-input"
+          aria-describedby="password-error"
+          aria-invalid="true"
+          class="w-full px-md py-sm border border-rhodochrosite-rose-DEFAULT rounded-md font-montserrat text-body text-grey-800 focus:border-rhodochrosite-rose-DEFAULT focus:ring focus:ring-rhodochrosite-rose-100 focus:ring-opacity-50 transition-all duration-DEFAULT"
+          placeholder="Enter password"
+        />
+        <p id="password-error" class="mt-xs font-montserrat text-caption text-rhodochrosite-rose-DEFAULT flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-xs" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+          </svg>
+          Password must be at least 8 characters long
+        </p>
+      </div>
+
+      <!-- Input with Tooltip -->
+      <div class="mb-6">
+        <div class="flex items-center mb-xs">
+          <label for="tooltip-input" class="font-montserrat font-medium text-small text-grey-800">
+            Security Question
+          </label>
+          <div class="relative ml-2">
+            <button 
+              type="button"
+              aria-label="Show information about security questions"
+              class="text-azurite-blue-600 hover:text-azurite-blue-700 focus:outline-none focus:ring-2 focus:ring-azurite-blue-300 rounded-full"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-sm py-xs bg-grey-900 text-selenite-white-50 rounded shadow-md font-montserrat text-caption w-48 hidden group-hover:block">
+              Security questions help us verify your identity if you forget your password.
+              <div class="absolute top-full left-1/2 transform -translate-x-1/2 h-2 w-2 bg-grey-900 rotate-45"></div>
+            </div>
+          </div>
+        </div>
+        <input
+          type="text"
+          id="tooltip-input"
+          class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT"
+          placeholder="What was the name of your first pet?"
+        />
+      </div>
+
+      <!-- Input with Optional Label -->
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-xs">
+          <label for="optional-input" class="font-montserrat font-medium text-small text-grey-800">
+            Phone Number
+          </label>
+          <span class="font-montserrat text-caption text-grey-600">Optional</span>
+        </div>
+        <input
+          type="tel"
+          id="optional-input"
+          class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT"
+          placeholder="(123) 456-7890"
+        />
+      </div>
+
+      <!-- Textarea with Label -->
+      <div class="mb-6">
+        <label for="textarea-input" class="block font-montserrat font-medium text-small text-grey-800 mb-xs">
+          Additional Information
+        </label>
+        <textarea
+          id="textarea-input"
+          rows="4"
+          class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT resize-vertical"
+          placeholder="Share any additional information that might be helpful..."
+        ></textarea>
+      </div>
+
+      <!-- Input with Character Counter -->
+      <div class="mb-6">
+        <label for="counter-input" class="block font-montserrat font-medium text-small text-grey-800 mb-xs">
+          Bio
+        </label>
+        <div class="relative">
+          <textarea
+            id="counter-input"
+            rows="3"
+            maxlength="150"
+            class="w-full px-md py-sm border border-grey-300 rounded-md font-montserrat text-body text-grey-800 focus:border-azurite-blue-400 focus:ring focus:ring-azurite-blue-100 focus:ring-opacity-50 transition-all duration-DEFAULT resize-vertical"
+            placeholder="Tell us about yourself..."
+          ></textarea>
+          <div class="absolute bottom-2 right-2 font-montserrat text-caption text-grey-500 bg-selenite-white-50 px-1">
+            <span id="char-count">0</span>/150
+          </div>
+        </div>
+      </div>
+
+      <!-- Usage notes -->
+      <!-- 
+        Usage:
+        - For collecting user input with clear labeling
+        - Maintain consistent spacing and styling for form elements
+        - Error states should be clear but not alarming
+        - Helper text to guide users through form completion
+        
+        Variations:
+        - Standard input with label
+        - Input with helper text
+        - Required input with indicator
+        - Error state with message
+        - Input with tooltip guidance
+        - Input marked as optional
+        - Textarea for longer responses
+        
+        Accessibility:
+        - Labels are properly associated with inputs
+        - Error messages are linked via aria-describedby
+        - Required fields include aria-required="true"
+        - Error states include aria-invalid="true"
+        - Info tooltips have appropriate aria-labels
+      -->
+
+      <!-- Trauma-informed considerations -->
+      <!--
+        - Clear, non-intimidating language
+        - Explicit marking of required vs optional fields
+        - Gentle error states that guide rather than criticize
+        - Supportive helper text rather than commanding instructions
+        - Clear visual hierarchy with consistent spacing
+        - Rounded corners and gentle transitions for visual comfort
+        - Non-threatening focus states that don't use alarming colors
+        - Careful, limited use of asterisks and error indicators
+        - Tooltips for providing context without cluttering the interface
+      -->
+
+    </div>
+  </main>
+  
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="../../atoms/form-elements/checkbox.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Checkbox
+          </a>
+          <a href="../text-groups/title-subtitle.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Title-Subtitle
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

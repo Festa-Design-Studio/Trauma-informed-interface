@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Tag Pills Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-8">
+      <ol class="flex flex-wrap items-center space-x-2 text-sm">
+        <li>
+          <a href="/src/index.html" class="text-grey-500 hover:text-azurite-blue-600 transition-colors duration-200">Home</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-grey-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+          <a href="/src/components/atoms/atoms.html" class="text-grey-500 hover:text-azurite-blue-600 transition-colors duration-200">Components</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-grey-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+          <a href="/src/components/atoms/atoms.html" class="text-grey-500 hover:text-azurite-blue-600 transition-colors duration-200">Atoms</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-grey-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+          <a href="#" class="text-grey-500 hover:text-azurite-blue-600 transition-colors duration-200">Status Indicators</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-grey-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+          <span class="text-azurite-blue-800 font-medium">Tag Pills</span>
+        </li>
+      </ol>
+    </nav>
+    
+    <div class="mb-12">
+      <h1 class="font-playfair font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop text-azurite-blue-900 mb-6">
+        Tag Pills Components
+      </h1>
+      
+      <p class="font-montserrat font-regular text-body text-grey-800 max-w-3xl mb-8">
+        Tag pills help users identify content categories and topics across Dr. G's Lab interfaces. They provide visual cues for filtering and understanding content groupings in a trauma-informed way.
+      </p>
+    </div>
+
+    <!-- Tag Pills Components -->
+    <div class="space-y-12">
+      <!-- Standard Tag Pills -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Standard Tag Pills</h2>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200">
+            Self-care
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200">
+            Trauma-informed
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200">
+            Research
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200">
+            Design
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200"&gt;
+            Tag name
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Colored Tag Pills -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Colored Tag Pills</h2>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+            Research
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+            Beginner
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-rhodochrosite-rose-50 text-rhodochrosite-rose-800 border border-rhodochrosite-rose-100">
+            Sensitive
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-sunstone-orange-50 text-sunstone-orange-800 border border-sunstone-orange-100">
+            Practical
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-[color]-50 text-[color]-800 border border-[color]-100"&gt;
+            Tag name
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Tag Pills with Icons -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Tag Pills with Icons</h2>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            Education
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            </svg>
+            Communication
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-rhodochrosite-rose-50 text-rhodochrosite-rose-800 border border-rhodochrosite-rose-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            Confidential
+          </span>
+        </div>
+        <code class="block bg-grey-100 p-3 rounded-md overflow-x-auto font-mono text-small text-grey-800">
+          &lt;span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-[color]-50 text-[color]-800 border border-[color]-100"&gt;
+            &lt;svg class="h-3.5 w-3.5 mr-1"&gt;...&lt;/svg&gt;
+            Tag with icon
+          &lt;/span&gt;
+        </code>
+      </div>
+
+      <!-- Tag Group Usage Example -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Tag Group Example</h2>
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-md p-4 mb-6">
+          <h3 class="font-montserrat font-medium text-grey-800 mb-3">Topics</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-azurite-blue-50 text-azurite-blue-800 border border-azurite-blue-100">
+              Research
+            </span>
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-chrysocolla-green-50 text-chrysocolla-green-800 border border-chrysocolla-green-100">
+              Methods
+            </span>
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200">
+              Interviews
+            </span>
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-montserrat font-medium bg-selenite-white-50 text-grey-700 border border-grey-200">
+              Ethical Practice
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Usage Guidelines -->
+      <div class="p-6 border border-grey-200 rounded-lg bg-selenite-white-100">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4">Usage Guidelines</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Usage:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>For categorization of content (topics, themes, difficulty levels)</li>
+              <li>In card footers to provide additional context</li>
+              <li>For filtering mechanisms in search or listing views</li>
+              <li>To indicate related topics or areas of interest</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Accessibility:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Ensure sufficient color contrast between text and background</li>
+              <li>Don't use color alone to convey meaning</li>
+              <li>Keep text size readable (minimum 12px)</li>
+              <li>Include icons when helpful for visual recognition</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-montserrat font-medium mb-2">Trauma-informed Considerations:</h3>
+            <ul class="list-disc pl-5 space-y-1 font-montserrat text-small text-grey-700">
+              <li>Gentle, soft colors reduce visual stress</li>
+              <li>Rounded shapes feel less threatening than sharp corners</li>
+              <li>Consistent styling across the interface creates predictability</li>
+              <li>Subtle borders create clear visual boundaries</li>
+              <li>Generous padding improves readability and reduces visual stress</li>
+              <li>Tag groups help users find content that feels safe to them</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component Navigation -->
+    <div class="mt-12 pt-6 border-t border-grey-200">
+      <div class="flex justify-between">
+        <a href="/src/components/atoms/status-indicators/status-badge.html" class="inline-flex items-center px-4 py-2 border border-azurite-blue-300 text-sm font-medium rounded-md text-azurite-blue-700 bg-selenite-white-50 hover:bg-azurite-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-azurite-blue-500 transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+          </svg>
+          Previous: Status Badge
+        </a>
+        <a href="/src/components/atoms/status-indicators/category-badge.html" class="inline-flex items-center px-4 py-2 border border-azurite-blue-300 text-sm font-medium rounded-md text-azurite-blue-700 bg-selenite-white-50 hover:bg-azurite-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-azurite-blue-500 transition-colors duration-200">
+          Next: Category Badge
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

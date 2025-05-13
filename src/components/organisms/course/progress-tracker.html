@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. G's Lab - Trauma-Informed UI Components</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+ <!-- Main content -->
+ <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Progress Tracker Component -->
+<div class="bg-selenite-white-50 border border-grey-200 rounded-lg p-lg mb-lg">
+  <div class="flex justify-between items-center mb-md">
+    <h3 class="font-montserrat font-medium text-azurite-blue-900">Your Course Progress</h3>
+    <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-sm py-xs rounded-md text-caption font-medium">
+      42% Complete
+    </span>
+  </div>
+  
+  <!-- Overall Progress Bar - Molecule -->
+  <div class="mb-lg">
+    <div class="h-2 bg-grey-200 rounded-full overflow-hidden">
+      <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 42%"></div>
+    </div>
+    <p class="font-montserrat text-caption text-grey-600 mt-xs">
+      3 of 7 modules completed - You're making steady progress!
+    </p>
+  </div>
+  
+  <!-- Module Progress Cards - Collection of Molecules -->
+  <div class="space-y-md">
+    <!-- Module 1 - Completed - Molecule -->
+    <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md">
+      <div class="flex justify-between items-center mb-xs">
+        <h4 class="font-montserrat font-medium text-grey-800">Module 1: Understanding Empathy</h4>
+        <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-0.5 rounded text-caption">
+          Completed
+        </span>
+      </div>
+      <div class="h-1 bg-grey-200 rounded-full overflow-hidden">
+        <div class="h-full bg-chrysocolla-green-DEFAULT rounded-full" style="width: 100%"></div>
+      </div>
+    </div>
+    
+    <!-- Module 2 - In Progress - Molecule -->
+    <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md">
+      <div class="flex justify-between items-center mb-xs">
+        <h4 class="font-montserrat font-medium text-grey-800">Module 2: The Science of Empathy</h4>
+        <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-0.5 rounded text-caption">
+          In Progress
+        </span>
+      </div>
+      <div class="h-1 bg-grey-200 rounded-full overflow-hidden">
+        <div class="h-full bg-azurite-blue-600 rounded-full" style="width: 60%"></div>
+      </div>
+      <div class="flex justify-between items-center mt-xs">
+        <span class="font-montserrat text-caption text-grey-600">3 of 5 lessons completed</span>
+        <a href="#" class="font-montserrat text-caption text-azurite-blue-600 hover:text-azurite-blue-700">
+          Continue
+        </a>
+      </div>
+    </div>
+    
+    <!-- Module 3 - Not Started - Molecule -->
+    <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md">
+      <div class="flex justify-between items-center mb-xs">
+        <h4 class="font-montserrat font-medium text-grey-800">Module 3: Designing with Empathy</h4>
+        <span class="bg-grey-100 text-grey-600 px-xs py-0.5 rounded text-caption">
+          Not Started
+        </span>
+      </div>
+      <div class="h-1 bg-grey-200 rounded-full overflow-hidden">
+        <div class="h-full bg-grey-400 rounded-full" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Encouraging Message - Molecule -->
+  <div class="mt-lg pt-lg border-t border-grey-200">
+    <div class="bg-chrysocolla-green-50 rounded-md p-md">
+      <p class="font-montserrat text-small text-grey-800">
+        <span class="font-medium">Friendly reminder:</span> Learning at your own pace is important. There's no rush to complete the course, and you can take breaks whenever needed.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - Use on user dashboards and course landing pages
+  - Keep the overall progress percentage but always pair it with supportive messaging
+  - Ensure each module card clearly displays its status through color and labels
+  - Always include an encouraging message that validates self-paced learning
+  - Provide direct "Continue" links only for modules that are in progress
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Progress tracking without judgment or time-based expectations
+  - Supportive language that emphasizes self-paced learning
+  - Clear status indication using meaningful color coding
+  - Explicitly noting that taking breaks is acceptable and encouraged
+  - Putting the learner in control of their own learning journey
+  - Non-pressuring metrics focus on progress made rather than remaining work
+-->
+
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+        <a href="module-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous: Module Card
+        </a>
+        <a href="specialization-course-card.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+          Next: Specialization Course Card
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

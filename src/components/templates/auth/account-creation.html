@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - Trauma-Informed Design</title>
+  <link href="../../../output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+  <!-- Emergency Exit Button - Always visible -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button 
+      class="bg-selenite-white-50 border border-sunstone-orange-600 text-sunstone-orange-600 hover:bg-sunstone-orange-50 transition-all duration-DEFAULT px-md py-sm rounded-md shadow-soft flex items-center"
+      aria-label="Emergency exit to safe page"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-sm" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      Exit
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-selenite-white-50 border-b border-grey-200 shadow-soft py-4">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="../../../img/dgl-logomark.svg" alt="Dr G Lab" class="h-10">
+          <span class="ml-3 text-azurite-blue-900 font-playfair text-xl font-bold">Dr. G's Lab</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8 flex flex-col items-center">
+    <div class="w-full max-w-2xl">
+      <!-- Page Header -->
+      <div class="text-center mb-8">
+        <h1 class="font-playfair font-bold text-azurite-blue-900 text-h2-mobile md:text-h2-tablet mb-2">Create Your Account</h1>
+        <p class="text-grey-700">Join our community to begin your learning journey</p>
+      </div>
+
+      <!-- Back to Login Link -->
+      <div class="mb-6">
+        <a href="login.html" class="text-azurite-blue-600 hover:text-azurite-blue-800 transition-all duration-DEFAULT flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Already have an account? Log in
+        </a>
+      </div>
+
+      <!-- Registration Form Card -->
+      <div class="bg-selenite-white-50 rounded-lg border border-grey-200 p-8 shadow-soft mb-6">
+        <form class="space-y-6">
+          <!-- Personal Details Section -->
+          <div>
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Personal Details</h2>
+            
+            <!-- Name Fields -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-grey-700 mb-1">First Name</label>
+                <input type="text" id="first-name" name="first-name" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              </div>
+              
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-grey-700 mb-1">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              </div>
+            </div>
+            
+            <!-- Email Field -->
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-grey-700 mb-1">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <p class="mt-1 text-xs text-grey-500">This will be your login username</p>
+            </div>
+            
+            <!-- Password Field -->
+            <div class="mb-4">
+              <label for="password" class="block text-sm font-medium text-grey-700 mb-1">Password</label>
+              <input type="password" id="password" name="password" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              
+              <!-- Password Strength Meter -->
+              <div class="mt-2">
+                <div class="flex space-x-1 mb-1">
+                  <div class="h-1 w-1/4 rounded-full bg-chrysocolla-green-DEFAULT"></div>
+                  <div class="h-1 w-1/4 rounded-full bg-chrysocolla-green-100"></div>
+                  <div class="h-1 w-1/4 rounded-full bg-chrysocolla-green-100"></div>
+                  <div class="h-1 w-1/4 rounded-full bg-chrysocolla-green-100"></div>
+                </div>
+                <p class="text-xs text-grey-600">Use 8+ characters with letters, numbers, and symbols</p>
+              </div>
+            </div>
+            
+            <!-- Confirm Password Field -->
+            <div>
+              <label for="confirm-password" class="block text-sm font-medium text-grey-700 mb-1">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+            </div>
+          </div>
+          
+          <!-- Learning Preferences Section -->
+          <div>
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Learning Preferences</h2>
+            <p class="text-sm text-grey-700 mb-4">These preferences help us personalize your learning experience. You can always change them later.</p>
+            
+            <!-- Content Format Preference -->
+            <div class="mb-4">
+              <p class="block text-sm font-medium text-grey-700 mb-2">Preferred content formats (select all that apply):</p>
+              <div class="space-y-2">
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" name="format-video" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">Video</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" name="format-text" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">Text</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" name="format-audio" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">Audio</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" name="format-interactive" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">Interactive exercises</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Content Warnings Preference -->
+            <div class="mb-4">
+              <label for="content-warnings" class="block text-sm font-medium text-grey-700 mb-1">Content warning preferences:</label>
+              <select id="content-warnings" name="content-warnings" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="detailed">Detailed - Specific descriptions of content types</option>
+                <option value="general" selected>General - Broad category warnings only</option>
+                <option value="minimal">Minimal - Essential warnings only</option>
+              </select>
+            </div>
+            
+            <!-- Learning Pace -->
+            <div>
+              <label for="learning-pace" class="block text-sm font-medium text-grey-700 mb-1">Preferred learning pace:</label>
+              <select id="learning-pace" name="learning-pace" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="self-paced" selected>Self-paced (recommended)</option>
+                <option value="structured">Structured with deadlines</option>
+                <option value="accelerated">Accelerated</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Privacy & Terms -->
+          <div>
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Privacy & Terms</h2>
+            
+            <div class="space-y-4">
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="terms" required class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700 text-sm">
+                    I agree to the <a href="#" class="text-chrysocolla-green-DEFAULT hover:underline">Terms and Conditions</a> and <a href="#" class="text-chrysocolla-green-DEFAULT hover:underline">Privacy Policy</a>. *
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="newsletter" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700 text-sm">
+                    I agree to receive educational newsletters and updates. You can unsubscribe anytime.
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="learning-policy" required class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700 text-sm">
+                    I understand and agree to follow the <a href="#" class="text-chrysocolla-green-DEFAULT hover:underline">Community Guidelines</a> that foster a safe and respectful learning environment. *
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Form Submission -->
+          <div>
+            <button type="submit" class="w-full bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-xl py-md rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-medium">
+              Create Account
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Alternative Access Options -->
+      <div class="bg-selenite-white-50 rounded-lg border border-grey-200 p-8 shadow-soft mb-6">
+        <h2 class="font-montserrat font-medium text-grey-800 mb-4 text-center">Or create an account with</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <button class="flex justify-center items-center py-3 px-4 border border-grey-300 rounded-md shadow-sm bg-selenite-white-50 hover:bg-selenite-white-200 transition-all duration-DEFAULT">
+            <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+            </svg>
+            <span class="text-grey-700">Google</span>
+          </button>
+          
+          <button class="flex justify-center items-center py-3 px-4 border border-grey-300 rounded-md shadow-sm bg-selenite-white-50 hover:bg-selenite-white-200 transition-all duration-DEFAULT">
+            <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+            <span class="text-grey-700">Facebook</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-selenite-white-200 border-t border-grey-200 mt-auto">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-col items-center justify-center">
+        <div class="mb-4">
+          <p class="text-grey-600 text-sm">© 2025 Dr G's Lab. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Help & Support</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Accessibility</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Component Documentation -->
+  <div class="max-w-2xl mx-auto mt-16 p-8 bg-azurite-blue-50 rounded-lg mb-16">
+    <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Account Creation Template Documentation</h2>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Usage</h3>
+      <p>This template provides a trauma-informed account creation process that collects necessary information while allowing users to set preferences that support their unique needs.</p>
+    </div>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Key Components</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Logically grouped form sections with clear headers</li>
+        <li>Learning preference options that allow for personalization</li>
+        <li>Content warning preferences to give users control</li>
+        <li>Password strength visual feedback</li>
+        <li>Alternative account creation methods</li>
+        <li>Clear consent checkboxes with accessible terms links</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Form divided into logical sections to reduce cognitive load</li>
+        <li>Learning preferences collection demonstrates commitment to personalization</li>
+        <li>Content warning preferences established at signup to prevent unexpected encounters</li>
+        <li>Clear, simple language throughout</li>
+        <li>Optional newsletter signup (not pre-checked)</li>
+        <li>Multiple options for account creation</li>
+        <li>Emergency exit button for quick navigation away if needed</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

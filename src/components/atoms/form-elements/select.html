@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select - Dr G Lab Design System</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 min-h-screen">
+
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto pt-4 px-4 md:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-small">
+        <li class="flex items-center">
+            <a href="/index.html" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Components</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li class="flex items-center">
+            <a href="#" class="text-azurite-blue-700 hover:text-azurite-blue-900 transition-colors duration-300 font-montserrat">Atoms</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </li>
+        <li>
+            <span class="text-grey-700 font-montserrat font-medium">Select</span>
+        </li>
+    </ol>
+  </nav>
+
+  <header class="max-w-6xl mx-auto py-4 px-4 md:px-6 lg:px-8">
+    <h1 class="text-2xl font-playfair font-bold mb-2">Select Component</h1>
+    <p class="text-grey-700 font-montserrat">Dropdown menus for selecting from a list of options</p>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto py-8 px-4 md:px-6 lg:px-8">
+    <div class="mb-12 space-y-6">
+
+<!-- Select Component -->
+<div class="mb-4">
+  <label for="select-example" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+    Select an option
+  </label>
+  <div class="relative">
+    <select 
+      id="select-example" 
+      class="w-full appearance-none border border-grey-300 rounded-md py-3 px-4 pr-10 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:border-azurite-blue-500 focus:outline-none transition-all duration-300"
+    >
+      <option value="" disabled selected>Please select an option</option>
+      <option value="option1">Option One</option>
+      <option value="option2">Option Two</option>
+      <option value="option3">Option Three</option>
+    </select>
+    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-grey-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </div>
+  <p class="font-montserrat text-caption text-grey-600 mt-1">
+    Helper text with additional guidance
+  </p>
+</div>
+
+<!-- Select Component with Option Groups -->
+<div class="mb-4">
+  <label for="grouped-select-example" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+    Select a course
+  </label>
+  <div class="relative">
+    <select 
+      id="grouped-select-example" 
+      class="w-full appearance-none border border-grey-300 rounded-md py-3 px-4 pr-10 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-azurite-blue-300 focus:border-azurite-blue-500 focus:outline-none transition-all duration-300"
+    >
+      <option value="" disabled selected>Please select a course</option>
+      <optgroup label="Core Courses">
+        <option value="core1">Introduction to Trauma-Informed Design</option>
+        <option value="core2">Building Psychological Safety</option>
+        <option value="core3">Ethical Content Creation</option>
+      </optgroup>
+      <optgroup label="Specialized Courses">
+        <option value="spec1">Advanced Trauma-Informed Practices</option>
+        <option value="spec2">Crisis Response Communication</option>
+        <option value="spec3">Community Care Systems</option>
+      </optgroup>
+    </select>
+    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-grey-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- Select Component with Error State -->
+<div class="mb-4">
+  <label for="error-select-example" class="block font-montserrat font-medium text-small text-grey-800 mb-2">
+    Select a required option
+  </label>
+  <div class="relative">
+    <select 
+      id="error-select-example" 
+      class="w-full appearance-none border border-rhodochrosite-rose-300 rounded-md py-3 px-4 pr-10 font-montserrat text-small text-grey-800 bg-selenite-white-50 focus:ring-2 focus:ring-rhodochrosite-rose-200 focus:border-rhodochrosite-rose-500 focus:outline-none transition-all duration-300"
+      aria-describedby="select-error-message"
+      aria-invalid="true"
+    >
+      <option value="" disabled selected>Please select an option</option>
+      <option value="option1">Option One</option>
+      <option value="option2">Option Two</option>
+      <option value="option3">Option Three</option>
+    </select>
+    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-rhodochrosite-rose-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </div>
+  <p id="select-error-message" class="font-montserrat text-caption text-rhodochrosite-rose-500 mt-1">
+    Please select an option to continue
+  </p>
+</div>
+
+<!-- Usage notes -->
+<!-- 
+  Usage:
+  - For selecting one option from a predefined list
+  - For hierarchical option grouping
+  - When space is limited compared to radio buttons
+  
+  Variations:
+  - Standard select dropdowns
+  - Grouped options for categorized choices
+  - Error states for validation feedback
+  
+  Accessibility:
+  - Use proper label associations with 'for' and 'id'
+  - Include descriptive placeholder option
+  - Error messages should be associated with inputs using aria-describedby
+  - Custom styling maintains native behaviors for keyboard navigation
+-->
+
+<!-- Trauma-informed considerations -->
+<!--
+  - Clear labeling reduces uncertainty about the expected input
+  - Visual arrow indicator makes the dropdown functionality obvious
+  - Subtle transitions avoid jarring interface changes
+  - Option groups create logical organization to reduce cognitive load
+  - Generous padding creates visual breathing room
+  - Placeholder text provides clear instruction
+  - Error messaging uses supportive, non-judgmental language
+  - Consistent styling maintains predictability across form elements
+-->
+
+    </div>
+
+    <!-- Usage Guidelines Section -->
+    <div class="mt-12 p-6 border border-gray-200 rounded-md bg-selenite-white-50">
+        <h2 class="text-lg font-medium mb-4">Usage Guidelines</h2>
+        <div class="space-y-4">
+            <div>
+                <h3 class="font-medium mb-2">Usage:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>For selecting one option from a list of many choices</li>
+                    <li>When space is limited but many options are available</li>
+                    <li>For categorization or filtering of content</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Accessibility:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Use proper labels with 'for' and 'id' associations</li>
+                    <li>Include descriptive placeholder text</li>
+                    <li>Ensure keyboard navigability</li>
+                    <li>Consider using the native select element for best screen reader support</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Trauma-informed considerations:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Clear labeling helps users understand what they're selecting</li>
+                    <li>Helper text provides additional context without overwhelming</li>
+                    <li>Organized options reduce cognitive load</li>
+                    <li>Predictable behavior builds trust</li>
+                    <li>Visual feedback confirms user actions</li>
+                    <li>Default options are thoughtfully chosen to be neutral</li>
+                    <li>Error messages are supportive, not punitive</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- Component Navigation Footer -->
+  <footer class="max-w-6xl mx-auto mt-12 pt-4 border-t border-grey-200 px-4 md:px-6 lg:px-8 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="font-montserrat text-caption text-grey-600 mb-4 md:mb-0">
+        Part of Dr. G's Lab Trauma-Informed Design System
+      </p>
+      
+      <nav aria-label="Component Navigation" class="flex flex-wrap">
+          <a href="radio-button.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous: Radio Button
+          </a>
+          <a href="text-input.html" class="inline-flex items-center py-2 px-4 text-azurite-blue-700 hover:text-azurite-blue-900 font-montserrat font-medium transition-colors duration-300">
+              Next: Text Input
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+          </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
