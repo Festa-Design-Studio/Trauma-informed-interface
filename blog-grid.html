@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Grid Template - Trauma-Informed Design</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+  <!-- Emergency Exit Button - Always visible -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button 
+      class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2 flex items-center gap-2"
+      aria-label="Emergency exit to neutral website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Emergency Exit
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-selenite-white-50 border-b border-grey-200 sticky top-0 z-40">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+         <img src="./src/img/dgl-logomark.svg" alt="Dr. G's Lab Logo" class="h-10 w-10 mr-3">
+          <span class="ml-3 text-azurite-blue-900 font-playfair text-xl font-bold">Dr. G's Lab</span>
+        </div>
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-medium transition-all duration-DEFAULT">Courses</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Resources</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Blog</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Services</a>
+        </nav>
+        <!-- User Menu -->
+        <div class="flex items-center space-x-4">
+          
+          <a href="#" class="hidden md:flex items-center px-4 py-2 rounded-md border border-chrysocolla-green-DEFAULT text-chrysocolla-green-DEFAULT hover:bg-chrysocolla-green-50 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.776-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            My Learning
+          </a>
+          <!-- Settings Button -->
+          <button class="p-2 rounded-full hover:bg-grey-100 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+          <div class="relative">
+            <button class="h-8 w-8 rounded-full bg-azurite-blue-100 flex items-center justify-center text-azurite-blue-600 font-medium">
+              JD
+            </button>
+          </div>
+          <button class="md:hidden p-2 rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Page Header -->
+    <div class="mb-10">
+      <h1 class="font-playfair font-bold text-azurite-blue-900 text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-4">Blog & Resources</h1>
+      <p class="text-grey-700 text-lg max-w-3xl">Explore our articles, case studies, and resources on trauma-informed design principles and practices. All content includes appropriate content notices where needed.</p>
+    </div>
+
+    <!-- Content Filtering & Search -->
+    <div class="mb-8 bg-selenite-white-100 border border-grey-200 rounded-lg p-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-4">
+          <!-- Content Type Filter -->
+          <div>
+            <label for="content-type" class="block text-sm font-medium text-grey-700 mb-1">Content Type</label>
+            <select id="content-type" class="rounded-md border-grey-300 py-2 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <option>All Content</option>
+              <option>Articles</option>
+              <option>Case Studies</option>
+              <option>Research</option>
+              <option>Guides & Resources</option>
+            </select>
+          </div>
+
+          <!-- Topic Filter -->
+          <div>
+            <label for="topic" class="block text-sm font-medium text-grey-700 mb-1">Topic</label>
+            <select id="topic" class="rounded-md border-grey-300 py-2 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <option>All Topics</option>
+              <option>Design Principles</option>
+              <option>Research Methods</option>
+              <option>Case Studies</option>
+              <option>Ethics & Inclusion</option>
+            </select>
+          </div>
+          
+          <!-- Content Warning Filter -->
+          <div>
+            <label for="content-warnings" class="block text-sm font-medium text-grey-700 mb-1">Content Warnings</label>
+            <select id="content-warnings" class="rounded-md border-grey-300 py-2 pl-3 pr-8 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              <option>Show All Content</option>
+              <option>Hide Content with Warnings</option>
+              <option>Only Show Content without Warnings</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div class="w-full md:w-auto">
+          <label for="search" class="block text-sm font-medium text-grey-700 mb-1">Search Resources</label>
+          <div class="relative">
+            <input type="text" id="search" placeholder="Search by keyword or topic" class="w-full md:w-64 rounded-md border-grey-300 py-2 pl-3 pr-10 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-grey-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Article -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-6">Featured Article</h2>
+      
+      <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT">
+        <div class="flex flex-col md:flex-row">
+          <!-- Article Image -->
+          <div class="relative md:w-1/3">
+            <img src="https://placehold.co/600x400/C7DEE0/102A43?text=Featured+Article" alt="Featured article on trauma-informed design" class="w-full h-full object-cover max-h-60 md:max-h-full" />
+          </div>
+          
+          <!-- Article Content -->
+          <div class="p-lg md:w-2/3">
+            <div class="mb-sm">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+                Research & Insights
+              </span>
+            </div>
+            
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h2-mobile md:text-h2-tablet lg:text-h2-desktop mb-sm">
+              The Science Behind Trauma-Informed Design: New Research Findings
+            </h3>
+            
+            <p class="font-montserrat text-grey-800 text-body mb-md">
+              Our latest research explores the neurobiological basis for trauma-informed design principles and how they impact user experiences. This comprehensive analysis provides evidence-based insights for designers and researchers working with diverse populations.
+            </p>
+            
+            <!-- Article metadata -->
+            <div class="flex items-center justify-between mt-md pt-md border-t border-grey-200">
+              <div class="flex items-center">
+                <img src="https://placehold.co/40x40/475569/FFFFFF?text=DG" alt="Dr. Grace" class="h-8 w-8 rounded-full object-cover" />
+                <span class="font-montserrat text-small text-grey-600 ml-sm">
+                  Dr. Grace Patel
+                </span>
+              </div>
+              <span class="font-montserrat text-caption text-grey-500">
+                May 5, 2025
+              </span>
+            </div>
+            
+            <div class="mt-lg">
+              <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT">
+                Read Full Article
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="mb-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl">Latest Articles</h2>
+        <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-montserrat text-small flex items-center">
+          View all articles
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog Card 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT group">
+          <!-- Blog image with gentle transition -->
+          <div class="relative aspect-ratio-16/9 overflow-hidden">
+            <img src="https://placehold.co/600x400/C7DEE0/102A43?text=Article+1" alt="Building trust through design" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+          </div>
+          
+          <!-- Blog content -->
+          <div class="p-lg">
+            <!-- Blog category -->
+            <div class="mb-sm">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+                Design Principles
+              </span>
+            </div>
+            
+            <!-- Blog title -->
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+              Building Trust Through Transparent Design
+            </h3>
+            
+            <!-- Blog excerpt -->
+            <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+              Explore how transparency in design processes can help create more trustworthy digital experiences for trauma-affected users.
+            </p>
+            
+            <!-- Blog metadata -->
+            <div class="flex items-center justify-between mt-md pt-md border-t border-grey-200">
+              <div class="flex items-center">
+                <img src="https://placehold.co/40x40/475569/FFFFFF?text=SJ" alt="Dr. Sarah Johnson" class="h-8 w-8 rounded-full object-cover" />
+                <span class="font-montserrat text-small text-grey-600 ml-sm">
+                  Dr. Sarah Johnson
+                </span>
+              </div>
+              <span class="font-montserrat text-caption text-grey-500">
+                May 2, 2025
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT group">
+          <!-- Blog image with gentle transition -->
+          <div class="relative aspect-ratio-16/9 overflow-hidden">
+            <img src="https://placehold.co/600x400/C7DEE0/102A43?text=Article+2" alt="Trauma-informed research methods" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+            <!-- Content warning overlay for sensitive topics -->
+            <div class="absolute bottom-0 left-0 right-0 bg-rhodochrosite-rose-50 bg-opacity-90 px-sm py-xs">
+              <p class="font-montserrat text-caption text-rhodochrosite-rose-DEFAULT">
+                Contains discussion of trauma responses
+              </p>
+            </div>
+          </div>
+          
+          <!-- Blog content -->
+          <div class="p-lg">
+            <!-- Blog category -->
+            <div class="mb-sm">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+                Research Methods
+              </span>
+            </div>
+            
+            <!-- Blog title -->
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+              Ethical Approaches to User Research
+            </h3>
+            
+            <!-- Blog excerpt -->
+            <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+              Learn about trauma-informed approaches to conducting user research that prioritizes participant well-being and emotional safety.
+            </p>
+            
+            <!-- Blog metadata -->
+            <div class="flex items-center justify-between mt-md pt-md border-t border-grey-200">
+              <div class="flex items-center">
+                <img src="https://placehold.co/40x40/475569/FFFFFF?text=MB" alt="Michael Byrne" class="h-8 w-8 rounded-full object-cover" />
+                <span class="font-montserrat text-small text-grey-600 ml-sm">
+                  Michael Byrne
+                </span>
+              </div>
+              <span class="font-montserrat text-caption text-grey-500">
+                April 28, 2025
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT group">
+          <!-- Blog image with gentle transition -->
+          <div class="relative aspect-ratio-16/9 overflow-hidden">
+            <img src="https://placehold.co/600x400/C7DEE0/102A43?text=Article+3" alt="Inclusive color systems" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+          </div>
+          
+          <!-- Blog content -->
+          <div class="p-lg">
+            <!-- Blog category -->
+            <div class="mb-sm">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption">
+                Visual Design
+              </span>
+            </div>
+            
+            <!-- Blog title -->
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+              Creating Calm Through Color Systems
+            </h3>
+            
+            <!-- Blog excerpt -->
+            <p class="font-montserrat text-grey-800 text-body mb-md line-clamp-3">
+              Discover how thoughtful color systems can contribute to creating calmer, more supportive digital interfaces for all users.
+            </p>
+            
+            <!-- Blog metadata -->
+            <div class="flex items-center justify-between mt-md pt-md border-t border-grey-200">
+              <div class="flex items-center">
+                <img src="https://placehold.co/40x40/475569/FFFFFF?text=AL" alt="Alex Lee" class="h-8 w-8 rounded-full object-cover" />
+                <span class="font-montserrat text-small text-grey-600 ml-sm">
+                  Alex Lee
+                </span>
+              </div>
+              <span class="font-montserrat text-caption text-grey-500">
+                April 15, 2025
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Case Studies Section -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-6">Case Studies</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Case Study Card 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT group">
+          <!-- Case Study Image -->
+          <div class="relative aspect-ratio-16/9 overflow-hidden">
+            <img src="https://placehold.co/600x400/C7DEE0/102A43?text=Case+Study+1" alt="Healthcare app redesign" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+          </div>
+          
+          <!-- Case Study Content -->
+          <div class="p-lg">
+            <!-- Category Badge -->
+            <div class="mb-sm">
+              <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                Case Study
+              </span>
+            </div>
+            
+            <!-- Title -->
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+              Redesigning Mental Health Support App
+            </h3>
+            
+            <!-- Summary -->
+            <p class="font-montserrat text-grey-800 text-body mb-md">
+              How we applied trauma-informed design principles to create a more supportive and empowering mental health application.
+            </p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-xs mb-lg">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Healthcare</span>
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Mental Health</span>
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Mobile App</span>
+            </div>
+            
+            <!-- Link -->
+            <a href="#" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Case Study Card 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft overflow-hidden hover:shadow transition-all duration-DEFAULT group">
+          <!-- Case Study Image -->
+          <div class="relative aspect-ratio-16/9 overflow-hidden">
+            <img src="https://placehold.co/600x400/C7DEE0/102A43?text=Case+Study+2" alt="Educational platform redesign" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-DEFAULT" />
+          </div>
+          
+          <!-- Case Study Content -->
+          <div class="p-lg">
+            <!-- Category Badge -->
+            <div class="mb-sm">
+              <span class="bg-rhodochrosite-rose-50 text-rhodochrosite-rose-DEFAULT px-sm py-xs rounded-md text-caption">
+                Case Study
+              </span>
+            </div>
+            
+            <!-- Title -->
+            <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+              Transforming Educational Platforms
+            </h3>
+            
+            <!-- Summary -->
+            <p class="font-montserrat text-grey-800 text-body mb-md">
+              A comprehensive redesign of an educational platform to support diverse learning needs through trauma-informed principles.
+            </p>
+            
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-xs mb-lg">
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Education</span>
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Accessibility</span>
+              <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-xs rounded text-caption">Web Platform</span>
+            </div>
+            
+            <!-- Link -->
+            <a href="#" class="font-montserrat text-small text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 transition-all duration-DEFAULT flex items-center">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-xs" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Resources Section -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-6">Free Resources</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Resource Card 1 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT">
+          <!-- Resource icon -->
+          <div class="bg-azurite-blue-50 h-16 w-16 rounded-full flex items-center justify-center mb-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          
+          <!-- Resource title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Trauma-Informed Interview Guide
+          </h3>
+          
+          <!-- Resource description -->
+          <p class="font-montserrat text-grey-800 text-body mb-md">
+            A comprehensive toolkit for conducting research interviews in a trauma-informed way, with templates, scripts, and ethical guidelines.
+          </p>
+          
+          <!-- Resource contents -->
+          <div class="bg-selenite-white-100 rounded-md p-md mb-lg">
+            <p class="font-montserrat font-medium text-grey-700 mb-xs">Toolkit includes:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Interview protocol template (PDF)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Consent form examples (DOCX)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Distress protocol guide (PDF)</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Download button -->
+          <a href="#" class="inline-block bg-azurite-blue-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-azurite-blue-700 transition-all duration-DEFAULT text-center w-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-sm" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            Download Toolkit
+          </a>
+        </div>
+
+        <!-- Resource Card 2 -->
+        <div class="bg-selenite-white-50 border border-grey-200 rounded-lg shadow-soft p-lg hover:shadow transition-all duration-DEFAULT">
+          <!-- Resource icon -->
+          <div class="bg-azurite-blue-50 h-16 w-16 rounded-full flex items-center justify-center mb-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-azurite-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          
+          <!-- Resource title -->
+          <h3 class="font-playfair font-bold text-azurite-blue-900 text-h3-mobile md:text-h3-tablet lg:text-h3-desktop mb-sm">
+            Content Warning Guidelines
+          </h3>
+          
+          <!-- Resource description -->
+          <p class="font-montserrat text-grey-800 text-body mb-md">
+            A guide for implementing effective and appropriate content warnings in digital experiences, with examples and implementation patterns.
+          </p>
+          
+          <!-- Resource contents -->
+          <div class="bg-selenite-white-100 rounded-md p-md mb-lg">
+            <p class="font-montserrat font-medium text-grey-700 mb-xs">Guide includes:</p>
+            <ul class="space-y-xs">
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Best practices reference (PDF)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Implementation examples (PDF)</span>
+              </li>
+              <li class="font-montserrat text-small text-grey-700 flex items-start">
+                <span class="text-azurite-blue-600 mr-xs mt-0.5">•</span>
+                <span>Content warning templates (DOCX)</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Download button -->
+          <a href="#" class="inline-block bg-azurite-blue-600 text-selenite-white-50 px-md py-sm rounded-md hover:bg-azurite-blue-700 transition-all duration-DEFAULT text-center w-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-sm" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            Download Guide
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pagination -->
+    <section class="flex justify-center mt-12">
+      <nav aria-label="Blog pagination" class="inline-flex">
+        <a href="#" class="px-4 py-2 rounded-l-md border border-grey-300 bg-selenite-white-50 text-grey-700 hover:bg-selenite-white-100 transition-all duration-DEFAULT">
+          Previous
+        </a>
+        <a href="#" class="px-4 py-2 border-t border-b border-grey-300 bg-chrysocolla-green-DEFAULT text-selenite-white-50">
+          1
+        </a>
+        <a href="#" class="px-4 py-2 border-t border-b border-grey-300 bg-selenite-white-50 text-grey-700 hover:bg-selenite-white-100 transition-all duration-DEFAULT">
+          2
+        </a>
+        <a href="#" class="px-4 py-2 border-t border-b border-grey-300 bg-selenite-white-50 text-grey-700 hover:bg-selenite-white-100 transition-all duration-DEFAULT">
+          3
+        </a>
+        <a href="#" class="px-4 py-2 rounded-r-md border border-grey-300 bg-selenite-white-50 text-grey-700 hover:bg-selenite-white-100 transition-all duration-DEFAULT">
+          Next
+        </a>
+      </nav>
+    </section>
+  </main>
+  
+  <!-- Newsletter Section -->
+  <section class="bg-selenite-white-100 border-t border-grey-200 py-16 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl md:text-3xl mb-4">Subscribe to Our Newsletter</h2>
+        <p class="font-montserrat text-grey-700 mb-8">Get the latest articles, resources, and insights on trauma-informed design delivered to your inbox.</p>
+        
+        <form class="flex flex-col md:flex-row gap-4">
+          <div class="flex-grow">
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" id="email" placeholder="Your email address" class="w-full px-4 py-3 rounded-md border-grey-300 focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+          </div>
+          <button type="submit" class="bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-6 py-3 rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT">
+            Subscribe
+          </button>
+        </form>
+        <p class="font-montserrat text-caption text-grey-500 mt-4">We respect your privacy. You can unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-selenite-white-200 border-t border-grey-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-grey-600 text-sm">© 2025 Dr G's Lab. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Help & Support</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Accessibility</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Component Documentation -->
+  <div class="max-w-6xl mx-auto mt-16 p-8 bg-azurite-blue-50 rounded-lg mb-16">
+    <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Blog Grid Template Documentation</h2>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Usage</h3>
+      <p>This template presents a comprehensive blog and resources hub that allows users to browse, search, and filter content in a trauma-informed manner. It's designed to provide easy access to various content types while maintaining clear content warnings where needed.</p>
+    </div>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Key Components</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Emergency exit button for quick navigation away from any potentially triggering content</li>
+        <li>Content filters including explicit content warning filter options</li>
+        <li>Featured article section with prominent placement</li>
+        <li>Blog card components with optional content warnings</li>
+        <li>Case study and resource components for different content types</li>
+        <li>Clear metadata showing authors and publication dates</li>
+        <li>Accessible pagination system for navigating through content</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Content warning overlays for potentially triggering articles</li>
+        <li>Dedicated content warning filter to allow users to control exposure</li>
+        <li>Clear categorization through badges and tags helps users make informed choices</li>
+        <li>Gentle image hover animations provide subtle but noticeable feedback</li>
+        <li>Consistent card structures create predictability across content types</li>
+        <li>Author information creates a sense of human connection and accountability</li>
+        <li>Readable excerpts that provide enough context without overwhelming details</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
