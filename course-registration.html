@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration - Trauma-Informed Design</title>
+ <link href="./src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+  <!-- Emergency Exit Button - Always visible -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button 
+      class="bg-selenite-white-50 border border-sunstone-orange-600 text-sunstone-orange-600 hover:bg-sunstone-orange-50 transition-all duration-DEFAULT px-md py-sm rounded-md shadow-soft flex items-center"
+      aria-label="Emergency exit to safe page"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-sm" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      Exit
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-selenite-white-50 border-b border-grey-200 sticky top-0 z-40 shadow-soft">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="./src/img/dgl-logomark.svg" alt="Dr. G's Lab Logo" class="h-10 w-10 mr-3">
+          <span class="ml-3 text-azurite-blue-900 font-playfair text-xl font-bold">Dr. G's Lab</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-medium transition-all duration-DEFAULT">Courses</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Resources</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Blog</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Newsletter</a>
+        </nav>
+
+        <!-- My Learning and User Avatar -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.776-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            My Learning
+          </a>
+
+          <!-- User Avatar -->
+          <div class="relative">
+            <button class="h-8 w-8 rounded-full bg-azurite-blue-100 flex items-center justify-center text-azurite-blue-600 font-medium">
+              JD
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button - Now separate from the hidden div -->
+        <button class="md:hidden p-2 rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Course Registration Header with Progress Steps -->
+    <div class="mb-10">
+      <h1 class="font-playfair font-bold text-azurite-blue-900 text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-6">Course Registration</h1>
+      
+      <!-- Registration Progress Steps Component -->
+      <!-- Including the component from organisms/navigation/registration-progress-steps -->
+      <div class="mb-8">
+        <div class="registration-progress-steps w-full">
+          <ol class="flex flex-col md:flex-row md:items-center">
+            <!-- Step 1: Completed -->
+            <li class="flex items-center relative mb-6 md:mb-0">
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-chrysocolla-green-DEFAULT text-selenite-white-50 font-medium text-lg shadow-sm">
+                  1
+                </div>
+                <div class="ml-4">
+                  <p class="font-montserrat font-medium text-chrysocolla-green-DEFAULT text-base">Course Selection</p>
+                  <p class="text-grey-600 text-sm hidden md:block">Choose your course</p>
+                </div>
+              </div>
+              
+              <!-- Desktop connector line -->
+              <div class="hidden md:block absolute top-5 h-0.5 bg-chrysocolla-green-DEFAULT w-full left-10 -z-10"></div>
+              
+              <!-- Mobile connector line -->
+              <div class="absolute left-5 top-10 h-full w-0.5 bg-chrysocolla-green-DEFAULT md:hidden -z-10"></div>
+            </li>
+            
+            <!-- Step 2: Active -->
+            <li class="flex items-center relative mb-6 md:mb-0 md:ml-16">
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-chrysocolla-green-DEFAULT text-selenite-white-50 font-medium text-lg shadow-sm">
+                  2
+                </div>
+                <div class="ml-4">
+                  <p class="font-montserrat font-medium text-chrysocolla-green-DEFAULT text-base">Registration Details</p>
+                  <p class="text-grey-600 text-sm hidden md:block">Complete your information</p>
+                </div>
+              </div>
+              
+              <!-- Desktop connector line -->
+              <div class="hidden md:block absolute top-5 h-0.5 bg-grey-300 w-full left-10 -z-10"></div>
+              
+              <!-- Mobile connector line -->
+              <div class="absolute left-5 top-10 h-full w-0.5 bg-grey-300 md:hidden -z-10"></div>
+            </li>
+            
+            <!-- Step 3: Upcoming -->
+            <li class="flex items-center md:ml-16">
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center bg-grey-200 text-grey-600 font-medium text-lg shadow-sm">
+                  3
+                </div>
+                <div class="ml-4">
+                  <p class="font-montserrat font-medium text-grey-600 text-base">Confirmation</p>
+                  <p class="text-grey-600 text-sm hidden md:block">Review and confirm</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+      
+      <p class="text-grey-700 text-lg max-w-3xl">Complete your registration for the Trauma-Informed Design Practitioner course. This form is designed to help us understand your needs and ensure a supportive learning environment.</p>
+    </div>
+
+    <!-- Registration Form Area - Improved layout with better responsive grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+      <!-- Registration Form Section - Adjusted to be wider on large screens -->
+      <div class="lg:col-span-2 space-y-6">
+        <form id="registration-form" class="space-y-6">
+          <!-- Course Information (read-only) -->
+          <div class="bg-selenite-white-100 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Selected Course</h2>
+            <div class="flex items-start">
+              <img src="https://placehold.co/100x100/E5E7EB/1F2937?text=Course" alt="Course thumbnail" class="w-16 h-16 object-cover rounded-md">
+              <div class="ml-4">
+                <h3 class="font-montserrat font-bold text-azurite-blue-900">Trauma-Informed Design Practitioner</h3>
+                <p class="text-grey-700 text-sm">Core certification course - 40 hours</p>
+                <p class="text-chrysocolla-green-DEFAULT font-medium mt-2">$895 USD</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Personal Information Section -->
+          <div class="bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Personal Information</h2>
+            
+            <!-- Name Fields -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-grey-700 mb-1">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              </div>
+              
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-grey-700 mb-1">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              </div>
+            </div>
+            
+            <!-- Contact Fields -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-grey-700 mb-1">Email Address *</label>
+                <input type="email" id="email" name="email" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <p class="text-grey-500 text-xs mt-1">This will be your login username</p>
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-sm font-medium text-grey-700 mb-1">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <p class="text-grey-500 text-xs mt-1">Optional, for important course updates only</p>
+              </div>
+            </div>
+            
+            <!-- Location Field -->
+            <div class="mb-6">
+              <label for="country" class="block text-sm font-medium text-grey-700 mb-1">Country/Region *</label>
+              <select id="country" name="country" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="">Select your country or region</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="AU">Australia</option>
+                <option value="OTHER">Other (specify)</option>
+              </select>
+            </div>
+            
+            <!-- Time Zone Field -->
+            <div>
+              <label for="timezone" class="block text-sm font-medium text-grey-700 mb-1">Time Zone *</label>
+              <select id="timezone" name="timezone" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="">Select your time zone</option>
+                <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                <option value="America/Anchorage">(GMT-09:00) Alaska</option>
+                <option value="America/Los_Angeles">(GMT-08:00) Pacific Time</option>
+                <option value="America/Denver">(GMT-07:00) Mountain Time</option>
+                <option value="America/Chicago">(GMT-06:00) Central Time</option>
+                <option value="America/New_York">(GMT-05:00) Eastern Time</option>
+                <option value="Europe/London">(GMT+00:00) London</option>
+                <option value="Europe/Paris">(GMT+01:00) Paris, Berlin</option>
+                <!-- Additional time zones would be included here -->
+              </select>
+              <p class="text-grey-500 text-xs mt-1">Helps schedule any live components</p>
+            </div>
+          </div>
+          
+          <!-- Learning Experience Section -->
+          <div class="bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Learning Experience</h2>
+            
+            <!-- Background Field -->
+            <div class="mb-6">
+              <label for="background" class="block text-sm font-medium text-grey-700 mb-1">What is your primary professional background? *</label>
+              <select id="background" name="background" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="">Select your background</option>
+                <option value="UX Design">UX Design</option>
+                <option value="UI Design">UI Design</option>
+                <option value="Product Design">Product Design</option>
+                <option value="Product Management">Product Management</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Research">Research</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Mental Health">Mental Health</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <!-- Experience Level -->
+            <div class="mb-6">
+              <label for="experience" class="block text-sm font-medium text-grey-700 mb-1">Experience Level with Trauma-Informed Design *</label>
+              <select id="experience" name="experience" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="">Select your experience level</option>
+                <option value="Beginner">Beginner - New to these concepts</option>
+                <option value="Familiar">Familiar - Basic understanding but limited practice</option>
+                <option value="Experienced">Experienced - Some implementation experience</option>
+                <option value="Advanced">Advanced - Regular implementation in projects</option>
+              </select>
+            </div>
+            
+            <!-- Goals -->
+            <div class="mb-6">
+              <label for="goals" class="block text-sm font-medium text-grey-700 mb-1">What are your primary learning goals for this course? *</label>
+              <textarea id="goals" name="goals" rows="4" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT"></textarea>
+              <p class="text-grey-500 text-xs mt-1">This helps our instructors tailor the experience</p>
+            </div>
+          </div>
+          
+          <!-- Learning Accommodations Section -->
+          <div class="bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Learning Accommodations</h2>
+            <p class="text-grey-700 mb-6">We're committed to making our courses accessible to all participants. Please let us know if you require any accommodations.</p>
+            
+            <!-- Accommodations Checkboxes -->
+            <div class="space-y-3 mb-6">
+              <p class="block text-sm font-medium text-grey-700 mb-3">Please select any accommodations you require:</p>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="accommodations[]" value="captions" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">Captions for video content</span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="accommodations[]" value="text-alternatives" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">Text alternatives for multimedia content</span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="accommodations[]" value="extended-time" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">Extended time for assignments</span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="accommodations[]" value="alternative-formats" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">Materials in alternative formats</span>
+                </label>
+              </div>
+            </div>
+            
+            <!-- Additional Accommodations -->
+            <div>
+              <label for="other-accommodations" class="block text-sm font-medium text-grey-700 mb-1">Any other accommodations or needs?</label>
+              <textarea id="other-accommodations" name="other-accommodations" rows="3" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT"></textarea>
+            </div>
+          </div>
+          
+          <!-- Content Sensitivity Section -->
+          <div class="bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Content Preferences</h2>
+            <div class="bg-azurite-blue-50 border border-azurite-blue-200 rounded-md p-4 mb-6">
+              <p class="text-azurite-blue-800">
+                <span class="font-medium">Note:</span> Our course includes discussions of trauma and its effects on users. All sensitive content includes clear warnings and is presented with care. The selections below help us present content in a way that works best for you.
+              </p>
+            </div>
+            
+            <!-- Content Warnings Preference -->
+            <div class="mb-6">
+              <label for="content-warnings" class="block text-sm font-medium text-grey-700 mb-1">Content Warning Preferences *</label>
+              <select id="content-warnings" name="content-warnings" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="detailed">Detailed - Specific descriptions of content types</option>
+                <option value="general" selected>General - Broad category warnings only</option>
+                <option value="minimal">Minimal - Essential warnings only</option>
+              </select>
+            </div>
+            
+            <!-- Content Intensity Preference -->
+            <div class="mb-6">
+              <label for="case-studies" class="block text-sm font-medium text-grey-700 mb-1">Case Study Presentation Preference *</label>
+              <select id="case-studies" name="case-studies" required class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                <option value="full">Full - Complete case studies with specific examples</option>
+                <option value="summarized" selected>Summarized - Abstracted examples with key lessons</option>
+                <option value="theoretical">Theoretical - Principles-only with minimal real-world examples</option>
+              </select>
+            </div>
+            
+            <!-- Topics to Avoid -->
+            <div>
+              <label for="topics-to-avoid" class="block text-sm font-medium text-grey-700 mb-1">Are there specific topics you'd prefer not to engage with?</label>
+              <textarea id="topics-to-avoid" name="topics-to-avoid" rows="3" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT"></textarea>
+              <p class="text-grey-500 text-xs mt-1">This information is confidential and helps us provide appropriate alternatives</p>
+            </div>
+          </div>
+          
+          <!-- Payment Information Section -->
+          <div class="bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Payment Information</h2>
+            
+            <!-- Payment Options -->
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-grey-700 mb-3">Payment Method *</label>
+              <div class="space-y-3">
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="radio" name="payment-method" value="credit-card" checked class="border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">Credit Card</span>
+                  </label>
+                </div>
+                
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="radio" name="payment-method" value="paypal" class="border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">PayPal</span>
+                  </label>
+                </div>
+                
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="radio" name="payment-method" value="invoice" class="border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT">
+                    <span class="ml-2 text-grey-700">Invoice (Organizations only)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Credit Card Fields -->
+            <div id="credit-card-fields" class="border border-grey-200 rounded-md p-4 mb-6">
+              <div class="mb-4">
+                <label for="card-name" class="block text-sm font-medium text-grey-700 mb-1">Name on Card *</label>
+                <input type="text" id="card-name" name="card-name" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              </div>
+              
+              <div class="mb-4">
+                <label for="card-number" class="block text-sm font-medium text-grey-700 mb-1">Card Number *</label>
+                <input type="text" id="card-number" name="card-number" placeholder="•••• •••• •••• ••••" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+              </div>
+              
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="card-expiry" class="block text-sm font-medium text-grey-700 mb-1">Expiration Date *</label>
+                  <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                </div>
+                
+                <div>
+                  <label for="card-cvc" class="block text-sm font-medium text-grey-700 mb-1">CVC *</label>
+                  <input type="text" id="card-cvc" name="card-cvc" placeholder="•••" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Discount Code -->
+            <div class="mb-6">
+              <label for="discount-code" class="block text-sm font-medium text-grey-700 mb-1">Discount Code</label>
+              <input type="text" id="discount-code" name="discount-code" class="w-full rounded-md border-grey-300 py-3 px-4 text-base focus:outline-none focus:ring-chrysocolla-green-DEFAULT focus:border-chrysocolla-green-DEFAULT">
+            </div>
+          </div>
+          
+          <!-- Terms and Conditions -->
+          <div class="bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+            <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Terms & Consent</h2>
+            
+            <div class="space-y-4">
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="terms" required class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">
+                    I agree to the <a href="#" class="text-chrysocolla-green-DEFAULT hover:underline">Terms and Conditions</a> and <a href="#" class="text-chrysocolla-green-DEFAULT hover:underline">Privacy Policy</a>. *
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="communication-consent" class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">
+                    I agree to receive course-related communications and updates. You can unsubscribe anytime.
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <label class="inline-flex items-start">
+                  <input type="checkbox" name="learning-policy" required class="rounded border-grey-300 text-chrysocolla-green-DEFAULT focus:ring-chrysocolla-green-DEFAULT mt-1">
+                  <span class="ml-2 text-grey-700">
+                    I understand and agree to follow the <a href="#" class="text-chrysocolla-green-DEFAULT hover:underline">Community Guidelines</a> that foster a safe and respectful learning environment. *
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Form Submission - Improved mobile layout -->
+          <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+            <a href="#" class="text-azurite-blue-600 hover:text-azurite-blue-800 transition-all duration-DEFAULT">
+              <span class="inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to Course Selection
+              </span>
+            </a>
+            
+            <button type="submit" class="w-full sm:w-auto bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-xl py-md rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT font-medium">
+              Continue to Confirmation
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Course Summary Sidebar - Adjusted for better responsive behavior -->
+      <div class="lg:col-span-1">
+        <!-- Course Summary - Improved sticky behavior -->
+        <div class="bg-selenite-white-100 rounded-lg p-6 border border-grey-200 sticky top-28">
+          <h2 class="font-playfair font-bold text-azurite-blue-800 text-xl mb-4">Registration Summary</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div>
+              <p class="text-grey-700 text-sm">Course</p>
+              <p class="font-medium">Trauma-Informed Design Practitioner</p>
+            </div>
+            
+            <div>
+              <p class="text-grey-700 text-sm">Format</p>
+              <p class="font-medium">Online, self-paced with live Q&A</p>
+            </div>
+            
+            <div>
+              <p class="text-grey-700 text-sm">Duration</p>
+              <p class="font-medium">8 weeks (5-6 hours/week)</p>
+            </div>
+            
+            <div>
+              <p class="text-grey-700 text-sm">Start Date</p>
+              <p class="font-medium">June 1, 2025</p>
+            </div>
+          </div>
+          
+          <!-- Price Summary -->
+          <div class="border-t border-grey-200 pt-4 mb-6">
+            <div class="flex justify-between mb-2">
+              <span>Course Fee</span>
+              <span class="font-medium">$895.00</span>
+            </div>
+            
+            <div class="flex justify-between text-sm text-grey-700 mb-4">
+              <span>Tax</span>
+              <span>$0.00</span>
+            </div>
+            
+            <div class="flex justify-between font-bold">
+              <span>Total</span>
+              <span>$895.00</span>
+            </div>
+          </div>
+          
+          <!-- What's Included -->
+          <div class="bg-selenite-white-50 rounded-md p-4 border border-grey-100">
+            <h3 class="font-medium text-azurite-blue-800 mb-3">What's Included</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-DEFAULT mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-2">Full access to all 8 course modules</span>
+              </li>
+              <li class="flex items-start text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-DEFAULT mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-2">Practitioner's toolkit with templates & resources</span>
+              </li>
+              <li class="flex items-start text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-DEFAULT mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-2">4 live Q&A sessions with instructors</span>
+              </li>
+              <li class="flex items-start text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-DEFAULT mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-2">Project feedback from course mentors</span>
+              </li>
+              <li class="flex items-start text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-DEFAULT mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-2">Certificate of completion</span>
+              </li>
+              <li class="flex items-start text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-chrysocolla-green-DEFAULT mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="ml-2">1-year access to content updates</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Need Help Section -->
+        <div class="mt-6 bg-selenite-white-50 rounded-lg p-6 border border-grey-200">
+          <h3 class="font-montserrat font-bold text-azurite-blue-800 mb-2">Need Help?</h3>
+          <p class="text-grey-700 mb-4">Our team is available to assist with registration questions or concerns.</p>
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azurite-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:support@drglab.com" class="text-azurite-blue-600 hover:text-azurite-blue-800 transition-all duration-DEFAULT">
+              support@drglab.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-selenite-white-200 border-t border-grey-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-grey-600 text-sm">© 2025 Dr G's Lab. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Help & Support</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Accessibility</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Component Documentation -->
+  <div class="max-w-6xl mx-auto mt-16 p-8 bg-azurite-blue-50 rounded-lg mb-16">
+    <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Course Registration Template Documentation</h2>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Usage</h3>
+      <p>This template provides a comprehensive, trauma-informed course registration form that collects necessary information while respecting user agency and comfort.</p>
+    </div>
+    
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Key Components</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Clear progress indicator showing registration steps</li>
+        <li>Course summary with transparent pricing information</li>
+        <li>Options for learning accommodations</li>
+        <li>Content sensitivity preferences</li>
+        <li>Detailed "What's Included" section to set clear expectations</li>
+        <li>Transparent consent and terms section</li>
+        <li>Emergency exit button for quick navigation away</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Clear content warning preferences that give users control over information presentation</li>
+        <li>Options to specify topics to avoid without requiring detailed explanations</li>
+        <li>Comprehensive accommodation options that normalize various needs</li>
+        <li>Progress indicators to create predictability</li>
+        <li>Clear explanations of what's included to reduce uncertainty</li>
+        <li>Clearly labeled required vs. optional fields</li>
+        <li>Thoughtful form organization with related fields grouped together</li>
+        <li>Ample whitespace and clean layout to reduce cognitive load</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

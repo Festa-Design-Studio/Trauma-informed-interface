@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Detail - Introduction to Trauma-Informed Design</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- Import Playfair Display and Montserrat fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-selenite-white-50 font-montserrat">
+
+  <!-- Emergency Exit Button - Always visible -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button 
+      class="bg-rhodochrosite-rose-600 hover:bg-rhodochrosite-rose-700 text-selenite-white-50 font-montserrat font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rhodochrosite-rose-300 focus:ring-offset-2 flex items-center gap-2"
+      aria-label="Emergency exit to neutral website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Emergency Exit
+    </button>
+  </div>
+
+
+  <!-- Header -->
+  <header class="bg-selenite-white-50 border-b border-grey-200 sticky top-0 z-40">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="./src/img/dgl-logomark.svg" alt="Dr. G's Lab Logo" class="h-10 w-10 mr-3">
+          <span class="ml-3 text-azurite-blue-900 font-playfair text-xl font-bold">Dr. G's Lab</span>
+        </div>
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-chrysocolla-green-DEFAULT hover:text-chrysocolla-green-600 font-medium transition-all duration-DEFAULT">Courses</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Resources</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Blog</a>
+          <a href="#" class="text-azurite-blue-900 hover:text-azurite-blue-600 transition-all duration-DEFAULT">Services</a>
+        </nav>
+        <!-- User Menu -->
+        <div class="flex items-center space-x-4">
+          
+          <a href="#" class="hidden md:flex items-center px-4 py-2 rounded-md border border-chrysocolla-green-DEFAULT text-chrysocolla-green-DEFAULT hover:bg-chrysocolla-green-50 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.776-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            My Learning
+          </a>
+          <!-- Settings Button -->
+          <button class="p-2 rounded-full hover:bg-grey-100 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+          <div class="relative">
+            <button class="h-8 w-8 rounded-full bg-azurite-blue-100 flex items-center justify-center text-azurite-blue-600 font-medium">
+              JD
+            </button>
+          </div>
+          <button class="md:hidden p-2 rounded-md hover:bg-grey-100 transition-all duration-DEFAULT">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-grey-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Course Title & Metadata -->
+    <div class="mb-8">
+      <span class="bg-azurite-blue-50 text-azurite-blue-600 px-sm py-xs rounded-md text-caption font-medium mb-2 inline-block">Core Course</span>
+      <h1 class="font-playfair font-bold text-azurite-blue-900 text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-4">Introduction to Trauma-Informed Design</h1>
+      <div class="flex flex-wrap gap-4 mb-4">
+        <span class="font-montserrat text-caption text-grey-600 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          4 hours
+        </span>
+        <span class="font-montserrat text-caption text-grey-600 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          Beginner
+        </span>
+      </div>
+      <p class="text-grey-700 text-lg max-w-2xl mb-4">This foundational course introduces trauma-informed design principles and their importance in creating safe, inclusive, and empowering user experiences.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-2 py-1 rounded text-caption">Self-paced</span>
+        <span class="bg-azurite-blue-50 text-azurite-blue-600 px-2 py-1 rounded text-caption">Certificate</span>
+      </div>
+    </div>
+
+    <!-- Content Warning Banner -->
+    <div class="mb-8 bg-rhodochrosite-rose-50 border border-rhodochrosite-rose-100 rounded-md p-4 flex items-start">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rhodochrosite-rose-DEFAULT mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="text-caption text-rhodochrosite-rose-DEFAULT">
+        This course includes discussions of trauma and its effects. Content warnings are provided before sensitive material.
+      </p>
+    </div>
+
+    <!-- Course Overview & Objectives -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-xl mb-4">Course Overview</h2>
+      <p class="text-grey-800 mb-6">Gain a foundational understanding of trauma-informed design, why it matters, and how to apply its principles to create safer, more inclusive digital experiences. This course is suitable for designers, developers, and anyone interested in user-centered, compassionate design.</p>
+      <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-2">Learning Objectives</h3>
+      <ul class="list-disc pl-5 space-y-2 text-grey-800 mb-6">
+        <li>Understand the core principles of trauma-informed design</li>
+        <li>Recognize the impact of trauma on user experience</li>
+        <li>Identify potential triggers in digital products</li>
+        <li>Apply trauma-informed strategies to your own work</li>
+      </ul>
+      <h3 class="font-montserrat font-medium text-azurite-blue-900 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-2 text-azurite-blue-700">
+        <li>Clear content warnings and supportive messaging</li>
+        <li>Non-pressuring, self-paced learning environment</li>
+        <li>Consistent visual progress indicators</li>
+        <li>Accessible, inclusive design for all learners</li>
+        <li>Encouragement to take breaks and seek support</li>
+      </ul>
+    </section>
+
+    <!-- Module List with Progress/Status -->
+    <section class="mb-12">
+      <h2 class="font-playfair font-bold text-azurite-blue-900 text-xl mb-4">Course Modules</h2>
+      <div class="space-y-md">
+        <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md flex justify-between items-center mb-2">
+          <div>
+            <h4 class="font-montserrat font-medium text-grey-800">Module 1: Why Trauma-Informed Design Matters</h4>
+            <p class="text-caption text-grey-600">Explore the importance of trauma-informed approaches in digital design.</p>
+          </div>
+          <span class="bg-chrysocolla-green-50 text-chrysocolla-green-DEFAULT px-xs py-0.5 rounded text-caption">Completed</span>
+        </div>
+        <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md flex justify-between items-center mb-2">
+          <div>
+            <h4 class="font-montserrat font-medium text-grey-800">Module 2: Principles of Trauma-Informed Care in Design</h4>
+            <p class="text-caption text-grey-600">Learn the six key principles and how to apply them in your work.</p>
+          </div>
+          <span class="bg-azurite-blue-50 text-azurite-blue-600 px-xs py-0.5 rounded text-caption">In Progress</span>
+        </div>
+        <div class="bg-selenite-white-100 border border-grey-200 rounded-md p-md flex justify-between items-center mb-2">
+          <div>
+            <h4 class="font-montserrat font-medium text-grey-800">Module 3: Creating Safe Digital Spaces</h4>
+            <p class="text-caption text-grey-600">Practical strategies for building supportive, empowering user experiences.</p>
+          </div>
+          <span class="bg-grey-100 text-grey-600 px-xs py-0.5 rounded text-caption">Not Started</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="flex flex-col md:flex-row gap-4 mb-16">
+      <a href="#" class="inline-block bg-chrysocolla-green-DEFAULT text-selenite-white-50 px-md py-sm rounded-md hover:bg-chrysocolla-green-600 transition-all duration-DEFAULT text-center font-medium">Start Course</a>
+      <a href="#" class="inline-block border border-grey-300 text-grey-700 px-md py-sm rounded-md hover:bg-grey-100 transition-all duration-DEFAULT text-center font-medium">Download Syllabus</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-selenite-white-200 border-t border-grey-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-grey-600 text-sm">© 2025 Dr G's Lab. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Help & Support</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Accessibility</a>
+          <a href="#" class="text-grey-600 hover:text-azurite-blue-600 text-sm transition-all duration-DEFAULT">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Component Documentation -->
+  <div class="max-w-4xl mx-auto mt-16 p-8 bg-azurite-blue-50 rounded-lg mb-16">
+    <h2 class="font-playfair font-bold text-azurite-blue-900 text-2xl mb-4">Course Detail Page Documentation</h2>
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Usage</h3>
+      <p>This page provides a detailed overview of a course, including its objectives, modules, trauma-informed considerations, and actions for enrollment. It is designed to be the standard reusable template for all course detail pages.</p>
+    </div>
+    <div class="mb-6">
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Key Components</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Emergency exit button (always accessible)</li>
+        <li>Header with navigation and branding</li>
+        <li>Course title, metadata, and description</li>
+        <li>Content warning banner for sensitive material</li>
+        <li>Course overview, objectives, and trauma-informed considerations</li>
+        <li>Module list with status indicators</li>
+        <li>Clear call-to-action for enrollment or starting the course</li>
+        <li>Footer with support and accessibility links</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-medium text-azurite-blue-800 mb-2">Trauma-Informed Considerations</h3>
+      <ul class="list-disc pl-5 space-y-1 text-azurite-blue-700">
+        <li>Clear, non-judgmental progress/status indicators</li>
+        <li>Supportive, non-pressuring language throughout</li>
+        <li>Content warnings and encouragement to take breaks</li>
+        <li>Accessible, inclusive layout and color palette</li>
+        <li>Consistent navigation and emergency exit for user safety</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
